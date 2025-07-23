@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia Vladimir T15</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- RASTRO DE SANGUE -->
+    <canvas id="sangue"></canvas>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <div class="logo blood-text">VLADIMIR T15</div>
+        <nav>
+            <ul>
+                <li><a href="#hero" class="blood-text">Como Jogar</a></li>
+                <li><a href="#runas" class="blood-text">Runas</a></li>
+                <li><a href="#builds" class="blood-text">Builds</a></li>
+                <li><a href="#itens" class="blood-text">Itens</a></li>
+                <li><a href="#botas" class="blood-text">Botas</a></li>
+                <li><a href="#spells" class="blood-text">Spells</a></li>
+                <li><a href="#combos" class="blood-text">Combos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="hero fade">
+        <h1 class="blood-text">Como Jogar com Vladimir</h1>
+
+        <div class="como-jogar">
+            <!-- KIT DO CAMPEÃO -->
+            <h2 class="blood-text">Conheça o kit do campeão</h2>
+            <p>
+                <strong>PASSIVA – PACTO CARMESIM (Crimson Pact)</strong><br>
+                <strong>Descrição:</strong><br>
+                O AP (Poder de Habilidade) de Vladimir concede Vida adicional, e a Vida adicional concede AP.<br>
+                <span class="habilidade">1 AP → 1,6 de Vida adicional<br>
+                    40 de Vida adicional → 1 AP</span><br><br>
+
+                <strong>Q – TRANSFUSÃO (Transfusion)</strong><br>
+                <strong>Função:</strong> Dano e cura.<br>
+                <strong>Descrição Detalhada:</strong><br>
+                Vladimir drena a vida do inimigo, causando dano mágico e se curando.<br>
+                Após duas conjurações, ele fica com Ímpeto Carmesim, tornando a terceira conjuração muito mais forte,
+                causando dano aumentado e curando muito mais.<br><br>
+
+                <strong>Cooldown:</strong> 9 / 7,9 / 6,8 / 5,7 / 4,6 segundos (reduz com níveis).<br>
+                <strong>Escala:</strong><br>
+                Dano base: 80 – 200 (+60% AP)<br>
+                Cura: 20 – 40 (+35% AP)<br>
+                Ímpeto Carmesim: Dano aumentado em 85% e cura dobrada.<br>
+                <strong>Dica:</strong> Essa habilidade é o coração do sustain do Vlad. Use para trocar dano infinito na lane.<br><br>
+
+                <strong>W – POÇA DE SANGUE (Sanguine Pool)</strong><br>
+                <strong>Função:</strong> Mobilidade + CC + invulnerabilidade.<br>
+                <strong>Descrição Detalhada:</strong><br>
+                Vladimir se transforma em uma poça de sangue por 2 segundos, ficando invisível e inalvejável.<br>
+                Enquanto está na poça:<br>
+                • Causa dano mágico por segundo aos inimigos acima.<br>
+                • Lentidão de 40% aos inimigos atingidos.<br>
+                • Vladimir se cura em 15% do dano causado.<br><br>
+
+                <strong>Cooldown:</strong> 28 / 25 / 22 / 19 / 16 segundos.<br>
+                <strong>Escala:</strong><br>
+                Dano: 80 – 240 (+15% AP) (+15% Vida adicional).<br>
+                <strong>Dica:</strong> É uma skill para fugir de ganks, desviar de habilidades cruciais (como ultimates de Malzahar,
+                Ashe, etc.) ou garantir o slow em perseguições.<br><br>
+
+                <strong>E – MARÉ VERMELHA (Tides of Blood)</strong><br>
+                <strong>Função:</strong> Dano em área (AoE).<br>
+                <strong>Descrição Detalhada:</strong><br>
+                Vladimir carrega uma onda de sangue por até 1,5 segundos, reduzindo sua própria vida em 10% da Vida atual,
+                mas aumentando o dano causado.<br>
+                Após liberar, causa dano mágico em área.<br>
+                Quanto mais carregado, mais dano e mais alcance.<br><br>
+
+                <strong>Cooldown:</strong> 13 / 11 / 9 / 7 / 5 segundos.<br>
+                <strong>Escala:</strong><br>
+                Dano mínimo: 30 – 90 (+35% AP) (+2,5% da Vida adicional)<br>
+                Dano máximo (carregado): 60 – 180 (+70% AP) (+5% da Vida adicional)<br>
+                <strong>Dica:</strong> Use em waveclear e para zonear lutas. Combine com o Q para combos rápidos.<br><br>
+
+                <strong>R – HEMOPLAGUE (Hemoplague)</strong><br>
+                <strong>Função:</strong> Burst + amplificação de dano em área.<br>
+                <strong>Descrição Detalhada:</strong><br>
+                Vladimir infecta uma área com uma praga de sangue por 4 segundos:<br>
+                • Inimigos afetados recebem aumento de 10% do dano recebido de TODAS as fontes.<br>
+                • Após 4 segundos, os inimigos explodem, recebendo dano mágico massivo e Vladimir recupera Vida por cada
+                campeão atingido.<br><br>
+
+                <strong>Cooldown:</strong> 150 / 135 / 120 segundos.<br>
+                <strong>Escala:</strong><br>
+                Dano: 150 / 250 / 350 (+70% AP)<br>
+                Cura: 150 / 250 / 350 (+70% AP) (por campeão atingido)<br>
+                <strong>Dica:</strong> O segredo do Vladimir. Espere o momento perfeito para pegar o máximo de alvos antes
+                de entrar com Q + E.<br><br>
+
+                
+
+                ✅ <strong>PONTOS FORTES E FRACOS</strong><br>
+                ✔ <strong>Pontos Fortes:</strong><br>
+                • Sustain absurdo com o Q.<br>
+                • Late game insano (um dos melhores do jogo).<br>
+                • Invulnerabilidade com W.<br>
+                • Impacto em lutas em equipe com R.<br><br>
+
+                ❌ <strong>Pontos Fracos:</strong><br>
+                • Fraco no early contra campeões de poke constante.<br>
+                • Vulnerável a CC pesado.<br>
+                • Requer tempo para escalar.<br><br>
+
+                <strong>Impacto:</strong> É por isso que Vladimir escala absurdamente bem no late game e se torna um monstro
+                em lutas longas.
+            </p>
+
+            <!-- TEAMFIGHTS -->
+            <h2 class="blood-text">Como se Posicionar em Teamfights</h2>
+            <p>
+                Jogadores iniciantes de Vladimir cometem o erro de avançar demais com
+                <span class="habilidade">E + Poça</span>, o que pode levar a uma morte rápida.<br>
+                Só vale entrar no meio dos inimigos se o time puder acompanhar,
+                como com <span class="habilidade">Fiddlesticks R</span> ou <span class="habilidade">Ornn R</span>.<br>
+                Acerte o <span class="habilidade">R</span> no máximo de inimigos para aumentar o dano recebido em 10%.<br>
+                Não use a <span class="habilidade">Poça</span> cedo demais.
+            </p>
+
+            <!-- LANE PHASE -->
+            <h2 class="blood-text">Como Jogar a Lane Phase</h2>
+            <p>
+                Na fase de rotas, Vladimir troca dano de forma eficiente, usando sua vida para forçar o inimigo a gastar mana ou poções.<br>
+                Seu <span class="habilidade">Q</span> garante sustain, <strong>abuse disso!</strong><br>
+                Faça trocas prolongadas e favoráveis.<br>
+                <strong>SEMPRE dê o máximo de auto-ataques possíveis (AA)</strong>, permitindo que ele se cure enquanto pressiona o oponente,
+                forçando-o a gastar recursos cedo e garantindo trocas prolongadas.
+            </p>
+        </div>
+    </section>
+
+    <!-- RUNAS -->
+    <section id="runas" class="fade">
+        <h2 class="blood-text">Runas</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="img/runas/aery.png" alt="Runa Aery" class="runa-img">
+                <h3 class="runa aery">Aery</h3>
+                <p>Aumenta o dano na fase de rotas e/ou em lutas no rio, fortalecendo o early game.<br>
+                Lembre-se de dar muitos ataques básicos (AA) com essa runa.<br>
+                Geralmente, é a principal escolha para Vladimir.<br>
+                Indicada para um estilo de jogo agressivo no início da partida.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/runas/grasp.png" alt="Runa Grasp" class="runa-img">
+                <h3 class="runa grasp">Grasp</h3>
+                <p>Boa contra campeões corpo a corpo (melee) e tanques, pois permite acumular a runa rapidamente.<br>
+                Porém, após o nerf, tornou-se inviável contra tanks.<br>
+                Contra Akali, funciona bem para jogar de forma segura, acumulando a runa e escalando para o late game.<br><br>
+                🩸 <strong>Importante:</strong><br>
+                Se for utilizar Flash + Ghost, use Arcanista do Axioma nas runas.<br>
+                Se for utilizar Flash + Ignite, use Manto de Nimbus nas runas.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/runas/conquistador.PNG" alt="Runa Conquistador" class="runa-img">
+                <h3 class="runa conquistador">Conquistador</h3>
+                <p>Ideal contra lutadores (bruisers), como Galio no mid ou K’Sante no top.<br>
+                Testado contra Warwick (WW), que se cura constantemente na wave, prolongando muito as trocas.<br>
+                Essa runa ajuda a lidar com isso.<br><br>
+                🩸 <strong>Importante:</strong><br>
+                Se for utilizar Flash + Ghost, use Arcanista do Axioma nas runas.<br>
+                Se for utilizar Flash + Ignite, use Manto de Nimbus nas runas.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/runas/aery mais sustentacao.PNG" alt="Aery + Sustentação" class="runa-img">
+                <h3 class="runa"><span class="aery">Aery</span> + <span class="sustentacao">Sustentação</span></h3>
+                <p>Aery ajuda a causar mais dano no início do jogo.<br>
+                A árvore verde proporciona mais resistência contra campeões de poke pesado, como Viktor, Zoe, Orianna e Syndra, Mel.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/runas/conquistador mais escalacao.PNG" alt="Conquistador + Escalação" class="runa-img">
+                <h3 class="runa"><span class="conquistador">Conquistador</span> + <span class="escala">Escalação</span></h3>
+                <p>Focado no late game, garantindo grande quantidade de AP.<br>
+                No nível 13, o Conquistador fornece cerca de 35 de AP + 48 de AP do Tempestade Crescente aos 30 min de partida.<br>
+                Ideal para um estilo de jogo passivo, sem agressivar no início.<br><br>
+                🩸 <strong>Opcional:</strong><br>
+                Caso prefira, utilize vida escalável em vez de vida flat, pois essa runa é focada em escalamento.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/runas/impeto.PNG" alt="Runa Ímpeto" class="runa-img">
+                <h3 class="runa impeto">Ímpeto</h3>
+                <p>Utilize contra composições inimigas com muito slow ou quando precisar manter distância.<br>
+                Também é útil para escalar para o late game.<br><br>
+                🩸 <strong>Opcional:</strong><br>
+                Caso prefira, utilize vida escalável em vez de vida flat, pois essa runa é focada em escalamento.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/runas/impeto mais sust.PNG" alt="Ímpeto + Sustentação" class="runa-img">
+                <h3 class="runa"><span class="impeto">Ímpeto</span> + <span class="sustentacao">Sustentação</span></h3>
+                <p>Semelhante à configuração anterior, mas com a árvore verde para enfrentar campeões que dificultam sua fase de rotas.<br>
+                Excelente contra Aurora, pois permite escalar e dominar as lutas no mid/late game.<br><br>
+                🩸 <strong>Opcional:</strong><br>
+                Caso prefira, utilize vida escalável em vez de vida flat, pois essa runa é focada em escalamento.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/runas/impeto inspiracao.PNG" alt="Ímpeto + Inspiração" class="runa-img">
+                <h3 class="runa"><span class="impeto">Ímpeto</span> + <span class="inspiracao">Inspiração</span></h3>
+                <p>Focado em escalonamento, com Flash e Ghost.<br>
+                A árvore de Inspiração oferece vantagens adicionais:<br>
+                Botas gratuitas → +10 de velocidade de movimento ao recebê-las (ótimo para Vladimir, que é lento).<br>
+                Perspicácia Cósmica → Reduz o tempo de recarga de feitiços de invocador e itens ativos.<br><br>
+                🩸 <strong>Opcional:</strong><br>
+                Caso prefira, utilize vida escalável em vez de vida flat, pois essa runa é focada em escalamento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- BUILDS -->
+    <section id="builds" class="fade">
+        <h2 class="blood-text">Builds</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="img/builds/build facil.PNG" alt="Build Fácil" class="runa-img">
+                <h3 class="blood-text">Build Fácil</h3>
+                <p>Ímpeto Cósmico > Rabadon > Void > Bota de Penetração.</p>
+            </div>
+            <div class="card">
+                <img src="img/builds/criafendas.PNG" alt="Build Cria Fendas" class="runa-img">
+                <h3 class="blood-text">Cria Fendas</h3>
+                <p>Cria Fendas > Liandry > Bota da Rapidez.</p>
+            </div>
+            <div class="card">
+                <img src="img/builds/apice.PNG" alt="Ápice + Chama Sombria" class="runa-img">
+                <h3 class="blood-text">Ápice + Chama Sombria</h3>
+                <p>Dano explosivo em alvos frágeis.</p>
+            </div>
+            <div class="card">
+                <img src="img/builds/liandry.PNG" alt="Ápice + Liandry" class="runa-img">
+                <h3 class="blood-text">Ápice + Liandry</h3>
+                <p>Pune tanques e explode frágeis.</p>
+            </div>
+            <div class="card">
+                <img src="img/builds/protobelt.PNG" alt="Proto Belt" class="runa-img">
+                <h3 class="blood-text">Proto Belt</h3>
+                <p>Mais mobilidade com Ignite.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ITENS -->
+<section id="itens" class="fade">
+    <h2 class="blood-text">Itens Situacionais</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="img/itens situacionais/Itens situacionais.PNG" alt="Itens Situacionais" class="runa-img">
+            <p>
+                <strong class="habilidade">Chama Sombria:</strong> spike rápido;<br>
+                <strong class="habilidade">Zhonya:</strong> contra full AD;<br>
+                <strong class="habilidade">Void Staff:</strong> quase sempre 3º item;<br>
+                <strong class="habilidade">Banshee:</strong> contra picks inesperados;<br>
+                <strong class="habilidade">Morello:</strong> contra curas intensas;<br>
+                <strong class="habilidade">Mejai:</strong> com 10 stacks no Lacre.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- BOTAS -->
+<section id="botas" class="fade">
+    <h2 class="blood-text">Botas</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="img/botas/Capturar.PNG" alt="Botas" class="runa-img">
+            <p>
+                <strong class="habilidade">Mercúrio:</strong> Importante contra times com muito controle de grupo (CC). Se houver mais de um campeão AP no time inimigo, como um suporte AP e um Fiddlesticks, essa bota é ideal para reduzir o tempo de controle de grupo recebido.
+;<br>
+                <strong class="habilidade">Feiticeiro:</strong> Se o objetivo é causar mais dano, essa bota é a melhor escolha, pois concede penetração mágica. Ideal contra composições frágeis que podem ser eliminadas em uma rotação de habilidades.<br>
+                <strong class="habilidade">Ionianas:</strong> Reduz o tempo de recarga das habilidades e feitiços de invocador. É uma bota mais barata (900 de ouro) e muito útil contra campeões que aplicam poke constante (ex.: Orianna, Azir, Syndra). Ajuda a ter mais mobilidade cedo no jogo e permite punir os inimigos mais vezes com habilidades.
+<br>
+                <strong class="habilidade">Rapidez:</strong> Boa contra campeões que dependem de aproximação para causar dano, como Sett. Essa bota melhora o posicionamento e facilita jogar à distância. Também é eficaz contra composições que aplicam muitos efeitos de lentidão, com ela tu pode ir sem ghost pegando uma spell mais agressiva como ignite ou tp para agilidade global.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- SPELLS -->
+<section id="spells" class="fade">
+    <h2 class="blood-text">Spells</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="img/spells/combined_spells.png" alt="Spells" class="runa-img">
+            <p>
+                <strong class="habilidade">Flash + Ghost:</strong> escalamento;<br>
+                <strong class="habilidade">Flash + Ignite:</strong> agressivo em melee;<br>
+                <strong class="habilidade">Ghost + Ignite:</strong> raro, mas útil sem CC inimigo.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- COMBOS -->
+<section id="combos" class="fade">
+    <h2 class="blood-text">Combos</h2>
+    <div class="grid">
+        <div class="card">
+            <video controls muted loop class="runa-img" style="width:100%; max-height:300px; border-radius:8px;">
+                <source src="videos/combo-vladimir.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos.
+            </video>
+            <p>
+                ✅ <strong>COMBOS IMPORTANTES</strong><br>
+                ✔ Combo Básico: <span class="habilidade">E (carrega) → Q → Solta E → R</span> (padrão curto alcance)<br>
+                ✔ Combo de Iniciação com Flash: <span class="habilidade">E (carregando) → Flash → R → Solta E → Q</span> (explosão surpresa)<br>
+                ✔ Combo Full Engage (Late Game): <span class="habilidade">R → E carregado → Q → W → espera R estourar → Q novamente</span><br><br>
+            </p>
+        </div>
+    </div>
+</section>
+
+    <footer>
+        <p>© 2025 Guia Vladimir | Criado por LORD Felipin</p>
+    </footer>
+
+    <!-- MODAL PARA IMAGENS -->
+    <div id="modal" class="modal">
+        <span id="fechar" class="fechar">&times;</span>
+        <img class="modal-conteudo" id="img-ampliada" alt="Imagem ampliada">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

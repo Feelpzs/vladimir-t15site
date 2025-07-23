@@ -1,0 +1,322 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('img/vlad.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #ddd;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* CABEÇALHO */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 10000;
+    box-shadow: 0 0 15px #550000;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+}
+
+/* TEXTOS SANGRENTOS */
+.blood-text {
+    font-family: 'Creepster', cursive;
+    color: #ff0000;
+    text-shadow: 2px 2px 5px #800000, 0 0 10px #ff0000;
+    letter-spacing: 1px;
+    animation: blood-drip 2s infinite alternate;
+}
+
+@keyframes blood-drip {
+    0% { text-shadow: 2px 2px 5px #800000, 0 0 10px #ff0000; }
+    100% { text-shadow: 4px 4px 15px #550000, 0 0 20px #ff0000; }
+}
+
+/* HABILIDADES E DESTAQUES */
+.habilidade {
+    color: #ff4040;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px #800000;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 20px 50px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 9998;
+}
+
+.como-jogar {
+    max-width: 900px;
+    background: rgba(20, 20, 20, 0.85);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+    color: #ccc;
+    text-align: justify;
+}
+
+/* RUNAS E CARDS */
+section {
+    padding: 100px 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(20, 20, 20, 0.9);
+    border: 2px solid #550000;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+}
+
+.card p {
+    color: #bbb;
+    font-size: 0.95rem;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.card p strong {
+    color: #ff4040;
+}
+
+/* RUNAS - CORES ESPECÍFICAS */
+.runa {
+    display: inline-block;
+    background: linear-gradient(90deg, rgba(50, 0, 0, 0.7), rgba(80, 0, 0, 0.7));
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.aery { color: #9b30ff; }
+.grasp { color: #00ff66; }
+.conquistador { color: #ffd700; }
+.impeto { color: #9b30ff; }
+.sustentacao { color: #00ff66; }
+.escala { color: #00ff66; }
+.inspiracao { color: #1e90ff; }
+
+/* IMAGENS COM ZOOM + MODAL */
+.runa-img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+.runa-img:hover {
+    transform: scale(1.8) translateY(-10px);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    z-index: 10001;
+    position: relative;
+}
+
+/* MODAL PARA IMAGEM AMPLIADA */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10002;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-conteudo {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid #ff0000;
+    box-shadow: 0 0 25px #800000;
+    border-radius: 5px;
+    animation: aparecer 0.3s ease-in-out;
+}
+
+@keyframes aparecer {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.fechar {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.fechar:hover {
+    color: #ff0000;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    position: relative;
+    z-index: 9998;
+}
+
+/* FADE AO ROLAR */
+.fade {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RASTRO DE SANGUE */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10005 !important;
+    pointer-events: none;
+}
+
+/* ============================= */
+/* RESPONSIVIDADE PARA MOBILE */
+/* ============================= */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .hero {
+        padding: 150px 10px 50px 10px;
+    }
+
+    .como-jogar {
+        padding: 15px;
+        font-size: 0.95rem;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .runa-img {
+        width: 100px;
+    }
+
+    .modal-conteudo {
+        max-width: 95%;
+        max-height: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        padding-top: 180px;
+    }
+
+    .runa {
+        font-size: 1rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+}
