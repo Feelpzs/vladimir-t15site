@@ -118,14 +118,36 @@ section {
 }
 
 .card {
-    background: rgba(20, 20, 20, 0.9);
-    border: 2px solid #550000;
-    padding: 20px;
-    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Garante que tudo começa no topo */
+    align-items: center;
     text-align: center;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #ff0000;
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 360px; /* Altura padrão para todos os cards */
 }
+
+.card h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid currentColor; /* mesmo padrão para todos */
+    display: inline-block;
+}
+
+/* Cores específicas */
+.runa.aery { color: #8a2be2; }           /* Roxo */
+.runa.grasp { color: #00ff66; }         /* Verde */
+.runa.conquistador { color: #ffd700; }  /* Amarelo */
+.runa .sustentacao { color: #00ff66; }  /* Verde */
+.runa .escala { color: #1e90ff; }       /* Azul */
+.runa .impeto { color: #9b30ff; }       /* Roxo */
+.runa .inspiracao { color: #1e90ff; }   /* Azul */
 
 .card:hover {
     transform: scale(1.05);
@@ -399,4 +421,10 @@ nav ul {
         from { opacity: 0; transform: translateX(100%); }
         to { opacity: 1; transform: translateX(0); }
     }
+}
+
+.runa-img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
