@@ -100,3 +100,26 @@ modal.addEventListener("click", function(e) {
         modal.style.display = "none";
     }
 });
+ 
+
+const menuToggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("menu");
+
+// Abre/fecha ao clicar no botão
+menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("show");
+});
+
+// Fecha ao clicar em qualquer link dentro do menu
+menu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        menu.classList.remove("show");
+    });
+});
+
+// Fecha ao clicar fora do menu
+document.addEventListener("click", (event) => {
+    if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+        menu.classList.remove("show");
+    }
+});

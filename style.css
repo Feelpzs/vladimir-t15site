@@ -326,3 +326,77 @@ canvas {
         font-size: 0.9rem;
     }
 }
+/* BOTÃO HAMBURGUER */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    color: #ff0000;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 2000;
+}
+
+/* MENU DESKTOP */
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+/* MENU MOBILE */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        background: rgba(0, 0, 0, 0.9);
+        border-left: 2px solid #ff0000;
+        z-index: 1500;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav.show {
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        width: 220px;
+        background: rgba(0, 0, 0, 0.95);
+        border-left: 2px solid #ff0000;
+        z-index: 1500;
+        transition: all 0.3s ease-in-out;
+    }
+
+    nav.show {
+        display: block;
+        animation: slideMenu 0.3s ease forwards;
+    }
+
+    @keyframes slideMenu {
+        from { opacity: 0; transform: translateX(100%); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+}
