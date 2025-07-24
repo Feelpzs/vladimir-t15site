@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guia Vladimir T15</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lobby.css">
     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- RASTRO DE SANGUE -->
     <canvas id="sangue"></canvas>
-
     <!-- CABEÇALHO -->
     <header>
     <div class="logo blood-text">VLADIMIR T15</div>
@@ -26,6 +25,7 @@
             <li><a href="#botas" class="blood-text">Botas</a></li>
             <li><a href="#spells" class="blood-text">Spells</a></li>
             <li><a href="#combos" class="blood-text">Combos</a></li>
+            <li><a href="#lobby" class="blood-text">Matchups</a></li>
         </ul>
     </nav>
 </header>
@@ -330,10 +330,180 @@
         </div>
     </div>
 </section>
+<!-- ✅ MATCHUP LOBBY -->
+    <section class="lobby" id="lobby">
+        <div class="meu-campeao">
+            <img src="imglobby/img champs/vladmir.png" alt="Vladimir" class="vlad-img">
+            <p class="summoner">VLADIMIR T15</p>
+            <div class="info-basica">
+                <p class="blood-text">Veja as melhores runas e builds contra o campeão selecionado.</p>
+            </div>
+        </div>
 
-    <footer>
-        <p>© 2025 Guia Vladimir | Criado por Felipe Oliveira</p>
-    </footer>
+        <div class="carrossel-champs">
+            <h2 class="blood-text">Selecione o Campeão Inimigo</h2>
+
+            <!-- ✅ Barra de Pesquisa -->
+            <input type="text" id="search-champ" placeholder="Pesquisar campeão..." class="search-bar">
+
+            <div class="carrossel" id="carrossel">
+            <img src="imglobby/img champs/aatrox.PNG" class="champ" data-campeao="aatrox" alt="Aatrox">
+            <img src="imglobby/img champs/ahri.PNG" class="champ" data-campeao="ahri" alt="Ahri">
+            <img src="imglobby/img champs/akali.PNG" class="champ" data-campeao="akali" alt="Akali">
+            <img src="imglobby/img champs/akshan.PNG" class="champ" data-campeao="akshan" alt="Akshan">
+            <img src="imglobby/img champs/anivia.PNG" class="champ" data-campeao="anivia" alt="Anivia">
+            <img src="imglobby/img champs/annie.PNG" class="champ" data-campeao="annie" alt="Annie">
+            <img src="imglobby/img champs/aurelion sol.PNG" class="champ" data-campeao="aurelion_sol" alt="Aurelion Sol">
+            <img src="imglobby/img champs/aurora.PNG" class="champ" data-campeao="aurora" alt="Aurora">
+            <img src="imglobby/img champs/azir.PNG" class="champ" data-campeao="azir" alt="Azir">
+            <img src="imglobby/img champs/caitlyn.PNG" class="champ" data-campeao="caitlyn" alt="Caitlyn">
+            <img src="imglobby/img champs/camille.PNG" class="champ" data-campeao="camille" alt="Camille">
+            <img src="imglobby/img champs/cassiopeia.PNG" class="champ" data-campeao="cassiopeia" alt="Cassiopeia">
+            <img src="imglobby/img champs/chogath.PNG" class="champ" data-campeao="chogath" alt="Cho'Gath">
+            <img src="imglobby/img champs/corki.PNG" class="champ" data-campeao="corki" alt="Corki">
+            <img src="imglobby/img champs/darius.PNG" class="champ" data-campeao="darius" alt="Darius">
+            <img src="imglobby/img champs/dr_mundo.PNG" class="champ" data-campeao="dr_mundo" alt="Dr. Mundo">
+            <img src="imglobby/img champs/draven.PNG" class="champ" data-campeao="draven" alt="Draven">
+            <img src="imglobby/img champs/fiora.PNG" class="champ" data-campeao="fiora" alt="Fiora">
+            <img src="imglobby/img champs/fizz.PNG" class="champ" data-campeao="fizz" alt="Fizz">
+            <img src="imglobby/img champs/galio.PNG" class="champ" data-campeao="galio" alt="Galio">
+            <img src="imglobby/img champs/gangplank.PNG" class="champ" data-campeao="gangplank" alt="Gangplank">
+            <img src="imglobby/img champs/garen.PNG" class="champ" data-campeao="garen" alt="Garen">
+            <img src="imglobby/img champs/gnar.PNG" class="champ" data-campeao="gnar" alt="Gnar">
+            <img src="imglobby/img champs/gwen.PNG" class="champ" data-campeao="gwen" alt="Gwen">
+            <img src="imglobby/img champs/heimerdinger.PNG" class="champ" data-campeao="heimerdinger" alt="Heimerdinger">
+            <img src="imglobby/img champs/hwei.PNG" class="champ" data-campeao="hwei" alt="Hwei">
+            <img src="imglobby/img champs/illaoi.PNG" class="champ" data-campeao="illaoi" alt="Illaoi">
+            <img src="imglobby/img champs/irelia.PNG" class="champ" data-campeao="irelia" alt="Irelia">
+            <img src="imglobby/img champs/jayce.PNG" class="champ" data-campeao="jayce" alt="Jayce">
+            <img src="imglobby/img champs/jhin.PNG" class="champ" data-campeao="jhin" alt="Jhin">
+            <img src="imglobby/img champs/ksante.PNG" class="champ" data-campeao="ksante" alt="K’Sante">
+            <img src="imglobby/img champs/kaisa.PNG" class="champ" data-campeao="kaisa" alt="Kai’Sa">
+            <img src="imglobby/img champs/kalista.PNG" class="champ" data-campeao="kalista" alt="Kalista">
+            <img src="imglobby/img champs/karthus.PNG" class="champ" data-campeao="karthus" alt="Karthus">
+            <img src="imglobby/img champs/kassadin.PNG" class="champ" data-campeao="kassadin" alt="Kassadin">
+            <img src="imglobby/img champs/katarina.PNG" class="champ" data-campeao="katarina" alt="Katarina">
+            <img src="imglobby/img champs/kayle.PNG" class="champ" data-campeao="kayle" alt="Kayle">
+            <img src="imglobby/img champs/kennen.PNG" class="champ" data-campeao="kennen" alt="Kennen">
+            <img src="imglobby/img champs/kled.PNG" class="champ" data-campeao="kled" alt="Kled">
+            <img src="imglobby/img champs/kogmaw.PNG" class="champ" data-campeao="kogmaw" alt="Kog’Maw">
+            <img src="imglobby/img champs/leblanc.PNG" class="champ" data-campeao="leblanc" alt="LeBlanc">
+            <img src="imglobby/img champs/lissandra.PNG" class="champ" data-campeao="lissandra" alt="Lissandra">
+            <img src="imglobby/img champs/lucian.PNG" class="champ" data-campeao="lucian" alt="Lucian">
+            <img src="imglobby/img champs/lux.PNG" class="champ" data-campeao="lux" alt="Lux">
+            <img src="imglobby/img champs/malphite.PNG" class="champ" data-campeao="malphite" alt="Malphite">
+            <img src="imglobby/img champs/malzahar.PNG" class="champ" data-campeao="malzahar" alt="Malzahar">
+            <img src="imglobby/img champs/master_yi.PNG" class="champ" data-campeao="master_yi" alt="Master Yi">
+            <img src="imglobby/img champs/mel.PNG" class="champ" data-campeao="mel" alt="Mel">
+            <img src="imglobby/img champs/miss_fortune.PNG" class="champ" data-campeao="miss_fortune" alt="Miss Fortune">
+            <img src="imglobby/img champs/mordekaiser.PNG" class="champ" data-campeao="mordekaiser" alt="Mordekaiser">
+            <img src="imglobby/img champs/morgana.PNG" class="champ" data-campeao="morgana" alt="Morgana">
+            <img src="imglobby/img champs/nasus.PNG" class="champ" data-campeao="nasus" alt="Nasus">
+            <img src="imglobby/img champs/neeko.PNG" class="champ" data-campeao="neeko" alt="Neeko">
+            <img src="imglobby/img champs/nilah.PNG" class="champ" data-campeao="nilah" alt="Nilah">
+            <img src="imglobby/img champs/orianna.PNG" class="champ" data-campeao="orianna" alt="Orianna">
+            <img src="imglobby/img champs/ornn.PNG" class="champ" data-campeao="ornn" alt="Ornn">
+            <img src="imglobby/img champs/pantheon.PNG" class="champ" data-campeao="pantheon" alt="Pantheon">
+            <img src="imglobby/img champs/qiyana.PNG" class="champ" data-campeao="qiyana" alt="Qiyana">
+            <img src="imglobby/img champs/quinn.PNG" class="champ" data-campeao="quinn" alt="Quinn">
+            <img src="imglobby/img champs/renekton.PNG" class="champ" data-campeao="renekton" alt="Renekton">
+            <img src="imglobby/img champs/riven.PNG" class="champ" data-campeao="riven" alt="Riven">
+            <img src="imglobby/img champs/rumble.PNG" class="champ" data-campeao="rumble" alt="Rumble">
+            <img src="imglobby/img champs/ryze.PNG" class="champ" data-campeao="ryze" alt="Ryze">
+            <img src="imglobby/img champs/samira.PNG" class="champ" data-campeao="samira" alt="Samira">
+            <img src="imglobby/img champs/sett.PNG" class="champ" data-campeao="sett" alt="Sett">
+            <img src="imglobby/img champs/sion.PNG" class="champ" data-campeao="sion" alt="Sion">
+            <img src="imglobby/img champs/sivir.PNG" class="champ" data-campeao="sivir" alt="Sivir">
+            <img src="imglobby/img champs/smolder.PNG" class="champ" data-campeao="smolder" alt="Smolder">
+            <img src="imglobby/img champs/swain.PNG" class="champ" data-campeao="swain" alt="Swain">
+            <img src="imglobby/img champs/sylas.PNG" class="champ" data-campeao="sylas" alt="Sylas">
+            <img src="imglobby/img champs/syndra.PNG" class="champ" data-campeao="syndra" alt="Syndra">
+            <img src="imglobby/img champs/taliyah.PNG" class="champ" data-campeao="taliyah" alt="Taliyah">
+            <img src="imglobby/img champs/talon.PNG" class="champ" data-campeao="talon" alt="Talon">
+            <img src="imglobby/img champs/teemo.PNG" class="champ" data-campeao="teemo" alt="Teemo">
+            <img src="imglobby/img champs/tristana.PNG" class="champ" data-campeao="tristana" alt="Tristana">
+            <img src="imglobby/img champs/tryndamere.PNG" class="champ" data-campeao="tryndamere" alt="Tryndamere">
+            <img src="imglobby/img champs/twisted_fate.PNG" class="champ" data-campeao="twisted_fate" alt="Twisted Fate">
+            <img src="imglobby/img champs/twitch.PNG" class="champ" data-campeao="twitch" alt="Twitch">
+            <img src="imglobby/img champs/urgot.PNG" class="champ" data-campeao="urgot" alt="Urgot">
+            <img src="imglobby/img champs/varus.PNG" class="champ" data-campeao="varus" alt="Varus">
+            <img src="imglobby/img champs/vayne.PNG" class="champ" data-campeao="vayne" alt="Vayne">
+            <img src="imglobby/img champs/veigar.PNG" class="champ" data-campeao="veigar" alt="Veigar">
+            <img src="imglobby/img champs/velkoz.PNG" class="champ" data-campeao="velkoz" alt="Vel’Koz">
+            <img src="imglobby/img champs/vex.PNG" class="champ" data-campeao="vex" alt="Vex">
+            <img src="imglobby/img champs/viktor.PNG" class="champ" data-campeao="viktor" alt="Viktor">
+            <img src="imglobby/img champs/xayah.PNG" class="champ" data-campeao="xayah" alt="Xayah">
+            <img src="imglobby/img champs/xerath.PNG" class="champ" data-campeao="xerath" alt="Xerath">
+            <img src="imglobby/img champs/yasuo.PNG" class="champ" data-campeao="yasuo" alt="Yasuo">
+            <img src="imglobby/img champs/yone.PNG" class="champ" data-campeao="yone" alt="Yone">
+            <img src="imglobby/img champs/yorick.PNG" class="champ" data-campeao="yorick" alt="Yorick">
+            <img src="imglobby/img champs/yunara.PNG" class="champ" data-campeao="yunara" alt="Yunara">
+            <img src="imglobby/img champs/zeri.PNG" class="champ" data-campeao="zeri" alt="Zeri">
+            <img src="imglobby/img champs/ziggs.PNG" class="champ" data-campeao="ziggs" alt="Ziggs">
+            <img src="imglobby/img champs/zilean.PNG" class="champ" data-campeao="zilean" alt="Zilean">
+            <img src="imglobby/img champs/zoe.PNG" class="champ" data-campeao="zoe" alt="Zoe">
+            <img src="imglobby/img champs/zyra.PNG" class="champ" data-campeao="zyra" alt="Zyra">
+
+        </div>
+    </div>
+
+    <!-- Painel dinâmico à direita -->
+    <div class="painel-matchup" id="painel-matchup" style="display:none;">
+    <h2 class="blood-text">Matchup: Vladimir vs <span id="nome-campeao"></span></h2>
+
+    <!-- Matchup -->
+    <div class="card matchup-card">
+        <h3 class="blood-text">Matchup</h3>
+        <ul id="texto-matchup">
+            <!-- Texto do matchup será carregado via JS -->
+        </ul>
+    </div>
+
+    <!-- Spells -->
+    <div class="card">
+        <h3 class="blood-text">Spells</h3>
+        <div id="spells-container" class="spells">
+            <img src="img/spells/default1.png" alt="Spell 1" class="spell-img">
+            <img src="img/spells/default2.png" alt="Spell 2" class="spell-img">
+        </div>
+    </div>
+
+    <!-- Build -->
+    <div class="card">
+        <h3 class="blood-text">Build</h3>
+        <div id="build-container" class="build">
+            <!-- Itens carregados via JS -->
+        </div>
+    </div>
+
+    <!-- Runas -->
+    <div class="card">
+        <h3 class="blood-text">Runas</h3>
+        <h4>Árvore Primária</h4>
+        <div id="runas-primaria" class="runas"></div>
+
+        <h4>Árvore Secundária</h4>
+        <div id="runas-secundaria" class="runas"></div>
+
+        <h4>Stats</h4>
+        <div id="runas-stats" class="runas"></div>
+    </div>
+
+    <!-- Cooldowns -->
+    <div class="card">
+        <h3 class="blood-text">Cooldowns</h3>
+        <p id="cooldowns"></p>
+    </div>
+
+    <!-- Gameplay -->
+    <div class="card">
+        <h3 class="blood-text">Gameplay</h3>
+        <video id="video-matchup" controls muted loop style="width:100%; border-radius:8px;">
+            <source src="" type="video/mp4">
+        </video>
+    </div>
+</div>
+
 
     <!-- MODAL PARA IMAGENS -->
     <div id="modal" class="modal">
@@ -341,6 +511,13 @@
         <img class="modal-conteudo" id="img-ampliada" alt="Imagem ampliada">
     </div>
 
+     
     <script src="script.js"></script>
+    <script src="lobby.js"></script>
+
+    <!-- Footer dentro do body -->
+    <footer>
+        <p>© 2025 Guia Vladimir | Criado por Felipe Oliveira</p>
+    </footer>
 </body>
 </html>

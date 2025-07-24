@@ -1,0 +1,185 @@
+/* ===== MATCHUP LOBBY ===== */
+.lobby {
+    display: flex;
+    justify-content: center;      /* Centraliza tudo */
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+/* ==== CAMPEÃO FIXO (VLADIMIR) ==== */
+.meu-campeao {
+    text-align: center;
+    width: 220px;
+}
+
+.vlad-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid red;
+    box-shadow: 0 0 15px red;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vlad-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
+}
+
+.summoner {
+    color: gold;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 8px;
+    text-shadow: 1px 1px 3px black;
+}
+
+.info-basica {
+    font-size: 0.9rem;
+    color: #ff4444;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* ==== CARROSSEL DE CAMPEÕES ==== */
+.carrossel-champs {
+    max-width: 600px;
+    flex: 1;
+    text-align: center;
+}
+
+.carrossel-champs h2 {
+    color: red;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+}
+
+#search-champ {
+    width: 90%;
+    max-width: 400px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 2px solid red;
+    border-radius: 6px;
+    background: black;
+    color: white;
+    text-align: center;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+#search-champ:focus {
+    box-shadow: 0 0 10px red;
+}
+
+.carrossel {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 8px;
+    background: rgba(20, 20, 20, 0.7);
+    max-height: 120px;
+}
+
+.champ {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+    object-fit: cover;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.champ:hover {
+    transform: scale(1.15);
+    border: 2px solid red;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+}
+
+/* ==== PAINEL MATCHUP ==== */
+.painel-matchup {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid red;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+    height: auto;
+    max-height: 550px; /* Mantém proporcional ao lado esquerdo */
+    overflow-y: auto;
+}
+
+.painel-matchup h2 {
+    color: red;
+    text-align: center;
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
+}
+
+.painel-matchup .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.painel-matchup .card {
+    background: rgba(20, 20, 20, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid red;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.painel-matchup .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.painel-matchup img,
+.painel-matchup video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* ==== RESPONSIVIDADE ==== */
+@media (max-width: 768px) {
+    .lobby {
+        flex-direction: column;
+        align-items: center;
+    }
+    .painel-matchup {
+        max-width: 90%;
+    }
+    .carrossel {
+        max-height: 100px;
+    }
+}
+
+.item-img, .runa-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    margin: 4px;
+    object-fit: cover;
+    box-shadow: 0 0 5px #900;
+    transition: transform 0.3s ease;
+}
+
+.item-img:hover, .runa-img:hover {
+    transform: scale(1.1);
+}

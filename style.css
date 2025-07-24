@@ -124,7 +124,7 @@ section {
     align-items: center;
     text-align: center;
     background: rgba(0, 0, 0, 0.8);
-    border: 1px solid #ff0000;
+    border: 2px solid #ff0000;
     border-radius: 10px;
     padding: 15px;
     min-height: 360px; /* Altura padrão para todos os cards */
@@ -247,15 +247,21 @@ section {
     color: #ff0000;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #000;
-    color: #fff;
-    position: relative;
-    z-index: 9998;
+
+footer html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
+body {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
+
 
 /* FADE AO ROLAR */
 .fade {
@@ -446,3 +452,5 @@ nav ul {
 .card .runa-img:hover {
     transform: scale(1.05);
 }
+
+
