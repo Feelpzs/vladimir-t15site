@@ -169,17 +169,37 @@
         max-height: 100px;
     }
 }
-
-.item-img, .runa-img {
-    width: 20px;
-    height: 20px;
-    border-radius: 6px;
-    margin: 4px;
-    object-fit: cover;
-    box-shadow: 0 0 5px #900;
-    transition: transform 0.3s ease;
+/* === Ajuste exclusivo para os cards do lobby === */
+.lobby .card {
+    background: transparent; /* Remove fundo */
+    border: none;            /* Sem borda no card */
+    padding: 0;
+    min-height: auto;        /* Remove altura fixa */
+    box-shadow: none;        /* Sem sombra geral */
 }
 
-.item-img:hover, .runa-img:hover {
-    transform: scale(1.1);
+/* Ajuste direto nos ícones */
+.lobby .spell-img,
+.lobby .runa-img,
+.lobby .item-img {
+    width: 50px;             /* Ajuste do tamanho */
+    height: 50px;
+    border: 2px solid red;   /* Borda colada no ícone */
+    border-radius: 8px;
+    box-shadow: 0 0 8px red; /* Opcional: brilho */
+    padding: 0;
+    margin: 3px;
 }
+
+/* Para alinhar os ícones lado a lado */
+#spells-container,
+#runas-primaria,
+#runas-secundaria,
+#runas-stats,
+#build-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
