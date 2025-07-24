@@ -428,3 +428,21 @@ nav ul {
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
+
+
+/* Aumenta imagens dos cards (itens, botas, etc.) */
+.card .runa-img {
+    width: 91%;          /* Preenche quase todo o card */
+    max-width: 400px;    /* Para não ficar gigante em telas grandes */
+    height: auto;        /* Mantém proporção */
+    margin: 10px auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Mantém zoom ao passar o mouse */
+.card .runa-img:hover {
+    transform: scale(1.05);
+}
