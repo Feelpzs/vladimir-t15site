@@ -24,7 +24,7 @@
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 3px solid red;
+    border: 3px solid rgb(187, 10, 10);
     box-shadow: 0 0 15px red;
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -51,13 +51,13 @@
 }
 
 /* ==== CARROSSEL DE CAMPEÕES ==== */
-.carrossel-champs {
+.carrossel-champs{
     max-width: 600px;
     flex: 1;
     text-align: center;
 }
 
-.carrossel-champs h2 {
+.carrossel-champs h2 .blood-text {
     color: red;
     text-transform: uppercase;
     margin-bottom: 10px;

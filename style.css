@@ -26,14 +26,15 @@ header {
     align-items: center;
     padding: 15px 50px;
     z-index: 10000;
-    box-shadow: 0 0 15px #550000;
+    box-shadow: 0 0 15px #860101;
 }
 
 h1.blood-text {
     font-size: 4rem;
-    text-shadow: 4px 4px 10px #550000, 0 0 25px #ff0000;
+    text-shadow: 4px 4px 10px #ff0202, 0 0 25px #fa0000;
     animation: blood-drip 2s infinite alternate;
 }
+
 
 .logo {
     font-size: 2rem;
@@ -59,14 +60,30 @@ nav ul li a:hover {
     color: #ff0000;
 }
 
-/* TEXTOS SANGRENTOS */
 .blood-text {
-    font-family: 'Creepster', cursive;
-    color: #ff0000;
-    text-shadow: 2px 2px 5px #800000, 0 0 10px #ff0000;
+    font-family: 'Creepster', cursive; /* Fonte sangrenta */
+    color: #a50606; /* Vermelho neon */
+    text-transform: uppercase;
     letter-spacing: 1px;
-    animation: blood-drip 2s infinite alternate;
+
+    text-shadow:
+        /* Contorno preto bem forte */
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000,
+        -2px 0 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        0 2px 0 #000,
+
+        /* Efeito neon vermelho */
+        0 0 10px #a50606,
+        0 0 20px #a50606,
+        0 0 30px #a50606;
 }
+
+
 
 @keyframes blood-drip {
     0% { text-shadow: 2px 2px 5px #800000, 0 0 10px #ff0000; }
@@ -453,4 +470,46 @@ nav ul {
     transform: scale(1.05);
 }
 
+.destaque-texto {
+    font-size: 1.1rem; /* aumenta só aqui */
+    font-weight: bold;
+}
 
+
+
+.titulo-sangrento {
+    font-family: 'Creepster', cursive; /* Ou a fonte sangrenta que você está usando */
+    color: #e60000; /* Vermelho mais opaco, sangue real */
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    /* Contorno + Neon */
+    text-shadow:
+        3px 3px 0 #000,      /* contorno preto forte */
+        0 0 6px #800000,     /* brilho sangue escuro */
+        0 0 12px #b30000,    /* brilho sangue vivo */
+        0 0 18px #da1111;    /* neon avermelhado */
+
+    /* Animação pulsante */
+    animation: pulsar-sangue 1.5s infinite alternate;
+}
+
+@keyframes pulsar-sangue {
+    from {
+        text-shadow:
+            2px 2px 0 #000,
+            0 0 5px #660000,
+            0 0 10px #800000,
+            0 0 15px #b30000;
+        transform: scale(1);
+    }
+    to {
+        text-shadow:
+            2px 2px 0 #000,
+            0 0 10px #990000,
+            0 0 20px #cc0000,
+            0 0 30px #ff0000;
+        transform: scale(1.05);
+    }
+}
