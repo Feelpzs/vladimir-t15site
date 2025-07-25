@@ -1610,11 +1610,11 @@
         "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
         "video": "https://www.youtube.com/watch?v=v853NtnESYo"
     },
-    "master_yi": {
+    "singed": {
         "matchupTexto": [
-            "Use a Poça para desviar da habilidade mais perigosa de Master_yi.",
-            "Evite as trocas longas no early game contra Master_yi.",
-            "Abuse do sustain com seu Q para punir os pontos fracos de Master_yi."
+            "Use a Poça para não ser jogado para trás pela habilidade de engage de Singed (E).",
+            "Evite ficar proximo do rastro de veneno do singed se tomar o engage se reposicione com a poça.",
+            "Abuse do sustain com seu Q para pois singed e um boneco mele alterna com auto ataque (AA)."
         ],
         "spells": [
             "imglobby/spells/ghost.webp",
