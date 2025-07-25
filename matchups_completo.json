@@ -1119,11 +1119,11 @@
         "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
         "video": "https://www.youtube.com/watch?v=v853NtnESYo"
     },
-    "kalista": {
+    "jax": {
         "matchupTexto": [
-            "Use a Poça para desviar da habilidade mais perigosa de Kalista.",
-            "Evite as trocas longas no early game contra Kalista.",
-            "Abuse do sustain com seu Q para punir os pontos fracos de Kalista."
+            "Use a Poça para desviar da habilidade mais perigosa de Jax.",
+            "Evite as trocas longas no early game contra Jax.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Jax."
         ],
         "spells": [
             "imglobby/spells/ghost.webp",
@@ -1364,22 +1364,23 @@
         "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
         "video": "https://www.youtube.com/watch?v=v853NtnESYo"
     },
-    "kogmaw": {
+    "warwick": {
         "matchupTexto": [
-            "Use a Poça para desviar da habilidade mais perigosa de Kogmaw.",
-            "Evite as trocas longas no early game contra Kogmaw.",
-            "Abuse do sustain com seu Q para punir os pontos fracos de Kogmaw."
+            "Use a Poça para desviar da habilidade mais perigosa de Warwick.",
+            "Evite as trocas longas no early game contra Warwick.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Warwick."
         ],
         "spells": [
-            "imglobby/spells/ghost.webp",
+            "imglobby/spells/ignite.png",
             "imglobby/spells/flash.png"
         ],
         "build": [
-            "imglobby/itens/cinturao hextec.webp",
-            "imglobby/itens/foco do horizonte.webp",
+            "imglobby/itens/impeto cosmico.webp",
+            "imglobby/itens/morelo.webp",
             "imglobby/itens/rabadon.webp",
             "imglobby/itens/cajado do vazio.webp",
-            "imglobby/itens/chama sombria.webp"
+            "imglobby/itens/chama sombria.webp",
+            "img/botas/bota da rapidez.webp"
         ],
         "runasPrimaria": [
             "imglobby/runas/aery.webp",
@@ -1854,11 +1855,11 @@
         "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
         "video": "https://www.youtube.com/watch?v=v853NtnESYo"
     },
-    "nilah": {
+    "shen": {
         "matchupTexto": [
-            "Use a Poça para desviar da habilidade mais perigosa de Nilah.",
-            "Evite as trocas longas no early game contra Nilah.",
-            "Abuse do sustain com seu Q para punir os pontos fracos de Nilah."
+            "Use a Poça para desviar da habilidade mais perigosa de shen.",
+            "Evite as trocas longas no early game contra shen.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de shen."
         ],
         "spells": [
             "imglobby/spells/ghost.webp",

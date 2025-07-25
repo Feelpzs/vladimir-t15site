@@ -276,3 +276,11 @@
     justify-content: center;
 }
 
+.champ.selected {
+    border: 3px solid #ff0000; /* Vermelho para destacar */
+    box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+    border-radius: 6px;
+    transform: scale(1.1); /* Leve aumento para destacar */
+    transition: 0.2s ease-in-out;
+}
+

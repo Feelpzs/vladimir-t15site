@@ -95,6 +95,8 @@ champs.forEach(champ => {
     });
 });
 // localizar champ
+
+
 const searchInput = document.querySelector("#search-champ");
 const champ = document.querySelectorAll(".champ");
 
@@ -106,3 +108,17 @@ searchInput.addEventListener("input", () => {
         champ.style.display = champName.includes(searchTerm) ? "inline-block" : "none";
     });
 });
+
+const selection = document.querySelectorAll(".champ");
+
+champs.forEach(champ => {
+    champ.addEventListener("click", () => {
+        // Remove o destaque de todos
+        champs.forEach(c => c.classList.remove("selected"));
+        
+
+        // Adiciona o destaque apenas no clicado
+        champ.classList.add("selected");
+    });
+});
+
