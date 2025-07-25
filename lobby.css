@@ -124,11 +124,13 @@
     overflow-y: auto;
 }
 
-.painel-matchup h2 {
-    color: red;
+.blood-text {
     text-align: center;
-    text-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
+    display: block;
+    width: 100%;
 }
+
+
 
 .painel-matchup .grid {
     display: grid;
@@ -140,7 +142,7 @@
     background: rgba(20, 20, 20, 0.8);
     padding: 10px;
     border-radius: 8px;
-    border: 1px solid red;
+    border: 1px solid rgb(77, 6, 6);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -156,6 +158,74 @@
     border-radius: 8px;
 }
 
+/* === BARRA GERAL DO TEMA SANGRENTO === */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.6); /* fundo escuro */
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px #000; /* sombra interna */
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #7a0000, #ff0000); /* gradiente sangrento */
+    border-radius: 10px;
+    border: 1px solid #000;
+    box-shadow: 0 0 5px #ff0000, 0 0 10px #7a0000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #ff0000, #a50606); /* brilho ao passar o mouse */
+    box-shadow: 0 0 10px #ff0000, 0 0 20px #a50606;
+}
+
+/* === PAINEL MATCHUP (caso queira só nele) === */
+.painel-matchup {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #ff0000 #000; /* Firefox */
+}
+
+.painel-matchup::-webkit-scrollbar {
+    width: 10px;
+}
+
+.painel-matchup::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.painel-matchup::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #7a0000, #ff0000);
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+/* === CARROSSEL DE CAMPEÕES === */
+.carrossel {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #ff0000 #000; /* Firefox */
+}
+
+.carrossel::-webkit-scrollbar {
+    height: 8px; /* mais fino horizontal */
+}
+
+.carrossel::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.carrossel::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #7a0000, #ff0000);
+    border-radius: 5px;
+    border: 1px solid #000;
+    box-shadow: 0 0 5px #ff0000;
+}
+
+
+
+
 /* ==== RESPONSIVIDADE ==== */
 @media (max-width: 768px) {
     .lobby {
@@ -169,6 +239,9 @@
         max-height: 100px;
     }
 }
+
+
+
 /* === Ajuste exclusivo para os cards do lobby === */
 .lobby .card {
     background: transparent; /* Remove fundo */
