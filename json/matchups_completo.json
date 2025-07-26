@@ -1,0 +1,3400 @@
+{
+    "aatrox": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Aatrox.",
+            "Evite as trocas longas no early game contra Aatrox.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Aatrox."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "ahri": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Ahri.",
+            "Evite as trocas longas no early game contra Ahri.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Ahri."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "akali": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Akali.",
+            "Evite as trocas longas no early game contra Akali.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Akali."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "akshan": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Akshan.",
+            "Evite as trocas longas no early game contra Akshan.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Akshan."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "anivia": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Anivia.",
+            "Evite as trocas longas no early game contra Anivia.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Anivia."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "annie": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Annie.",
+            "Evite as trocas longas no early game contra Annie.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Annie."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "aurelion_sol": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Aurelion_sol.",
+            "Evite as trocas longas no early game contra Aurelion_sol.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Aurelion_sol."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "aurora": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Aurora.",
+            "Evite as trocas longas no early game contra Aurora.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Aurora."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "azir": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Azir.",
+            "Evite as trocas longas no early game contra Azir.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Azir."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "caitlyn": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Caitlyn.",
+            "Evite as trocas longas no early game contra Caitlyn.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Caitlyn."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "camille": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Camille.",
+            "Evite as trocas longas no early game contra Camille.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Camille."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "cassiopeia": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Cassiopeia.",
+            "Evite as trocas longas no early game contra Cassiopeia.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Cassiopeia."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "chogath": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Chogath.",
+            "Evite as trocas longas no early game contra Chogath.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Chogath."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "corki": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Corki.",
+            "Evite as trocas longas no early game contra Corki.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Corki."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "darius": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Darius.",
+            "Evite as trocas longas no early game contra Darius.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Darius."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "dr_mundo": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Dr_mundo.",
+            "Evite as trocas longas no early game contra Dr_mundo.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Dr_mundo."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "draven": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Draven.",
+            "Evite as trocas longas no early game contra Draven.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Draven."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "fiora": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Fiora.",
+            "Evite as trocas longas no early game contra Fiora.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Fiora."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "fizz": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Fizz.",
+            "Evite as trocas longas no early game contra Fizz.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Fizz."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "galio": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Galio.",
+            "Evite as trocas longas no early game contra Galio.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Galio."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "gangplank": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Gangplank.",
+            "Evite as trocas longas no early game contra Gangplank.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Gangplank."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "garen": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Garen.",
+            "Evite as trocas longas no early game contra Garen.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Garen."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "gnar": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Gnar.",
+            "Evite as trocas longas no early game contra Gnar.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Gnar."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "gwen": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Gwen.",
+            "Evite as trocas longas no early game contra Gwen.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Gwen."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "heimerdinger": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Heimerdinger.",
+            "Evite as trocas longas no early game contra Heimerdinger.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Heimerdinger."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "hwei": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Hwei.",
+            "Evite as trocas longas no early game contra Hwei.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Hwei."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "illaoi": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Illaoi.",
+            "Evite as trocas longas no early game contra Illaoi.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Illaoi."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "irelia": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Irelia.",
+            "Evite as trocas longas no early game contra Irelia.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Irelia."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "jayce": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Jayce.",
+            "Evite as trocas longas no early game contra Jayce.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Jayce."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "jhin": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Jhin.",
+            "Evite as trocas longas no early game contra Jhin.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Jhin."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "ksante": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Ksante.",
+            "Evite as trocas longas no early game contra Ksante.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Ksante."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "kaisa": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Kaisa.",
+            "Evite as trocas longas no early game contra Kaisa.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Kaisa."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "jax": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Jax.",
+            "Evite as trocas longas no early game contra Jax.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Jax."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "karthus": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Karthus.",
+            "Evite as trocas longas no early game contra Karthus.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Karthus."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "kassadin": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Kassadin.",
+            "Evite as trocas longas no early game contra Kassadin.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Kassadin."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "katarina": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Katarina.",
+            "Evite as trocas longas no early game contra Katarina.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Katarina."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "kayle": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Kayle.",
+            "Evite as trocas longas no early game contra Kayle.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Kayle."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "kennen": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Kennen.",
+            "Evite as trocas longas no early game contra Kennen.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Kennen."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "kled": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Kled.",
+            "Evite as trocas longas no early game contra Kled.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Kled."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "warwick": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Warwick.",
+            "Evite as trocas longas no early game contra Warwick.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Warwick."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ignite.png",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/impeto cosmico.webp",
+            "../assets/imglobby/itens/morelo.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp",
+            "img/botas/bota da rapidez.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "leblanc": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Leblanc.",
+            "Evite as trocas longas no early game contra Leblanc.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Leblanc."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "lissandra": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Lissandra.",
+            "Evite as trocas longas no early game contra Lissandra.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Lissandra."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "lucian": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Lucian.",
+            "Evite as trocas longas no early game contra Lucian.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Lucian."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "lux": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Lux.",
+            "Evite as trocas longas no early game contra Lux.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Lux."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "malphite": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Malphite.",
+            "Evite as trocas longas no early game contra Malphite.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Malphite."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "malzahar": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Malzahar.",
+            "Evite as trocas longas no early game contra Malzahar.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Malzahar."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "singed": {
+        "matchupTexto": [
+            "Use a Poça para não ser jogado para trás pela habilidade de engage de Singed (E).",
+            "Evite ficar proximo do rastro de veneno do singed se tomar o engage se reposicione com a poça.",
+            "Abuse do sustain com seu Q para pois singed e um boneco mele alterna com auto ataque (AA)."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "mel": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Mel.",
+            "Evite as trocas longas no early game contra Mel.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Mel."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "miss_fortune": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Miss_fortune.",
+            "Evite as trocas longas no early game contra Miss_fortune.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Miss_fortune."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "mordekaiser": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Mordekaiser.",
+            "Evite as trocas longas no early game contra Mordekaiser.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Mordekaiser."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "morgana": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Morgana.",
+            "Evite as trocas longas no early game contra Morgana.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Morgana."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "nasus": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Nasus.",
+            "Evite as trocas longas no early game contra Nasus.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Nasus."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "neeko": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Neeko.",
+            "Evite as trocas longas no early game contra Neeko.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Neeko."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "shen": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de shen.",
+            "Evite as trocas longas no early game contra shen.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de shen."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "orianna": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Orianna.",
+            "Evite as trocas longas no early game contra Orianna, nao fique tomando poke, desvie o maximo das habilidades.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Orianna."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/criafendas.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/banshee.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/impeto.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/transcedencia.webp",
+            "../assets/imglobby/runas/chamuscar.png"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/ventos revigorantes.webp",
+            "../assets/imglobby/runas/over.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "ornn": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Ornn.",
+            "Evite as trocas longas no early game contra Ornn.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Ornn."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "pantheon": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Pantheon.",
+            "Evite as trocas longas no early game contra Pantheon.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Pantheon."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "qiyana": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Qiyana.",
+            "Evite as trocas longas no early game contra Qiyana.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Qiyana."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "quinn": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Quinn.",
+            "Evite as trocas longas no early game contra Quinn.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Quinn."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "renekton": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Renekton.",
+            "Evite as trocas longas no early game contra Renekton.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Renekton."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "riven": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Riven.",
+            "Evite as trocas longas no early game contra Riven.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Riven."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "rumble": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Rumble.",
+            "Evite as trocas longas no early game contra Rumble.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Rumble."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "ryze": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Ryze.",
+            "Evite as trocas longas no early game contra Ryze.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Ryze."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "samira": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Samira.",
+            "Evite as trocas longas no early game contra Samira.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Samira."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "sett": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Sett.",
+            "Evite as trocas longas no early game contra Sett.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Sett."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "sion": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Sion.",
+            "Evite as trocas longas no early game contra Sion.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Sion."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "sivir": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Sivir.",
+            "Evite as trocas longas no early game contra Sivir.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Sivir."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "smolder": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Smolder.",
+            "Evite as trocas longas no early game contra Smolder.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Smolder."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "swain": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Swain.",
+            "Evite as trocas longas no early game contra Swain.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Swain."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "sylas": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Sylas.",
+            "Evite as trocas longas no early game contra Sylas.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Sylas."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "syndra": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Syndra.",
+            "Evite as trocas longas no early game contra Syndra.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Syndra."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "taliyah": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Taliyah.",
+            "Evite as trocas longas no early game contra Taliyah.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Taliyah."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "talon": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Talon.",
+            "Evite as trocas longas no early game contra Talon.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Talon."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "teemo": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Teemo.",
+            "Evite as trocas longas no early game contra Teemo.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Teemo."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "tristana": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Tristana.",
+            "Evite as trocas longas no early game contra Tristana.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Tristana."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "tryndamere": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Tryndamere.",
+            "Evite as trocas longas no early game contra Tryndamere.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Tryndamere."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "twisted_fate": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Twisted_fate.",
+            "Evite as trocas longas no early game contra Twisted_fate.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Twisted_fate."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "twitch": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Twitch.",
+            "Evite as trocas longas no early game contra Twitch.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Twitch."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "urgot": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Urgot.",
+            "Evite as trocas longas no early game contra Urgot.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Urgot."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "varus": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Varus.",
+            "Evite as trocas longas no early game contra Varus.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Varus."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "vayne": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Vayne.",
+            "Evite as trocas longas no early game contra Vayne.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Vayne."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "veigar": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Veigar.",
+            "Evite as trocas longas no early game contra Veigar.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Veigar."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "velkoz": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Velkoz.",
+            "Evite as trocas longas no early game contra Velkoz.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Velkoz."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "vex": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Vex.",
+            "Evite as trocas longas no early game contra Vex.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Vex."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "viktor": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Viktor.",
+            "Evite as trocas longas no early game contra Viktor.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Viktor."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "xayah": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Xayah.",
+            "Evite as trocas longas no early game contra Xayah.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Xayah."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "xerath": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Xerath.",
+            "Evite as trocas longas no early game contra Xerath.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Xerath."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "yasuo": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Yasuo.",
+            "Evite as trocas longas no early game contra Yasuo.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Yasuo."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "yone": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Yone.",
+            "Evite as trocas longas no early game contra Yone.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Yone."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "yorick": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Yorick.",
+            "Evite as trocas longas no early game contra Yorick.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Yorick."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "yunara": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Yunara.",
+            "Evite as trocas longas no early game contra Yunara.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Yunara."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "zeri": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Zeri.",
+            "Evite as trocas longas no early game contra Zeri.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Zeri."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "ziggs": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Ziggs.",
+            "Evite as trocas longas no early game contra Ziggs.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Ziggs."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "zilean": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Zilean.",
+            "Evite as trocas longas no early game contra Zilean.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Zilean."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "zoe": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Zoe.",
+            "Evite as trocas longas no early game contra Zoe.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Zoe."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    },
+    "zyra": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Zyra.",
+            "Evite as trocas longas no early game contra Zyra.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Zyra."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+
+        
+    },
+     "gragas": {
+        "matchupTexto": [
+            "Use a Poça para desviar da habilidade mais perigosa de Gragas.",
+            "Evite as trocas longas no early game contra gragas.",
+            "Abuse do sustain com seu Q para punir os pontos fracos de Gragas."
+        ],
+        "spells": [
+            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/flash.png"
+        ],
+        "build": [
+            "../assets/imglobby/itens/cinturao hextec.webp",
+            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/rabadon.webp",
+            "../assets/imglobby/itens/cajado do vazio.webp",
+            "../assets/imglobby/itens/chama sombria.webp"
+        ],
+        "runasPrimaria": [
+            "../assets/imglobby/runas/aery.webp",
+            "../assets/imglobby/runas/manto.webp",
+            "../assets/imglobby/runas/chamuscar.png",
+            "../assets/imglobby/runas/transcedencia.webp"
+        ],
+        "runasSecundaria": [
+            "../assets/imglobby/runas/lenda.webp",
+            "../assets/imglobby/runas/ate a morte.webp"
+        ],
+        "runasStats": [
+            "../assets/imglobby/runas/cdr.png",
+            "../assets/imglobby/runas/forca adaptativa.png",
+            "../assets/imglobby/runas/vida escalavel.png"
+        ],
+        "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
+        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+    }
+}

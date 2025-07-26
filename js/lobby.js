@@ -4,7 +4,7 @@ const painel = document.getElementById("painel-matchup");
 const nomeCampeao = document.getElementById("nome-campeao");
 
 // Objeto que armazena os dados de cada campeão (você preenche para cada um)
-fetch("matchups_completo.json")
+fetch("../json/matchups_completo.json")
   .then(response => response.json())
   .then(data => {
       matchups = data;
