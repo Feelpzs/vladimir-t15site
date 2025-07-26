@@ -13,7 +13,6 @@
 
 <body>
     <canvas id="sangue"></canvas>
-    <!-- CABEÇALHO -->
     <header>
     <div class="logo blood-text">VLADIMIR T15</div>
     <button class="menu-toggle" id="menu-toggle">☰</button>
@@ -32,13 +31,11 @@
 </header>
 
 
-    <!-- HERO -->
     <section id="hero" class="hero fade">
        <h1 class="titulo-sangrento">COMO JOGAR COM VLADIMIR</h1>
 
 
         <div class="como-jogar">
-            <!-- KIT DO CAMPEÃO -->
             <h2 class="blood-text">Conheça o kit do campeão</h2>
             <p>
                 <strong>PASSIVA – PACTO CARMESIM (Crimson Pact)</strong><br>
@@ -123,7 +120,6 @@
                 em lutas longas.
             </p>
 
-            <!-- TEAMFIGHTS -->
             <h2 class="blood-text">Como se Posicionar em Teamfights</h2>
             <p>
                 Jogadores iniciantes de Vladimir cometem o erro de avançar demais com
@@ -134,7 +130,6 @@
                 Não use a <span class="habilidade">Poça</span> cedo demais.
             </p>
 
-            <!-- LANE PHASE -->
             <h2 class="blood-text">Como Jogar a Lane Phase</h2>
             <p>
                 Na fase de rotas, Vladimir troca dano de forma eficiente, usando sua vida para forçar o inimigo a gastar mana ou poções.<br>
@@ -146,7 +141,6 @@
         </div>
     </section>
 
-    <!-- RUNAS -->
     <section id="runas" class="fade">
        <h2 class="titulo-sangrento">Runas</h2>
 
@@ -230,7 +224,6 @@
         </div>
     </section>
 
-    <!-- BUILDS -->
     <section id="builds" class="fade">
         <h2 class="blood-text">Builds</h2>
         <div class="grid">
@@ -262,7 +255,7 @@
         </div>
     </section>
 
-    <!-- ITENS -->
+   
 <section id="itens" class="fade">
     <h2 class="blood-text">Itens Situacionais</h2>
     <div class="grid">
@@ -280,7 +273,6 @@
     </div>
 </section>
 
-<!-- BOTAS -->
 <section id="botas" class="fade">
     <h2 class="blood-text">Botas</h2>
     <div class="grid">
@@ -298,7 +290,7 @@
     </div>
 </section>
 
-<!-- SPELLS -->
+
 <section id="spells" class="fade">
     <h2 class="blood-text">Spells</h2>
     <div class="grid">
@@ -314,7 +306,7 @@
     </div>
 </section>
 
-<!-- COMBOS -->
+
 <section id="combos" class="fade">
     <h2 class="blood-text">Combos</h2>
     <div class="grid">
@@ -324,7 +316,7 @@
                 Seu navegador não suporta vídeos.
             </video>
             <p>
-                ✅ <strong>COMBOS IMPORTANTES</strong><br>
+               <strong>COMBOS IMPORTANTES</strong><br>
                 ✔ Combo Básico: <span class="habilidade">E (carrega) → Q → Solta E → R</span> (padrão curto alcance)<br>
                 ✔ Combo de Iniciação com Flash: <span class="habilidade">E (carregando) → Flash → R → Solta E → Q</span> (explosão surpresa)<br>
                 ✔ Combo Full Engage (Late Game): <span class="habilidade">R → E carregado → Q → W → espera R estourar → Q novamente</span><br><br>
@@ -333,7 +325,7 @@
         </div>
     </div>
 </section>
-<!-- ✅ MATCHUP LOBBY -->
+
     <section class="lobby" id="lobby">
         <div class="meu-campeao">
             <img src="imglobby/img champs/vladmir.png" alt="Vladimir" class="vlad-img">
@@ -346,7 +338,6 @@
         <div class="carrossel-champs">
             <h2 class="blood-text">Selecione o Campeão Inimigo</h2>
 
-            <!-- ✅ Barra de Pesquisa -->
             <input type="text" id="search-champ" placeholder="Pesquisar campeão..." class="search-bar">
 
             <div class="carrossel" id="carrossel">
@@ -451,19 +442,15 @@
         </div>
     </div>
 
-    <!-- Painel dinâmico à direita -->
     <div class="painel-matchup" id="painel-matchup" style="display:none;">
     <h2 class="blood-text">Matchup: Vladimir vs <span id="nome-campeao"></span></h2>
 
-    <!-- Matchup -->
     <div class="card matchup-card">
         <h3 class="titulo-sangrento">Matchup</h3>
         <ul id="texto-matchup">
-            <!-- Texto do matchup será carregado via JS -->
         </ul>
     </div>
 
-    <!-- Spells -->
     <div class="card">
         <h3 class="blood-text">Spells</h3>
         <div id="spells-container" class="spells">
@@ -472,15 +459,12 @@
         </div>
     </div>
 
-    <!-- Build -->
     <div class="card">
         <h3 class="blood-text">Build</h3>
         <div id="build-container" class="build">
-            <!-- Itens carregados via JS -->
         </div>
     </div>
 
-    <!-- Runas -->
     <div class="card">
         <h3 class="blood-text">Runas</h3>
         <h4>Árvore Primária</h4>
@@ -493,13 +477,11 @@
         <div id="runas-stats" class="runas"></div>
     </div>
 
-    <!-- Cooldowns -->
     <div class="card">
         <h3 class="blood-text">Cooldowns</h3>
         <p id="cooldowns"></p>
     </div>
 
-    <!-- Gameplay -->
     <div class="card">
     <h3 class="blood-text">Gameplay</h3>
     <iframe id="video-matchup"
@@ -515,7 +497,6 @@
 </div>
 
 
-    <!-- MODAL PARA IMAGENS -->
     <div id="modal" class="modal">
         <span id="fechar" class="fechar">&times;</span>
         <img class="modal-conteudo" id="img-ampliada" alt="Imagem ampliada">
@@ -525,7 +506,6 @@
     <script src="script.js"></script>
     <script src="lobby.js"></script>
 
-    <!-- Footer dentro do body -->
     <footer>
         <p>© 2025 Guia Vladimir | Criado por Felipe Oliveira</p>
     </footer>
