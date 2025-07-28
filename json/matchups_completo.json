@@ -80,17 +80,17 @@
             "../assets/imglobby/spells/flash.png"
         ],
         "build": [
-            "../assets/imglobby/itens/cinturao hextec.webp",
-            "../assets/imglobby/itens/foco do horizonte.webp",
+            "../assets/imglobby/itens/apice.webp",
+            "../assets/imglobby/itens/chama sombria.webp",
             "../assets/imglobby/itens/rabadon.webp",
             "../assets/imglobby/itens/cajado do vazio.webp",
-            "../assets/imglobby/itens/chama sombria.webp"
+            "../assets/imglobby/itens/impeto cosmico.webp"
         ],
         "runasPrimaria": [
             "../assets/imglobby/runas/aery.webp",
             "../assets/imglobby/runas/manto.webp",
-            "../assets/imglobby/runas/chamuscar.png",
-            "../assets/imglobby/runas/transcedencia.webp"
+            "../assets/imglobby/runas/transcedencia.png",
+            "../assets/imglobby/runas/chamuscar.webp"
         ],
         "runasSecundaria": [
             "../assets/imglobby/runas/lenda.webp",
@@ -99,7 +99,7 @@
         "runasStats": [
             "../assets/imglobby/runas/cdr.png",
             "../assets/imglobby/runas/forca adaptativa.png",
-            "../assets/imglobby/runas/vida escalavel.png"
+            "../assets/imglobby/runas/vida flat.png"
         ],
         "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
         "video": "https://www.youtube.com/watch?v=v853NtnESYo"
@@ -3047,26 +3047,29 @@
     },
     "yasuo": {
         "matchupTexto": [
-            "Use a Poça para desviar da habilidade mais perigosa de Yasuo.",
+            "Evite ficar perto do range de (AA)AutoAtk do yasuo, você nao ganha troca de auto atk.",
+            "Nessa match é primordial voce manter o space (espaço de segurança) do yasuo.",
+            "Todos yasuo jogam freneticos querendo sempre dar all win quando pode, se vc observar este tipo de comportamento, jogue safe para escalar.",
             "Evite as trocas longas no early game contra Yasuo.",
-            "Abuse do sustain com seu Q para punir os pontos fracos de Yasuo."
+            "Abuse do sustain com seu Q , sempre de (AA) antes de usar a skill para punir o Yasuo."
         ],
         "spells": [
-            "../assets/imglobby/spells/ghost.webp",
+            "../assets/imglobby/spells/ignite.png",
             "../assets/imglobby/spells/flash.png"
         ],
         "build": [
-            "../assets/imglobby/itens/cinturao hextec.webp",
             "../assets/imglobby/itens/foco do horizonte.webp",
             "../assets/imglobby/itens/rabadon.webp",
             "../assets/imglobby/itens/cajado do vazio.webp",
-            "../assets/imglobby/itens/chama sombria.webp"
+            "../assets/imglobby/itens/impeto cosmico.webp",
+            "../assets/imglobby/itens/zonea.webp",
+            "../assets/img/botas/bota feiticeiro.webp"
         ],
         "runasPrimaria": [
             "../assets/imglobby/runas/aery.webp",
             "../assets/imglobby/runas/manto.webp",
-            "../assets/imglobby/runas/chamuscar.png",
-            "../assets/imglobby/runas/transcedencia.webp"
+            "../assets/imglobby/runas/transcedencia.webp",
+            "../assets/imglobby/runas/chamuscar.png"
         ],
         "runasSecundaria": [
             "../assets/imglobby/runas/lenda.webp",
@@ -3075,10 +3078,10 @@
         "runasStats": [
             "../assets/imglobby/runas/cdr.png",
             "../assets/imglobby/runas/forca adaptativa.png",
-            "../assets/imglobby/runas/vida escalavel.png"
+            "../assets/imglobby/runas/vida flat.png"
         ],
         "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
-        "video": "https://www.youtube.com/watch?v=v853NtnESYo"
+        "video": "https://www.youtube.com/watch?v=_5uwDnWiS8E&ab_channel=Guaxi"
     },
     "yone": {
         "matchupTexto": [
@@ -3091,17 +3094,18 @@
             "../assets/imglobby/spells/flash.png"
         ],
         "build": [
-            "../assets/imglobby/itens/cinturao hextec.webp",
-            "../assets/imglobby/itens/foco do horizonte.webp",
+           "../assets/imglobby/itens/foco do horizonte.webp",
             "../assets/imglobby/itens/rabadon.webp",
             "../assets/imglobby/itens/cajado do vazio.webp",
-            "../assets/imglobby/itens/chama sombria.webp"
+            "../assets/imglobby/itens/impeto cosmico",
+            "../assets/imglobby/itens/zonea.webp",
+            "../assets/imglobby/itens/bota feiticeiro.webp"
         ],
         "runasPrimaria": [
             "../assets/imglobby/runas/aery.webp",
             "../assets/imglobby/runas/manto.webp",
-            "../assets/imglobby/runas/chamuscar.png",
-            "../assets/imglobby/runas/transcedencia.webp"
+            "../assets/imglobby/runas/transcedencia.webp",
+            "../assets/imglobby/runas/chamuscar.png"
         ],
         "runasSecundaria": [
             "../assets/imglobby/runas/lenda.webp",
@@ -3110,7 +3114,7 @@
         "runasStats": [
             "../assets/imglobby/runas/cdr.png",
             "../assets/imglobby/runas/forca adaptativa.png",
-            "../assets/imglobby/runas/vida escalavel.png"
+            "../assets/imglobby/runas/vida flat.png"
         ],
         "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
         "video": "https://www.youtube.com/watch?v=v853NtnESYo"
