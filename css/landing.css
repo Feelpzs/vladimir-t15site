@@ -409,3 +409,35 @@ footer {
     display: none;
   }
 }
+
+@media (max-width: 480px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .btn-buy,
+  .btn-login {
+    width: 90%;
+    font-size: 1rem;
+    padding: 14px 20px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .btn-login {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hero-content {
+    padding: 20px 15px;
+  }
+
+  .sub-text {
+    font-size: 1rem;
+  }
+}
