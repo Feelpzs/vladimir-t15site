@@ -7,36 +7,32 @@ body {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+}
+
 .blood-text {
-    font-family: 'Creepster', cursive; /* Fonte sangrenta */
-    color: #a50606; /* Vermelho neon */
-    text-transform: uppercase;
-    letter-spacing: 1px;
-
-    text-shadow:
-        /* Contorno preto bem forte */
-        -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000,
-        2px 2px 0 #000,
-        -2px 0 0 #000,
-        2px 0 0 #000,
-        0 -2px 0 #000,
-        0 2px 0 #000,
-
-        /* Efeito neon vermelho */
-        0 0 10px #a50606,
-        0 0 20px #a50606,
-        0 0 30px #a50606;
+  font-family: 'Creepster', cursive;
+  color: #a50606;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow:
+    -2px -2px 0 #000,
+     2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000,
+    -2px  0   0 #000,
+     2px  0   0 #000,
+     0  -2px  0 #000,
+     0   2px  0 #000,
+     0   0   10px #a50606,
+     0   0   20px #a50606,
+     0   0   30px #a50606;
 }
 
 .highlight {
   color: #ff0000;
   font-weight: bold;
-}
-
-a {
-  text-decoration: none;
 }
 
 /* ======== HERO ======== */
@@ -48,16 +44,10 @@ a {
   align-items: center;
   justify-content: center;
 }
-.hero .blood-text {
-  font-size: 2.5rem; /* antes era ~1.8rem */
-  letter-spacing: 2px; /* dá um espaçamento entre as letras */
-  text-transform: uppercase;
-  
-}
+
 .hero-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
@@ -66,8 +56,16 @@ a {
 .hero-content {
   position: relative;
   max-width: 700px;
-  z-index: 2;
+  width: 100%;
   padding: 20px;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.hero .blood-text {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .sub-text {
@@ -77,6 +75,7 @@ a {
   color: #f1f1f1;
 }
 
+/* ======== BOTÕES ======== */
 .buttons {
   margin-top: 20px;
 }
@@ -110,17 +109,18 @@ a {
   background: #ddd;
 }
 
-/* Animação de pulsar nos botões principais */
+/* Animação de pulsar */
 .pulse {
   animation: pulse 1.5s infinite;
 }
+
 @keyframes pulse {
   0% { box-shadow: 0 0 0 0 rgba(255,0,0,0.7); }
   70% { box-shadow: 0 0 0 15px rgba(255,0,0,0); }
   100% { box-shadow: 0 0 0 0 rgba(255,0,0,0); }
 }
 
-/* ======== BENEFITS ======== */
+/* ======== BENEFÍCIOS ======== */
 .benefits {
   background: #111;
   padding: 50px 20px;
@@ -149,81 +149,8 @@ a {
   background: #222;
 }
 
-.seta {
-  display: inline-block;
-  margin-right: 8px;
-  color: #ff3333;
-  transition: transform 0.3s ease;
-}
-
 .benefit-toggle.active .seta {
   transform: rotate(90deg);
-}
-
-.benefit-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease, padding 0.3s ease;
-  background: #000;
-  border-left: 3px solid #ff0000;
-  padding: 0 10px;
-}
-
-.benefit-content img {
-  width: 100%;
-  border-radius: 5px;
-  margin: 10px 0;
-}
-
-
-/* ======== CTA ======== */
-.cta {
-  background: #1a0000;
-  padding: 60px 20px;
-}
-
-.price {
-  font-size: 1.8rem;
-  color: #ff3333;
-  font-weight: bold;
-}
-
-.garantia {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: #bbb;
-}
-
-/* ======== FOOTER ======== */
-footer {
-  background: #000;
-  padding: 15px;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* ======== RESPONSIVO ======== */
-@media (max-width: 768px) {
-  .sub-text { font-size: 1rem; }
-  .btn-buy, .btn-login { font-size: 1rem; padding: 12px 20px; }
-}
-
-.elo-escalada {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 15px;
-  gap: 10px;
-}
-
-.elo {
-  width: 150px;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-.elo:hover {
-  transform: scale(1.1);
 }
 
 .seta {
@@ -242,29 +169,56 @@ footer {
   100% { text-shadow: 0 0 3px #ff0000, 0 0 6px #990000; }
 }
 
-.benefit-toggle.active .seta {
-  transform: rotate(90deg);
+.benefit-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  background: #000;
+  border-left: 3px solid #ff0000;
+  padding: 0 10px;
 }
 
-
-.benefit-toggle:hover .seta {
-  color: #fff;
+.benefit-content img {
+  width: 100%;
+  border-radius: 5px;
+  margin: 10px 0;
 }
 
-.benefit-toggle.active .seta {
-  transform: rotate(90deg);
+/* ======== ELO ESCALADA ======== */
+.elo-escalada {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: 10px;
 }
 
-/* FADE AO ROLAR */
-.fade {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+.elo {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
 }
 
-.fade.visible {
-    opacity: 1;
-    transform: translateY(0);
+.elo:hover {
+  transform: scale(1.1);
+}
+
+/* ======== CTA ======== */
+.cta {
+  background: #1a0000;
+  padding: 60px 20px;
+}
+
+.price {
+  font-size: 1.8rem;
+  color: #ff3333;
+  font-weight: bold;
+}
+
+.garantia {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #bbb;
 }
 
 .preco {
@@ -299,7 +253,6 @@ footer {
   font-weight: bold;
 }
 
-
 .ampulheta {
   display: inline-block;
   margin-right: 5px;
@@ -311,20 +264,11 @@ footer {
   100% { transform: rotate(360deg); }
 }
 
-#sangue {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* não bloqueia cliques */
-  z-index: 9999; /* acima de tudo */
-}
-
+/* ======== VIDEO RESPONSIVO ======== */
 .video-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* Proporção 16:9 */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
   border-radius: 8px;
@@ -333,9 +277,135 @@ footer {
 
 .video-container iframe {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   width: 100%;
   height: 100%;
   border: none;
+}
+
+/* ======== CANVAS SANGUE ======== */
+#sangue {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* ======== TEXTO INTROS ======== */
+.intro-bloco {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 20px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.intro-bloco ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.intro-bloco ul li {
+  margin-bottom: 6px;
+}
+
+/* ======== ANIMAÇÃO FADE IN ======== */
+.fade {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background: #000;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ======== GRID GERAL ======== */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #111;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+/* ======== RESPONSIVO ======== */
+@media (max-width: 768px) {
+  .sub-text {
+    font-size: 1rem;
+  }
+
+  .btn-buy, .btn-login {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 40px 15px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero .blood-text {
+    font-size: 1.8rem;
+  }
+
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+    width: 100%;
+  }
+
+  .elo {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero .blood-text {
+    font-size: 1.5rem !important;
+  }
+
+  .sub-text {
+    font-size: 0.95rem;
+  }
+
+  .btn-buy, .btn-login {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .elo-escalada {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .seta {
+    display: none;
+  }
 }

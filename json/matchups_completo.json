@@ -3081,7 +3081,8 @@
             "../assets/imglobby/runas/vida flat.png"
         ],
         "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
-        "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/_5uwDnWiS8E\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+        "video":"https://www.youtube.com/embed/khPj6pLLZKI?si=5i8H8ofbL20Iq8x1"
+
     },
     "yone": {
         "matchupTexto": [
