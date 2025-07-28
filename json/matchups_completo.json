@@ -3081,7 +3081,7 @@
             "../assets/imglobby/runas/vida flat.png"
         ],
         "cooldowns": "Q – 8/7/6 | W – 14/12/10 | E – 10/9/8 | R – 120/100/80",
-        "video": "https://www.youtube.com/watch?v=_5uwDnWiS8E&ab_channel=Guaxi"
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/_5uwDnWiS8E\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
     },
     "yone": {
         "matchupTexto": [
