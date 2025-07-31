@@ -103,13 +103,10 @@ window.addEventListener('resize', () => {
 
 animar();
 
-const botao = document.getElementById("btnComprar");
-
 document.getElementById("paymentForm").addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const email = document.getElementById("buyerEmail").value || "comprador@exemplo.com";
-
+  const botao = document.getElementById("btnComprar");
   botao.textContent = "Redirecionando...";
   botao.disabled = true;
   botao.style.opacity = "0.6";
@@ -117,10 +114,8 @@ document.getElementById("paymentForm").addEventListener("submit", async (e) => {
   try {
     const response = await fetch("https://us-central1-guiacompleto-e62c2.cloudfunctions.net/app/api/payment/create-payment", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({ email })
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({}) // não é mais necessário enviar e-mail
     });
 
     const data = await response.json();
@@ -133,7 +128,6 @@ document.getElementById("paymentForm").addEventListener("submit", async (e) => {
       botao.disabled = false;
       botao.style.opacity = "1";
     }
-
   } catch (error) {
     console.error("Erro:", error);
     alert("Erro ao processar o pagamento.");
@@ -142,3 +136,4 @@ document.getElementById("paymentForm").addEventListener("submit", async (e) => {
     botao.style.opacity = "1";
   }
 });
+
