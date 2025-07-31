@@ -6,14 +6,19 @@
   <title>Login - Guia Vladimir</title>
   <link rel="stylesheet" href="css/login.css">
   <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
-</head>
+  <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
 <body>
-    <canvas id="sangue"></canvas>
+ 
+  <canvas id="sangue"></canvas>
 
   <div class="login-container">
     <h1 class="blood-text">Acesso Restrito</h1>
     <p class="sub-text">Entre para dominar o Vlad e subir de elo!</p>
-    
+     <div id="recaptcha-container"></div>
     <form id="loginForm">
       <input type="text" id="email" placeholder="Seu e-mail" required>
       <input type="password" id="password" placeholder="Senha" required>
@@ -23,6 +28,21 @@
     <p class="info">⚠️ Acesso exclusivo para membros.</p>
   </div>
 
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyCNUujTBklsv1hYn7N810o1iUOapd57z-E",
+      authDomain: "guiacompleto-e62c2.firebaseapp.com",
+      projectId: "guiacompleto-e62c2",
+      storageBucket: "guiacompleto-e62c2.appspot.com",
+      messagingSenderId: "680893444040",
+      appId: "1:680893444040:web:e86d0ca09ddcefdf8d9afd"
+    };
+
+    // Corrigido: inicialização correta no namespace global do Firebase v9 com script
+    const app = firebase.initializeApp(firebaseConfig);
+  </script>
+
   <script src="../js/login.js"></script>
+  <script src="../js/logout.js"></script>
 </body>
 </html>

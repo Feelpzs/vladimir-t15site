@@ -103,3 +103,42 @@ window.addEventListener('resize', () => {
 
 animar();
 
+const botao = document.getElementById("btnComprar");
+
+document.getElementById("paymentForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const email = document.getElementById("buyerEmail").value || "comprador@exemplo.com";
+
+  botao.textContent = "Redirecionando...";
+  botao.disabled = true;
+  botao.style.opacity = "0.6";
+
+  try {
+    const response = await fetch("https://us-central1-guiacompleto-e62c2.cloudfunctions.net/app/api/payment/create-payment", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ email })
+    });
+
+    const data = await response.json();
+
+    if (data.init_point) {
+      window.location.href = data.init_point;
+    } else {
+      alert("Erro ao gerar link de pagamento.");
+      botao.textContent = "Comprar Agora";
+      botao.disabled = false;
+      botao.style.opacity = "1";
+    }
+
+  } catch (error) {
+    console.error("Erro:", error);
+    alert("Erro ao processar o pagamento.");
+    botao.textContent = "Comprar Agora";
+    botao.disabled = false;
+    botao.style.opacity = "1";
+  }
+});

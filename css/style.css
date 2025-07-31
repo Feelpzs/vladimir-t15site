@@ -517,3 +517,58 @@ nav ul {
     }
 }
 
+/* MOBILE */
+.btn-sair-mobile {
+  background-color: #6e0000;
+  color: white;
+  font-family: 'Creepster', cursive;
+  font-size: 18px;
+  border: 1.5px solid #a80000;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  box-shadow: 0 0 6px #a80000;
+  transition: 0.3s ease;
+  width: 100%;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.btn-sair-mobile:hover {
+  background-color: #a80000;
+  box-shadow: 0 0 12px #ff0000, 0 0 6px #600;
+  transform: scale(1.05);
+}
+
+@media (min-width: 769px) {
+  .btn-sair-mobile {
+    display: none;
+  }
+}
+
+.btn-sair-desktop {
+  position: fixed;
+  top: 40px; /* Ajuste fino para alinhar com os menus */
+  right: 24px;
+
+  background-color: transparent;           /* Sem fundo */
+  color: #ff4c4c;                          /* Vermelho vibrante */
+  font-family: 'Creepster', cursive;
+  font-size: 20px;
+  border: none;                            /* Sem borda */
+  border-radius: 0;                        /* Sem arredondamento */
+  padding: 4px 10px;
+  cursor: pointer;
+
+  box-shadow: none;                        /* Remove sombra */
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+.btn-sair-desktop:hover {
+  color: #ff0000;                          /* Apenas muda o texto */
+  text-shadow: 0 0 6px #ff0000;            /* Efeito neon leve */
+  transform: scale(1.05);
+}
+
+

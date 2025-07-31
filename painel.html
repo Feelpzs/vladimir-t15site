@@ -12,9 +12,45 @@
 </head>
 
 <body>
+ <!-- Firebase SDK v8 compatível com script -->
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+
+  <!-- Inicializa Firebase e protege tela -->
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyCNUujTBklsv1hYn7N810o1iUOapd57z-E",
+      authDomain: "guiacompleto-e62c2.firebaseapp.com",
+      projectId: "guiacompleto-e62c2",
+      storageBucket: "guiacompleto-e62c2.appspot.com",
+      messagingSenderId: "680893444040",
+      appId: "1:680893444040:web:e86d0ca09ddcefdf8d9afd"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+
+    window.onload = () => {
+      const logadoLocal = localStorage.getItem("logado") === "true";
+      auth.onAuthStateChanged((user) => {
+        const logadoFirebase = !!user;
+        if (!logadoLocal && !logadoFirebase) {
+          alert("\u26D4\uFE0F Acesso negado! Fa\u00e7a login primeiro.");
+          window.location.href = "login.html";
+        }
+      });
+    };
+  </script>
+    
     <canvas id="sangue"></canvas>
     <header>
+    
+
     <div class="logo blood-text">VLADIMIR T15</div>
+    <button id="btnSairDesktop" class="btn-sair-desktop">Sair</button>
+
+    
     <button class="menu-toggle" id="menu-toggle">☰</button>
     <nav id="menu">
         <ul>
@@ -26,10 +62,13 @@
             <li><a href="#spells" class="blood-text">Spells</a></li>
             <li><a href="#combos" class="blood-text">Combos</a></li>
             <li><a href="#lobby" class="blood-text">Matchups</a></li>
+            <button id="btnSairMobile" class="btn-sair-mobile">Sair</button>
+
             
         </ul>
     </nav>
 </header>
+
 
 
     <section id="hero" class="hero fade">
@@ -511,9 +550,14 @@
      
     <script src="../js/script.js"></script>
     <script src="../js/lobby.js"></script>
+    <script src="../js/logout.js"></script>
+
+
+    
 
     <footer>
-        <p>© 2025 Guia Vladimir | Criado por Felipe Oliveira</p>
+        <p>© 2025 GuiaDoCampeão| Todos direitos reservados</p>
     </footer>
+    
 </body>
 </html>
