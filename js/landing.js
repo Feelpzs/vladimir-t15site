@@ -103,37 +103,16 @@ window.addEventListener('resize', () => {
 
 animar();
 
-document.getElementById("paymentForm").addEventListener("submit", async (e) => {
-  e.preventDefault();
-
+document.getElementById("btnComprar").addEventListener("click", () => {
   const botao = document.getElementById("btnComprar");
   botao.textContent = "Redirecionando...";
   botao.disabled = true;
   botao.style.opacity = "0.6";
 
-  try {
-    const response = await fetch("https://us-central1-guiacompleto-e62c2.cloudfunctions.net/app/api/payment/create-payment", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({}) // não é mais necessário enviar e-mail
-    });
-
-    const data = await response.json();
-
-    if (data.init_point) {
-      window.location.href = data.init_point;
-    } else {
-      alert("Erro ao gerar link de pagamento.");
-      botao.textContent = "Comprar Agora";
-      botao.disabled = false;
-      botao.style.opacity = "1";
-    }
-  } catch (error) {
-    console.error("Erro:", error);
-    alert("Erro ao processar o pagamento.");
-    botao.textContent = "Comprar Agora";
-    botao.disabled = false;
-    botao.style.opacity = "1";
-  }
+  // Pequeno delay antes de redirecionar
+  setTimeout(() => {
+    window.location.href = "https://mpago.la/2WUNwnE";
+  }, 1000);
 });
+
 
