@@ -116,3 +116,12 @@ document.getElementById("btnComprar").addEventListener("click", () => {
 });
 
 
+// Quando a página recarrega, reativa o botão
+window.addEventListener("load", () => {
+  const botao = document.getElementById("btnComprar");
+  if (botao) {
+    botao.textContent = "Comprar Agora";
+    botao.disabled = false;
+    botao.style.opacity = "1";
+  }
+});

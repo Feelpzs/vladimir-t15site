@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Acesso Liberado | Guia do Campeão</title>
+  <style>
+    body {
+      background-color: #0b0b0b;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #161616;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+    }
+
+    h1 {
+      color: #a50606;
+      margin-bottom: 20px;
+    }
+
+    .email-destino {
+      font-size: 18px;
+      background: #222;
+      padding: 10px;
+      border-radius: 8px;
+      margin: 15px auto;
+      display: inline-block;
+      color: #ff4444;
+      word-break: break-all;
+    }
+
+    .info {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .botao {
+      margin-top: 30px;
+      background-color: #a50606;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .botao:hover {
+      background-color: #ff1a1a;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>✅ Acesso Liberado!</h1>
+    <p class="info">Você acabou de garantir acesso ao <strong>Guia do Campeão</strong>.</p>
+
+    <p class="info">Seu login e senha foram enviados para:</p>
+    <div class="email-destino" id="emailDisplay">carregando...</div>
+
+    <p class="info">Verifique sua <strong>caixa de entrada</strong> e também o <strong>spam</strong>.</p>
+    <p class="info">Caso não encontre, entre em contato com o suporte pelo WhatsApp.</p>
+
+    <button class="botao" onclick="window.location.href='login.html'">
+      Acessar o Guia
+    </button>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const email = params.get("email");
+
+    if (email) {
+      document.getElementById("emailDisplay").textContent = email;
+    } else {
+      document.getElementById("emailDisplay").textContent = "E-mail não identificado";
+    }
+  </script>
+</body>
+</html>
