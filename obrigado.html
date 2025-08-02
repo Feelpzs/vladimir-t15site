@@ -8,34 +8,42 @@
     body {
       background-color: #0b0b0b;
       color: #fff;
-      font-family: Arial, sans-serif;
+      font-family: 'Georgia', serif;
       text-align: center;
       padding: 40px 20px;
+      background-image: url('https://i.imgur.com/9qytfAa.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
 
     .container {
       max-width: 600px;
       margin: auto;
-      background-color: #161616;
+      background-color: rgba(22, 22, 22, 0.95);
       padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+      box-shadow: 0 0 30px rgba(255, 0, 0, 0.6);
+      border: 2px solid #a50606;
     }
 
     h1 {
-      color: #a50606;
+      color: #ff0000;
       margin-bottom: 20px;
+      font-family: 'Cinzel', serif;
+      font-size: 2rem;
     }
 
     .email-destino {
       font-size: 18px;
-      background: #222;
+      background: #220000;
       padding: 10px;
       border-radius: 8px;
       margin: 15px auto;
       display: inline-block;
       color: #ff4444;
-      word-break: break-all;
+      word-break: break-word;
+      border: 1px solid #a50606;
     }
 
     .info {
@@ -44,7 +52,7 @@
       line-height: 1.6;
     }
 
-    .botao {
+    .botao, .botao-email {
       margin-top: 30px;
       background-color: #a50606;
       color: #fff;
@@ -56,36 +64,53 @@
       transition: background 0.3s;
     }
 
-    .botao:hover {
+    .botao:hover, .botao-email:hover {
       background-color: #ff1a1a;
+    }
+
+    input[type="email"] {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: none;
+      width: 80%;
+      margin-top: 15px;
+      background: #1b1b1b;
+      color: #fff;
+      border: 1px solid #a50606;
+    }
+
+    .status {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #ffaaaa;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>✅ Acesso Liberado!</h1>
-    <p class="info">Você acabou de garantir acesso ao <strong>Guia do Campeão</strong>.</p>
+    <h1>🩸 Acesso Liberado!</h1>
+    <p class="info">Você acaba de garantir seu lugar nas sombras do <strong>Guia do Campeão</strong>.</p>
 
-    <p class="info">Seu login e senha foram enviados para:</p>
+    <p class="info">Seu login foi enviado para:</p>
     <div class="email-destino" id="emailDisplay">carregando...</div>
 
     <p class="info">Verifique sua <strong>caixa de entrada</strong> e também o <strong>spam</strong>.</p>
-    <p class="info">Caso não encontre, entre em contato com o suporte pelo WhatsApp.</p>
+    <p class="info">Caso não encontre, envie seu e-mail abaixo para receber as credenciais:</p>
+
+    <form id="emailForm">
+      <input type="email" id="emailInput" placeholder="Digite seu e-mail" required />
+      <br />
+      <button type="submit" class="botao-email">Receber credenciais</button>
+      <p id="statusMsg" class="status"></p>
+    </form>
 
     <button class="botao" onclick="window.location.href='login.html'">
       Acessar o Guia
     </button>
   </div>
 
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const email = params.get("email");
-
-    if (email) {
-      document.getElementById("emailDisplay").textContent = email;
-    } else {
-      document.getElementById("emailDisplay").textContent = "E-mail não identificado";
-    }
-  </script>
+  <!-- JS externo -->
+  <script src="../js/obrigado.js"></script>
 </body>
 </html>
