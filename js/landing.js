@@ -103,18 +103,35 @@ window.addEventListener('resize', () => {
 
 animar();
 
-document.getElementById("btnComprar").addEventListener("click", () => {
+document.getElementById("btnComprar").addEventListener("click", async () => {
   const botao = document.getElementById("btnComprar");
   botao.textContent = "Redirecionando...";
   botao.disabled = true;
   botao.style.opacity = "0.6";
 
-  // Pequeno delay antes de redirecionar
-  setTimeout(() => {
-    window.location.href = "https://mpago.la/2WUNwnE";
-  }, 1000);
-});
+  try {
+    // Envia a requisição para o backend criar a sessão do Stripe
+    const response = await fetch("https://novousuariowebhook-h4oginleiq-uc.a.run.app/criar-checkout", {
+      method: "POST",
+    });
 
+    const data = await response.json();
+
+    if (data.url) {
+      // Pequeno delay antes do redirecionamento
+      setTimeout(() => {
+        window.location.href = data.url;
+      }, 1000);
+    } else {
+      throw new Error("Erro ao obter link de pagamento.");
+    }
+  } catch (error) {
+    console.error("Erro ao redirecionar para o Stripe:", error);
+    botao.textContent = "Tente novamente";
+    botao.disabled = false;
+    botao.style.opacity = "1";
+  }
+});
 
 // Quando a página recarrega, reativa o botão
 window.addEventListener("load", () => {
