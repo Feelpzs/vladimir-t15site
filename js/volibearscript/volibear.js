@@ -1,66 +1,46 @@
-// efeito fractal de raios que seguem o mouse
+// volibear.js (substitua tudo do efeito anterior por isso)
 (() => {
   const canvas = document.getElementById('raio');
   if (!canvas) { console.error('Canvas #raio não encontrado!'); return; }
   const ctx = canvas.getContext('2d');
-  let bolts = [];
+  let flashes = [];
 
-  // redimensiona full-screen
+  // full-screen
   function resize() {
-    canvas.width  = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width  = innerWidth;
+    canvas.height = innerHeight;
   }
   window.addEventListener('resize', resize);
   resize();
 
-  // fractal recursivo
-  /**
- * Desenha um relâmpago fractal entre (x1,y1) e (x2,y2)
- * @param {number} x1 
- * @param {number} y1 
- * @param {number} x2 
- * @param {number} y2 
- * @param {number} [depth=0] nível atual de recursão
- */
-function drawBolt(x1, y1, x2, y2, depth = 0) {
-  const dx   = x2 - x1;
-  const dy   = y2 - y1;
-  const dist = Math.hypot(dx, dy);
-
-  // Base case: ou distância pequena OU atingiu profundidade máx.
-  if (dist < 16 || depth > 4) {
-    ctx.lineTo(x2, y2);
-    return;
-  }
-
-  // Quanto maior o segmento, maior pode ser o desvio
-  const offset = dist * 0.3;
-  const midX   = (x1 + x2) / 2 + (Math.random() * offset - offset/2);
-  const midY   = (y1 + y2) / 2 + (Math.random() * offset - offset/2);
-
-  // Dois sub-segmentos, incrementando a profundidade
-  drawBolt(x1, y1, midX, midY, depth + 1);
-  drawBolt(midX, midY, x2, y2, depth + 1);
-}
-
-
-  class Bolt {
+  // classe de flash de raio
+  class Flash {
     constructor(x, y) {
-      this.x0 = x; this.y0 = y;
-      this.x1 = x + (Math.random()*200 - 100);
-      this.y1 = y + (Math.random()*200 - 100);
       this.life    = 0;
-      this.maxLife = 12 + Math.random()*8;
+      this.maxLife = 10 + Math.random()*5;
+      // cria pontos em zig-zag a partir do mouse
+      const segs = 6 + Math.floor(Math.random()*4);
+      const step = 20 + Math.random()*10;
+      this.pts = [[x, y]];
+      for (let i = 1; i <= segs; i++) {
+        const prev = this.pts[i-1];
+        const angle = (Math.PI/2) + (Math.random()*Math.PI/3 - Math.PI/6);
+        const nx = prev[0] + Math.cos(angle)*step;
+        const ny = prev[1] + Math.sin(angle)*step;
+        this.pts.push([nx + (Math.random()*10-5), ny + (Math.random()*10-5)]);
+      }
     }
     draw() {
-      const alpha = 1 - this.life/this.maxLife;
-      ctx.strokeStyle = `rgba(70,130,180,${alpha})`;  
-      ctx.lineWidth   = 2;
-      ctx.shadowBlur  = 20;
-      ctx.shadowColor = `rgba(70,130,180,${alpha})`;
+      const a = 1 - this.life/this.maxLife;
+      ctx.lineWidth    = 2 + a*2;
+      ctx.strokeStyle  = `rgba(255,255,224,${a})`;      // azul metálico forte
+      ctx.shadowBlur   = 13;
+      ctx.shadowColor  = `rgba(0,0,205,${a})`;
       ctx.beginPath();
-      ctx.moveTo(this.x0, this.y0);
-      drawBolt(this.x0, this.y0, this.x1, this.y1);
+      ctx.moveTo(...this.pts[0]);
+      for (let i = 1; i < this.pts.length; i++) {
+        ctx.lineTo(...this.pts[i]);
+      }
       ctx.stroke();
       this.life++;
     }
@@ -69,20 +49,21 @@ function drawBolt(x1, y1, x2, y2, depth = 0) {
     }
   }
 
-  // gera sempre que o mouse se move
+  // cria flashes no mousemove
   window.addEventListener('mousemove', e => {
-    const count = 1 + Math.floor(Math.random()*2);
+    // 1 ou 2 flashes por movimento
+    const count = 1 + Math.floor(Math.random()*1.5);
     for (let i = 0; i < count; i++) {
-      bolts.push(new Bolt(e.clientX, e.clientY));
+      flashes.push(new Flash(e.clientX, e.clientY));
     }
   });
 
-  // loop de desenho
+  // loop de animação
   (function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    for (let i = bolts.length - 1; i >= 0; i--) {
-      bolts[i].draw();
-      if (bolts[i].isDead()) bolts.splice(i, 1);
+    for (let i = flashes.length - 1; i >= 0; i--) {
+      flashes[i].draw();
+      if (flashes[i].isDead()) flashes.splice(i, 1);
     }
     requestAnimationFrame(animate);
   })();

@@ -311,17 +311,19 @@ section {
   box-shadow: 0 0 12px #00ccff;
 }
 
+
+
 @media (min-width: 769px) {
   .btn-sair-mobile { display: none; }
 }
 
 .btn-sair-desktop {
-  position: fixed;
-  top: 40px; right: 24px;
+  position: absolute;
+  top: 50px; right: 22px;
   background: transparent;
   color: #00ccff;
   font-family: 'Orbitron', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   border: none;
   padding: 4px 10px;
   cursor: pointer;
@@ -335,13 +337,21 @@ section {
   transform: scale(1.05);
 }
 
-/* canvas no topo, sem bloquear cliques */
+/* mantêm o canvas fullscreen e acima de tudo */
 #raio {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none;
+  pointer-events: none;  /* não bloqueia cliques */
+  z-index: 10000;        /* acima de qualquer header ou conteúdo */
+}
+
+/* só para garantir que seu header não fique acima do canvas */
+header {
+  position: relative;
   z-index: 9999;
 }
+
+
