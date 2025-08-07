@@ -1,0 +1,312 @@
+/* ===== MATCHUP LOBBY VOLIBEAR ===== */
+.lobby {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(0, 10, 30, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 200, 255, 0.4);
+}
+
+/* ==== CAMPEÃO FIXO (VOLIBEAR) ==== */
+.meu-campeao {
+    text-align: center;
+    width: 220px;
+}
+
+.volibear-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid #00ccff;
+    box-shadow: 0 0 15px #00e0ff;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.volibear-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+}
+
+.summoner {
+    color: #a0eaff;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 8px;
+    text-shadow: 1px 1px 3px #001122;
+}
+
+.info-basica {
+    font-size: 0.9rem;
+    color: #66dfff;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* ==== CARROSSEL DE CAMPEÕES ==== */
+.carrossel-champs {
+    max-width: 600px;
+    flex: 1;
+    text-align: center;
+}
+
+.carrossel-champs h2.frost-text {
+    color: #00ccff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 204, 255, 0.6);
+}
+
+#search-champ {
+    width: 90%;
+    max-width: 400px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 2px solid #00ccff;
+    border-radius: 6px;
+    background: rgba(0,0,20,0.9);
+    color: #e0f8ff;
+    text-align: center;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+#search-champ:focus {
+    box-shadow: 0 0 10px #00ccff;
+}
+
+.carrossel {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px;
+    border: 2px solid #00ccff;
+    border-radius: 8px;
+    background: rgba(0,20,40,0.7);
+    max-height: 120px;
+}
+
+.champ {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+    object-fit: cover;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.champ:hover {
+    transform: scale(1.15);
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+/* ==== PAINEL MATCHUP ==== */
+.painel-matchup {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    background: rgba(0, 10, 30, 0.7);
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid #00ccff;
+    box-shadow: 0 0 15px rgba(0, 200, 255, 0.5);
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+.frost-text {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.painel-matchup .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.painel-matchup .card {
+    background: rgba(0, 20, 40, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #002244;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.painel-matchup .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+}
+
+.painel-matchup img,
+.painel-matchup video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* BARRA DE SCROLL AZUL */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 20, 0.6);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #0077aa, #00ccff);
+    border-radius: 10px;
+    border: 1px solid #001122;
+    box-shadow: 0 0 5px #00ccff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #00ccff, #66f0ff);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .lobby {
+        flex-direction: column;
+        align-items: center;
+    }
+    .painel-matchup {
+        max-width: 90%;
+    }
+    .carrossel {
+        max-height: 100px;
+    }
+}
+
+/* AJUSTES ESPECÍFICOS */
+.lobby .card {
+    background: transparent;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+}
+
+.lobby .spell-img,
+.lobby .runa-img,
+.lobby .item-img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #00ccff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #00ccff;
+    margin: 3px;
+}
+
+#spells-container,
+#runas-primaria,
+#runas-secundaria,
+#runas-stats,
+#build-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.champ.selected {
+    border: 3px solid #00ffff;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #00ccff;
+    border-radius: 6px;
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+/* === CARROSSEL DE CAMPEÕES === */
+.carrossel {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #00ffff #000; /* Firefox */
+}
+
+.carrossel::-webkit-scrollbar {
+    height: 8px; /* mais fino horizontal */
+}
+
+.carrossel::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.carrossel::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #7a0000, #ff0000);
+    border-radius: 5px;
+    border: 1px solid #000;
+    box-shadow: 0 0 5px #ff0000;
+}
+
+
+
+
+/* ==== RESPONSIVIDADE ==== */
+@media (max-width: 768px) {
+    .lobby {
+        flex-direction: column;
+        align-items: center;
+    }
+    .painel-matchup {
+        max-width: 90%;
+    }
+    .carrossel {
+        max-height: 100px;
+    }
+}
+
+
+
+/* === Ajuste exclusivo para os cards do lobby === */
+.lobby .card {
+    background: transparent; /* Remove fundo */
+    border: none;            /* Sem borda no card */
+    padding: 0;
+    min-height: auto;        /* Remove altura fixa */
+    box-shadow: none;        /* Sem sombra geral */
+}
+
+/* Ajuste direto nos ícones */
+.lobby .spell-img,
+.lobby .runa-img,
+.lobby .item-img {
+    width: 50px;             /* Ajuste do tamanho */
+    height: 50px;
+    border: 2px solid red;   /* Borda colada no ícone */
+    border-radius: 8px;
+    box-shadow: 0 0 8px red; /* Opcional: brilho */
+    padding: 0;
+    margin: 3px;
+}
+
+/* Para alinhar os ícones lado a lado */
+#spells-container,
+#runas-primaria,
+#runas-secundaria,
+#runas-stats,
+#build-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.champ.selected {
+    border: 3px solid #ffbb00; /* Vermelho para destacar */
+    box-shadow: 0 0 10px #ffbb00, 0 0 20px #ffbb00;
+    border-radius: 6px;
+    transform: scale(1.1); /* Leve aumento para destacar */
+    transition: 0.2s ease-in-out;
+}

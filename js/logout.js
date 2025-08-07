@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
   const deslogar = () => {
     localStorage.removeItem("logado");
     auth.signOut().finally(() => {
-      window.location.href = "login.html";
+      window.location.href = "painel.html";
     });
   };
 

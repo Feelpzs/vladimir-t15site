@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: 'Cinzel', serif;
+  background-color: #0b1018;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.painel {
+  text-align: center;
+  padding: 20px;
+}
+
+.painel h1 {
+  font-size: 2em;
+  color: #f2c86d;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Bandeira estilo LoL */
+.bandeira-lol {
+  width: 140px;
+  height: 280px;
+  background: linear-gradient(to bottom, #111923, #0b1018);
+  position: relative;
+  border: 2px solid #c8a25d;
+  border-radius: 4px 4px 0 0;
+  clip-path: polygon(
+    0% 0%, 100% 0%,
+    100% 90%, 50% 100%,
+    0% 90%
+  );
+  overflow: hidden;
+  box-shadow: 0 0 15px #000;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.bandeira-lol:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #f2c86d;
+}
+
+.bandeira-lol img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bandeira-lol .champion {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f2c86d;
+  text-shadow: 1px 1px 4px #000;
+  text-align: center;
+}
+
+
+
+
+.bandeira-lol img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a imagem preencher tudo proporcionalmente */
+  border-radius: 0;
+  border: none;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+
+/* Animação de seleção */
+.bandeira-lol.selecionado {
+  animation: pulsar 1.5s ease;
+}
+
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0px #f2c86d;
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px #f2c86d;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0px #f2c86d;
+  }
+}
+
+
+
+/* Animação ao selecionar um card */
+.bandeira-lol.selecionado {
+  animation: brilhoZoom 1.5s ease forwards;
+  z-index: 10;
+}
+
+@keyframes brilhoZoom {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0px #f2c86d;
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px #f2c86d;
+    filter: brightness(1.5);
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0px #f2c86d;
+    filter: brightness(1);
+  }
+}
+
+/* Fadeout no fundo da tela */
+body.fadeout {
+  animation: telaDesaparecendo 1.5s ease forwards;
+}
+
+@keyframes telaDesaparecendo {
+  0% {
+    background-color: #0b1018;
+  }
+  100% {
+    background-color: #000;
+  }
+}
+
+.intro {
+  text-align: center;
+  color: #f7f3ea;
+  font-size: 1.rem;
+  margin-bottom: 20px;
+  font-family: 'Cinzel', serif;
+}
+
+
+

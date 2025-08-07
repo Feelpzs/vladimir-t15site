@@ -101,16 +101,27 @@ window.addEventListener('resize', () => {
   canvas.height = window.innerHeight;
 });
 
-animar();
+// Animação inicial (caso você tenha uma função chamada animar())
+if (typeof animar === "function") animar();
 
-document.getElementById("btnComprar").addEventListener("click", async () => {
-  const botao = document.getElementById("btnComprar");
-  botao.textContent = "Redirecionando...";
-  botao.disabled = true;
-  botao.style.opacity = "0.6";
+// Abre o modal ao clicar no botão principal
+document.getElementById("btnComprar").addEventListener("click", (e) => {
+  e.preventDefault();
+  document.getElementById("modalPagamento").classList.remove("hidden");
+});
+
+// Fecha o modal
+document.getElementById("fecharModal").addEventListener("click", () => {
+  document.getElementById("modalPagamento").classList.add("hidden");
+});
+
+// Clique em "Cartão de Crédito" → chama Stripe
+document.getElementById("btnCartao").addEventListener("click", async () => {
+  const btn = document.getElementById("btnCartao");
+  btn.textContent = "Redirecionando...";
+  btn.disabled = true;
 
   try {
-    // Envia a requisição para o backend criar a sessão do Stripe
     const response = await fetch("https://novousuariowebhook-h4oginleiq-uc.a.run.app/criar-checkout", {
       method: "POST",
     });
@@ -118,27 +129,21 @@ document.getElementById("btnComprar").addEventListener("click", async () => {
     const data = await response.json();
 
     if (data.url) {
-      // Pequeno delay antes do redirecionamento
       setTimeout(() => {
         window.location.href = data.url;
-      }, 1000);
+      }, 800);
     } else {
       throw new Error("Erro ao obter link de pagamento.");
     }
   } catch (error) {
     console.error("Erro ao redirecionar para o Stripe:", error);
-    botao.textContent = "Tente novamente";
-    botao.disabled = false;
-    botao.style.opacity = "1";
+    btn.textContent = "Tente novamente";
+    btn.disabled = false;
   }
 });
 
-// Quando a página recarrega, reativa o botão
-window.addEventListener("load", () => {
-  const botao = document.getElementById("btnComprar");
-  if (botao) {
-    botao.textContent = "Comprar Agora";
-    botao.disabled = false;
-    botao.style.opacity = "1";
-  }
+// Clique em "Pix" → redireciona para a tela Pix
+document.getElementById("btnPix").addEventListener("click", () => {
+  window.location.href = "pix.html";
 });
+

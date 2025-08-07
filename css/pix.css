@@ -1,0 +1,106 @@
+/* style.css */
+
+body.pix-body {
+  background: #0e0e0e;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.pix-container {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px #3f0f0f;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: #e94560;
+  margin-bottom: 10px;
+}
+
+.instrucao {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.qr-section {
+  margin: 20px 0;
+}
+
+.qr-code {
+  width: 220px;
+  height: 220px;
+  border-radius: 8px;
+  border: 3px solid #e94560;
+}
+
+.chave-pix {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.chave-pix label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.chave-pix input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
+  background: #333;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.chave-pix button {
+  background: #e94560;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.discord-section {
+  margin-top: 30px;
+}
+
+.discord-section p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.discord-btn {
+  display: inline-block;
+  background: #5865f2;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.discord-btn:hover {
+  background: #4752c4;
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #999;
+}

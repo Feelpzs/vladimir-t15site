@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pagamento via PIX - Guia do Campeão</title>
+  <link rel="stylesheet" href="css/pix.css" />
+</head>
+<body class="pix-body">
+  <div class="pix-container">
+    <h1>Pagamento via PIX</h1>
+    <p class="instrucao">Escaneie o QR Code abaixo ou copie a chave Pix:</p>
+
+    <div class="qr-section">
+      <img src="/assets/imgpix/qrcode nubank.PNG" alt="QR Code PIX" class="qr-code"/>
+    </div>
+
+    <div class="chave-pix">
+      <label>Chave Pix:</label>
+      <input type="text" value="00020126580014BR.GOV.BCB.PIX013665ee830d-c48f-4f51-8f3e-e635cc28d167520400005303986540559.905802BR5925Felipe de Oliveira Queiro6009SAO PAULO621405106U5hAhOYcc6304ECC3" id="chavePixInput" readonly />
+      <button onclick="copiarChave()">📋 Copiar</button>
+    </div>
+
+    <div class="discord-section">
+      <p>Após o pagamento, envie o comprovante no nosso Discord para receber suas credenciais:</p>
+      <a href="https://discord.gg/yAhhhz42" target="_blank" class="discord-btn">Entrar no Discord</a>
+    </div>
+
+    <footer class="footer">
+      <p>Guia do Campeão © 2025</p>
+    </footer>
+  </div>
+
+  <script>
+    function copiarChave() {
+      const input = document.getElementById("chavePixInput");
+      input.select();
+      input.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("Chave Pix copiada com sucesso!");
+    }
+  </script>
+</body>
+</html>

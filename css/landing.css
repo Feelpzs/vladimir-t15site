@@ -222,7 +222,7 @@ a {
 }
 
 .preco {
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .preco-original {
@@ -440,4 +440,95 @@ footer {
   .sub-text {
     font-size: 1rem;
   }
+}
+
+.container-comprar {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-buy {
+  background-color: #e94560;
+  color: white;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #e94560;
+  transition: 0.3s ease;
+}
+
+.btn-buy:hover {
+  background-color: #c7344d;
+}
+
+/* MODAL */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #1c1c1c;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 0 20px #e94560;
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal-content h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.botoes-escolha {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn-modal {
+  background: #e94560;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-modal.pix {
+  background: #34c759;
+}
+
+.btn-modal:hover {
+  opacity: 0.9;
+}
+
+.fechar {
+  background: none;
+  color: #aaa;
+  font-size: 14px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.hidden {
+  display: none;
 }

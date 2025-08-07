@@ -129,9 +129,22 @@
 
   <p>Você terá acesso imediato ao guia completo.</p>
 
-<form id="paymentForm">
-  <button id="btnComprar" type="submit" class="btn-buy pulse">Comprar Agora</button>
-</form>
+<!-- Botão principal -->
+<div class="container-comprar">
+  <button id="btnComprar" class="btn-buy pulse">Comprar Agora</button>
+</div>
+
+<!-- Modal com seleção de pagamento -->
+<div id="modalPagamento" class="modal hidden">
+  <div class="modal-content">
+    <h2>Como deseja pagar?</h2>
+    <div class="botoes-escolha">
+      <button id="btnCartao" class="btn-modal">💳 Cartão de Crédito</button>
+      <button id="btnPix" class="btn-modal pix">📲 Pix</button>
+    </div>
+    <button id="fecharModal" class="fechar">Cancelar</button>
+  </div>
+</div>
 
 
 

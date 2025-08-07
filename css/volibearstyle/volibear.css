@@ -1,0 +1,347 @@
+
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: url('../../assets/imgpainel/volibearraio.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #e0f8ff;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+
+/* CABEÇALHO */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 10, 30, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 10000;
+    box-shadow: 0 0 15px #00ccff;
+}
+
+h1.frost-text {
+    font-size: 4rem;
+    text-shadow: 4px 4px 10px #0099ff, 0 0 25px #00ccff;
+    animation: frost-crackle 2s infinite alternate;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #f0f8ff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #e0f8ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #00ffff;
+}
+
+.frost-text {
+    font-family: 'Orbitron', sans-serif;
+    color: #00ccff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow:
+        -2px -2px 0 #001122,
+        2px -2px 0 #001122,
+        -2px 2px 0 #001122,
+        2px 2px 0 #001122,
+        0 0 10px #00ccff,
+        0 0 20px #00ccff;
+}
+
+@keyframes frost-crackle {
+    0% { text-shadow: 2px 2px 5px #004477, 0 0 10px #00aaff; }
+    100% { text-shadow: 4px 4px 15px #002244, 0 0 20px #00ccff; }
+}
+
+/* HABILIDADES E DESTAQUES */
+.habilidade {
+    color: #a0eaff;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px #005577;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 20px 50px 20px;
+    background: rgba(0, 0, 30, 0.7);
+    position: relative;
+    z-index: 9998;
+}
+
+.como-jogar {
+    max-width: 900px;
+    background: rgba(0, 20, 40, 0.85);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #001122;
+    color: #d0f8ff;
+    text-align: justify;
+}
+
+/* SEÇÕES E CARDS */
+section {
+    padding: 100px 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 10, 30, 0.85);
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 360px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 200, 255, 0.5);
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid currentColor;
+    display: inline-block;
+}
+
+.card p {
+    color: #c0f0ff;
+    font-size: 0.95rem;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.card p strong {
+    color: #a0eaff;
+}
+
+/* RUNAS - CORES ESPECÍFICAS (exemplo colorido) */
+.runa.aery { color: #88ddff; }
+.runa.grasp { color: #66ffcc; }
+.runa.conquistador { color: #ffff66; }
+.runa.sustentacao { color: #66ffcc; }
+.runa.escala { color: #66ccff; }
+.runa.impeto { color: #aabbff; }
+.runa.inspiracao { color: #66ccff; }
+
+/* IMAGENS COM ZOOM + MODAL */
+.runa-img {
+    width: 120px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 200, 255, 0.3);
+}
+
+.runa-img:hover {
+    transform: scale(1.8) translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+    position: relative;
+    z-index: 10001;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10002;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    padding-top: 60px;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.modal-conteudo {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid #00ccff;
+    box-shadow: 0 0 25px #005577;
+    border-radius: 5px;
+    animation: appear-ice 0.3s ease;
+}
+
+@keyframes appear-ice {
+    from { transform: scale(0.7); opacity: 0; }
+    to   { transform: scale(1); opacity: 1; }
+}
+
+/* FECHAR */
+.fechar {
+    position: absolute;
+    top: 20px; right: 35px;
+    color: #e0f8ff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.fechar:hover { color: #00ffff; }
+
+/* FADE AO ROLAR */
+.fade {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    header { flex-direction: column; padding: 10px 20px; }
+    nav ul { flex-direction: column; margin-top: 10px; }
+    .logo { font-size: 1.8rem; }
+    .hero { padding: 150px 10px 50px 10px; }
+    .como-jogar { padding: 15px; font-size: 0.95rem; }
+    section { padding: 80px 20px; }
+    .grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .runa-img { width: 100px; }
+    .modal-conteudo { max-width: 95%; max-height: 80%; }
+}
+
+@media (max-width: 480px) {
+    .logo { font-size: 1.5rem; }
+    .hero { padding-top: 180px; }
+    .card p { font-size: 0.9rem; }
+}
+
+/* BOTÃO MOBILE */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    color: #00ccff;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px; right: 15px;
+    z-index: 2000;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    nav { display: none; position: fixed; top: 60px; right: 0;
+          width: 220px; background: rgba(0,0,30,0.95);
+          border-left: 2px solid #00ccff; z-index: 1500;
+          transition: all 0.3s ease-in-out; }
+    nav.show { display: block; }
+}
+
+@keyframes slideMenu {
+    from { opacity: 0; transform: translateX(100%); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+/* BOTÕES DE SAIR */
+.btn-sair-mobile {
+  background-color: #004466;
+  color: #e0f8ff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  border: 1.5px solid #00ccff;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  box-shadow: 0 0 6px #00cccc;
+  transition: 0.3s ease;
+  width: 100%;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.btn-sair-mobile:hover {
+  background-color: #0099cc;
+  box-shadow: 0 0 12px #00ccff;
+}
+
+@media (min-width: 769px) {
+  .btn-sair-mobile { display: none; }
+}
+
+.btn-sair-desktop {
+  position: fixed;
+  top: 40px; right: 24px;
+  background: transparent;
+  color: #00ccff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  border: none;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+.btn-sair-desktop:hover {
+  color: #00ffff;
+  text-shadow: 0 0 6px #00ccff;
+  transform: scale(1.05);
+}
+
+/* canvas no topo, sem bloquear cliques */
+#raio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
