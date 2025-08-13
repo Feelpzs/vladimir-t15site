@@ -229,7 +229,7 @@ body{
 .container-comprar{ margin-top: 16px; }
 
 /* Garantia + Timer */
-.garantia{ margin: 16px auto 8px; color: #ff9c9c; font-weight: 700; }
+.garantia{ margin: 16px auto 8px; color: #ec0202; font-weight: 700; }
 .contador{
   display: inline-flex; gap:10px; align-items:center;
   background: var(--glass-2);

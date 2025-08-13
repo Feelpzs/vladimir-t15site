@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia Jinx T15</title>
+
+  <!-- Estilos (mantém lobby.css e muda o style principal para o tema da Jinx) -->
+  <link rel="stylesheet" href="css/jinxstyle/jinx_lobby.css">
+  <link rel="stylesheet" href="css/jinxstyle/jinx.css">
+
+  <!-- Fonte usada no projeto original (mantida) -->
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Creepster&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Firebase SDK v8 compatível com script -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+  <!-- Inicializa Firebase e protege tela -->
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyCNUujTBklsv1hYn7N810o1iUOapd57z-E",
+      authDomain: "guiacompleto-e62c2.firebaseapp.com",
+      projectId: "guiacompleto-e62c2",
+      storageBucket: "guiacompleto-e62c2.appspot.com",
+      messagingSenderId: "680893444040",
+      appId: "1:680893444040:web:e86d0ca09ddcefdf8d9afd"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+
+    window.onload = () => {
+      const logadoLocal = localStorage.getItem("logado") === "true";
+      auth.onAuthStateChanged((user) => {
+        const logadoFirebase = !!user;
+        if (!logadoLocal && !logadoFirebase) {
+          alert("\u26D4\uFE0F Acesso negado! Faça login primeiro.");
+          window.location.href = "login.html";
+        }
+      });
+    };
+  </script>
+
+  <!-- Canvas (mantido para efeitos; o script da Jinx pode reutilizar este id) -->
+  <canvas id="sangue"></canvas>
+
+  <header>
+    <div class="logo blood-text">JINX T15</div>
+    <button id="btnSairDesktop" class="btn-sair-desktop">Sair</button>
+
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+    <nav id="menu">
+      <ul>
+        <li><a href="#hero" class="blood-text">Como Jogar</a></li>
+        <li><a href="#runas" class="blood-text">Runas</a></li>
+        <li><a href="#builds" class="blood-text">Builds</a></li>
+        <li><a href="#itens" class="blood-text">Itens</a></li>
+        <li><a href="#botas" class="blood-text">Botas</a></li>
+        <li><a href="#spells" class="blood-text">Spells</a></li>
+        <li><a href="#combos" class="blood-text">Combos</a></li>
+        <li><a href="#lobby" class="blood-text">Matchups</a></li>
+        <button id="btnSairMobile" class="btn-sair-mobile">Sair</button>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO / COMO JOGAR -->
+ <section id="hero" class="hero fade">
+  <div class="hero-card">
+    <h1 class="titulo-sangrento">COMO JOGAR DE JINX</h1>
+    <div class="hero-ribbon">CONHEÇA O KIT DA CAMPEÃ</div>
+      
+      <p>
+    <strong>PASSIVA – ANIME-SE! (Get Excited!)</strong><br>
+    <strong>Descrição:</strong><br>
+    Sempre que a Jinx participa de um abate (campeão), ajuda a derrubar um monstro épico, torre ou inibidor <em>nos 3s após causar dano</em>, ela entra em “Animação”: ganha <span class="habilidade">175% de Velocidade de Movimento (decai por 6s)</span>, pode <span class="habilidade">ultrapassar o limite de Velocidade de Ataque</span> e recebe 1 acúmulo de <em>Anime-se!</em> por 6s (máx. 5; só abates em campeões geram acúmulos além do primeiro). Cada acúmulo concede <span class="habilidade">+25% de Velocidade de Ataque total (até 125%)</span>. :contentReference[oaicite:0]{index=0}
+    <br><br>
+
+    <strong>Q – TROCANDO! (Switcheroo!)</strong><br>
+    <strong>Função:</strong> Alternar estilo de AA: DPS curto (minigun) ou alcance/AoE (lança-mísseis).<br>
+    <strong>Detalhes:</strong><br>
+    <span class="habilidade">Alterna</span> entre <em>Pow-Pow</em> (metralhadora) e <em>Fishbones</em> (lança-mísseis).<br>
+    • <span class="habilidade">Custo:</span> 20 de Mana <em>por ataque</em> com o Fishbones. • <span class="habilidade">Recarga estática da troca:</span> 0,9s. :contentReference[oaicite:1]{index=1}<br>
+    • <span class="habilidade">Pow-Pow:</span> cada ataque concede 1 acúmulo de <em>Rev’d Up</em> por 2,5s (até 3; renova ao atacar). 1º acúmulo é mais forte; os seguintes têm 50% da força. <span class="habilidade">Vel. de Ataque/stack:</span> 15/27,5/40/52,5/65% ⇒ máx. 30/55/80/105/130%. :contentReference[oaicite:2]{index=2}<br>
+    • <span class="habilidade">Fishbones:</span> ataques causam <span class="habilidade">110% do AD</span> ao alvo e em área, aplicam críticos, ganham <span class="habilidade">+alcance</span> e consomem Mana a cada disparo; enquanto ativo, a Jinx perde <span class="habilidade">10% do bônus de Vel. de Ataque</span>. Alcance bônus: <span class="habilidade">+100/125/150/175/200</span>. :contentReference[oaicite:3]{index=3}
+    <br><strong>Dica:</strong> use Pow-Pow para derreter objetivos e quando estiver segura; troque para Fishbones para bater com segurança e acertar múltiplos alvos sob peel. O 1º ataque após trocar para rockets sai rápido, então dá pra “stutter-step” e kitear. :contentReference[oaicite:4]{index=4}
+    <br><br>
+
+    <strong>W – ZAP!</strong><br>
+    <strong>Função:</strong> Poke/engage de longo alcance + slow + <em>reveal</em> no alvo.<br>
+    <strong>Descrição:</strong> depois de um curto preparo, a Jinx dispara um raio que acerta o primeiro inimigo, causando dano físico e <span class="habilidade">aplicando lentidão por 2s</span>; o alvo fica <span class="habilidade">revelado</span> por um breve período. <br>
+    <span class="habilidade">Custo:</span> 40/45/50/55/60 de Mana • <span class="habilidade">Tempo de Recarga:</span> 10/9/8/7/6s • <span class="habilidade">Alcance:</span> ~1450 • <span class="habilidade">Dano:</span> 10/60/110/160/210 (+140% do AD bônus) • <span class="habilidade">Slow:</span> 40/50/60/70/80%. :contentReference[oaicite:5]{index=5}
+    <br><strong>Dica:</strong> combine com controle do suporte (ex.: raiz/knock-up) para garantir acerto; ótimo para iniciar lutas no rio/objetivos e punir rotações.
+    <br><br>
+
+    <strong>E – MORDIDINHA FLAMEJANTE! (Flame Chompers!)</strong><br>
+    <strong>Função:</strong> Zona/peel e setup de pickoff.<br>
+    <strong>Descrição:</strong> arremessa 3 armadilhas que armam rapidamente e explodem ao contato com campeões, causando dano em área e <span class="habilidade">enraizando por 1,5s</span> o primeiro campeão que ativar cada armadilha (um campeão só pode ser afetado por 1 por conjuração). Explodem automaticamente após 5s. <br>
+    <span class="habilidade">Custo:</span> 90 de Mana • <span class="habilidade">Tempo de Recarga:</span> 24/20,5/17/13,5/10s • <span class="habilidade">Alcance:</span> 925 • <span class="habilidade">Arme time:</span> ~0,5s. :contentReference[oaicite:6]{index=6}
+    <br><strong>Dica:</strong> pré-posicione no choke antes de drag/barão, feche rotas de engage e proteja a si mesma contra mergulhos (divers/assassinos).
+    <br><br>
+
+    <strong>R – SUPER MEGA MÍSSIL DA MORTE! (Super Mega Death Rocket!)</strong><br>
+    <strong>Função:</strong> Execução global + dano em área escalando com distância e vida perdida do alvo.<br>
+    <strong>Descrição:</strong> dispara um míssil global que <em>revela</em> brevemente a área durante o voo e explode ao colidir com um campeão. O dano base da explosão escala de <span class="habilidade">10% → 100%</span> conforme a distância percorrida (máximo após ~1500 unidades) e tem um componente de <span class="habilidade">% da vida perdida</span> do alvo. Inimigos ao redor tomam <span class="habilidade">80% do dano</span>. <br>
+    <span class="habilidade">Custo:</span> 100 de Mana • <span class="habilidade">Tempo de Recarga:</span> 70/55/40s. :contentReference[oaicite:7]{index=7}<br>
+    <span class="habilidade">Dano máx. alvo primário:</span> 325/475/625 (+165% do AD bônus) + 25/30/35% da vida perdida do alvo • <span class="habilidade">Dano mín.:</span> 32,5/47,5/62,5 (+16,5% do AD bônus) + 25/30/35% da vida perdida • <span class="habilidade">Cap em monstros épicos:</span> +vida perdida limitado a 1200 (em alvos secundários também capado). :contentReference[oaicite:8]{index=8}
+    <br><strong>Dica:</strong> use para finalizar alvos a longa distância, forçar objetivos (pressão global) e começar lutas quando o alvo estiver com pouca vida.
+    <br><br>
+
+    ✅ <strong>PONTOS FORTES E FRACOS</strong><br>
+    ✔ <strong>Pontos Fortes:</strong><br>
+    • Escalonamento monstruoso (DPS alto com Pow-Pow e alcance com Fishbones).<br>
+    • Reset da passiva decide lutas e corridas por objetivos/torres.<br>
+    • Excelente dano a estruturas/objetivos quando segura atrás da linha de frente.<br>
+    • Controle de zona com E e poke seguro com W.<br><br>
+
+    ❌ <strong>Pontos Fracos:</strong><br>
+    • Imóvel (sem dash); depende de peel e posicionamento perfeito.<br>
+    • Janela de cast do W é punível e E tem arm time; vulnerável a <em>gap-closers</em> e hard CC.<br>
+    • Consumo de Mana dos rockets no early pode punir trades longos.<br><br>
+
+    <strong>Impacto:</strong> A Jinx domina lutas prolongadas: se conseguir o primeiro reset do <em>Anime-se!</em>, “neva-bola” rapidamente com MS/AS, troca para rockets para bater em múltiplos alvos e fecha a luta/objetivo com DPS constante.
+</p>
+
+      <h2 class="blood-text">Como se Posicionar em Teamfights</h2>
+      <p>
+        Fique atrás da sua linha de frente e jogue pelo <em>alcance do foguete</em>. Priorize <strong>alvos mais próximos</strong> e seguros.<br>
+        Use <span class="habilidade">E</span> para travar engages (chokepoints), e <span class="habilidade">W</span> para punir alvos sem flash.<br>
+        Assim que pegar <strong>reset da passiva</strong>, avance com cuidado para capitalizar o buff e fechar a luta.
+      </p>
+
+      <h2 class="blood-text">Como Jogar a Lane Phase</h2>
+      <p>
+        Abuse do <span class="habilidade">alcance do foguete (Q)</span> para ganhar prioridade e pressão na wave.<br>
+        Use <span class="habilidade">W</span> para trades curtos (poke) e para punir ADCs parados farmando.<br>
+        Guarde <span class="habilidade">E</span> para cobrir gank inimigo (jogue nas costas) ou para setar all-in do seu suporte.
+      </p>
+    </div>
+  </section>
+
+  <!-- RUNAS -->
+  <section id="runas" class="fade">
+    <h2 class="titulo-sangrento">Runas</h2>
+
+    <div class="grid">
+      <div class="card">
+        <img src="../assets/img/runas/lethal_tempo.png" alt="Runa Ritmo Fatal" class="runa-img">
+        <h3 class="runa">Ritmo Fatal</h3>
+        <p>Principal escolha para Jinx. Escala o DPS e sinergiza com minigun. Ideal para teamfights longas.</p>
+      </div>
+
+      <div class="card">
+        <img src="../assets/img/runas/press_the_attack.png" alt="Runa Pressione o Ataque" class="runa-img">
+        <h3 class="runa">Pressione o Ataque</h3>
+        <p>Boa em lanes agressivas com suporte de engage — ativa facilmente e amplifica dano do time.</p>
+      </div>
+
+      <div class="card">
+        <img src="../assets/img/runas/fleet_footwork.png" alt="Runa Pés Ligeiros" class="runa-img">
+        <h3 class="runa">Pés Ligeiros</h3>
+        <p>Para matchups de <em>poke pesado</em>. Sustain na lane e mobilidade adicional para reposicionamento.</p>
+      </div>
+
+      <div class="card">
+        <img src="../assets/img/runas/lethal_inspiracao.png" alt="Ritmo Fatal + Inspiração" class="runa-img">
+        <h3 class="runa">Ritmo Fatal + Inspiração</h3>
+        <p>Secundária com <em>Biscoitos</em> e <em>Perspicácia Cósmica</em> para lane estável e CDs menores nos feitiços.</p>
+      </div>
+
+      <div class="card">
+        <img src="../assets/img/runas/lethal_dominacao.png" alt="Ritmo Fatal + Dominação" class="runa-img">
+        <h3 class="runa">Ritmo Fatal + Dominação</h3>
+        <p><em>Gosto de Sangue</em> + <em>Caça Voraz</em> (ou equivalente) para sustain ofensivo quando quiser trocar muito.</p>
+      </div>
+
+      <div class="card">
+        <img src="../assets/img/runas/pta_precisao_inspiracao.png" alt="PTA + Inspiração" class="runa-img">
+        <h3 class="runa">PTA + Inspiração</h3>
+        <p>Para snowball cedo com suporte agressivo; botas grátis + redução de recarga de feitiços ajudam no mid game.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUILDS -->
+  <section id="builds" class="fade">
+    <h2 class="blood-text">Builds</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="../assets/img/builds/kraken.png" alt="Build DPS Puro" class="runa-img">
+        <h3 class="blood-text">DPS Puro</h3>
+        <p>Arco-escudo/Força do Vendaval → Canhão Fumegante → Lembranças do Lorde Dominik.</p>
+      </div>
+      <div class="card">
+        <img src="../assets/img/builds/canhão.png" alt="Build Alcance/Controle" class="runa-img">
+        <h3 class="blood-text">Alcance/Controle</h3>
+        <p>Vendaval → Canhão Fumegante → Dançarina Fantasma (kite e segurança).</p>
+      </div>
+      <div class="card">
+        <img src="../assets/img/builds/mata_craken.png" alt="Anti-Tanque" class="runa-img">
+        <h3 class="blood-text">Anti-Tanque</h3>
+        <p>Quebrapassos/Arco-escudo → Lembranças do Lorde Dominik → Serrilhada/Coletor (conforme comp).</p>
+      </div>
+      <div class="card">
+        <img src="../assets/img/builds/situacional_arp.png" alt="Burst em frágeis" class="runa-img">
+        <h3 class="blood-text">Burst em Frágeis</h3>
+        <p>Vendaval → Gume do Infinito → Canhão Fumegante.</p>
+      </div>
+      <div class="card">
+        <img src="../assets/img/builds/defensivo.png" alt="Linha Defensiva" class="runa-img">
+        <h3 class="blood-text">Linha Defensiva</h3>
+        <p>Anjo Guardião/Zhonyas (situação extrema) → Cimitarra Mercurial vs. hard CC.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ITENS SITUACIONAIS -->
+  <section id="itens" class="fade">
+    <h2 class="blood-text">Itens Situacionais</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="../assets/img/itens situacionais/adc_situacionais.png" alt="Itens Situacionais" class="runa-img">
+        <p>
+          <strong class="habilidade">Sedenta por Sangue:</strong> sustain em fights longas;<br>
+          <strong class="habilidade">GA (Anjo Guardião):</strong> segurança no mid/late;<br>
+          <strong class="habilidade">Lembretes Mortais:</strong> corta cura;<br>
+          <strong class="habilidade">Cimitarra Mercurial:</strong> remove supressões/CC;<br>
+          <strong class="habilidade">Coletor:</strong> fechar abates quando inimigos estão squishy.<br>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTAS -->
+  <section id="botas" class="fade">
+    <h2 class="blood-text">Botas</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="../assets/img/botas/adc_botas.png" alt="Botas" class="runa-img">
+        <p>
+          <strong class="habilidade">Grevas do Berserker:</strong> padrão de DPS;<br>
+          <strong class="habilidade">Mercúrio:</strong> muito CC/duplo AP;<br>
+          <strong class="habilidade">Açoite de Placas:</strong> vs. burst AD e engage pesado.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPELLS -->
+  <section id="spells" class="fade">
+    <h2 class="blood-text">Spells</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="../assets/img/spells/adc_spells.png" alt="Spells" class="runa-img"><br><br>
+        <p>
+          <strong class="habilidade">Flash + Curar:</strong> padrão duo bot;<br>
+          <strong class="habilidade">Flash + Barreira:</strong> contra burst de assassinos;<br>
+          <strong class="habilidade">Flash + Exaustão:</strong> quando seu suporte vai de Curar.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMBOS / DICAS MECÂNICAS -->
+  <section id="combos" class="fade">
+    <h2 class="blood-text">Combos</h2>
+    <div class="grid">
+      <div class="card">
+        <iframe
+          class="runa-img"
+          style="width:100%; max-height:300px; border-radius:8px;"
+          src="https://www.youtube.com/embed/bwU8o9f8k3k"
+          title="Combos Jinx"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+        <p>
+          <strong>COMBOS/SEQUÊNCIAS</strong><br>
+          ✔ <span class="habilidade">W → AA → Q (minigun)</span> para garantir slow e DPS em all-in;<br>
+          ✔ <span class="habilidade">E defensivo</span> no choke quando inimigo engajar (ou ofensivo em flash/rota de fuga);<br>
+          ✔ <span class="habilidade">R</span> para executar de longe (maior dano em alvos com pouca vida).<br>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOBBY / MATCHUPS -->
+  <section class="lobby" id="lobby">
+    <div class="meu-campeao">
+      <img src="../assets/imglobby/img champs/jinx.webp" alt="Jinx" class="vlad-img">
+      <p class="summoner">JINX T15</p>
+      <div class="info-basica">
+        <p class="blood-text destaque-texto">Veja as melhores runas e builds contra o campeão selecionado.</p>
+      </div>
+    </div>
+
+    <div class="carrossel-champs">
+      <h2 class="blood-text">Selecione o Campeão Inimigo</h2>
+
+      <input type="text" id="search-champ" placeholder="Pesquisar campeão..." class="search-bar">
+
+      <div class="carrossel" id="carrossel">
+        <!-- Mantido: lista completa de campeões inimigos -->
+        <img src="../assets/imglobby/img champs/aatrox.PNG" class="champ" data-campeao="aatrox" alt="Aatrox">
+        <img src="../assets/imglobby/img champs/ahri.PNG" class="champ" data-campeao="ahri" alt="Ahri">
+        <img src="../assets/imglobby/img champs/akali.PNG" class="champ" data-campeao="akali" alt="Akali">
+        <img src="../assets/imglobby/img champs/akshan.PNG" class="champ" data-campeao="akshan" alt="Akshan">
+        <img src="../assets/imglobby/img champs/anivia.PNG" class="champ" data-campeao="anivia" alt="Anivia">
+        <img src="../assets/imglobby/img champs/annie.PNG" class="champ" data-campeao="annie" alt="Annie">
+        <img src="../assets/imglobby/img champs/aurelion sol.PNG" class="champ" data-campeao="aurelion_sol" alt="Aurelion Sol">
+        <img src="../assets/imglobby/img champs/aurora.PNG" class="champ" data-campeao="aurora" alt="Aurora">
+        <img src="../assets/imglobby/img champs/azir.PNG" class="champ" data-campeao="azir" alt="Azir">
+        <img src="../assets/imglobby/img champs/caitlyn.PNG" class="champ" data-campeao="caitlyn" alt="Caitlyn">
+        <img src="../assets/imglobby/img champs/camille.PNG" class="champ" data-campeao="camille" alt="Camille">
+        <img src="../assets/imglobby/img champs/cassiopeia.PNG" class="champ" data-campeao="cassiopeia" alt="Cassiopeia">
+        <img src="../assets/imglobby/img champs/chogath.PNG" class="champ" data-campeao="chogath" alt="Cho'Gath">
+        <img src="../assets/imglobby/img champs/corki.PNG" class="champ" data-campeao="corki" alt="Corki">
+        <img src="../assets/imglobby/img champs/darius.PNG" class="champ" data-campeao="darius" alt="Darius">
+        <img src="../assets/imglobby/img champs/dr_mundo.PNG" class="champ" data-campeao="dr_mundo" alt="Dr. Mundo">
+        <img src="../assets/imglobby/img champs/draven.PNG" class="champ" data-campeao="draven" alt="Draven">
+        <img src="../assets/imglobby/img champs/fiora.PNG" class="champ" data-campeao="fiora" alt="Fiora">
+        <img src="../assets/imglobby/img champs/fizz.PNG" class="champ" data-campeao="fizz" alt="Fizz">
+        <img src="../assets/imglobby/img champs/galio.PNG" class="champ" data-campeao="galio" alt="Galio">
+        <img src="../assets/imglobby/img champs/gangplank.PNG" class="champ" data-campeao="gangplank" alt="Gangplank">
+        <img src="../assets/imglobby/img champs/garen.PNG" class="champ" data-campeao="garen" alt="Garen">
+        <img src="../assets/imglobby/img champs/gnar.PNG" class="champ" data-campeao="gnar" alt="Gnar">
+        <img src="../assets/imglobby/img champs/gwen.PNG" class="champ" data-campeao="gwen" alt="Gwen">
+        <img src="../assets/imglobby/img champs/heimerdinger.PNG" class="champ" data-campeao="heimerdinger" alt="Heimerdinger">
+        <img src="../assets/imglobby/img champs/hwei.PNG" class="champ" data-campeao="hwei" alt="Hwei">
+        <img src="../assets/imglobby/img champs/illaoi.PNG" class="champ" data-campeao="illaoi" alt="Illaoi">
+        <img src="../assets/imglobby/img champs/irelia.PNG" class="champ" data-campeao="irelia" alt="Irelia">
+        <img src="../assets/imglobby/img champs/jayce.PNG" class="champ" data-campeao="jayce" alt="Jayce">
+        <img src="../assets/imglobby/img champs/jhin.PNG" class="champ" data-campeao="jhin" alt="Jhin">
+        <img src="../assets/imglobby/img champs/ksant.PNG" class="champ" data-campeao="ksante" alt="K'Sante">
+        <img src="../assets/imglobby/img champs/kaisa.PNG" class="champ" data-campeao="kaisa" alt="Kai’Sa">
+        <img src="../assets/imglobby/img champs/jax.png" class="champ" data-campeao="jax" alt="Jax">
+        <img src="../assets/imglobby/img champs/karthus.PNG" class="champ" data-campeao="karthus" alt="Karthus">
+        <img src="../assets/imglobby/img champs/kassadin.PNG" class="champ" data-campeao="kassadin" alt="Kassadin">
+        <img src="../assets/imglobby/img champs/katarina.PNG" class="champ" data-campeao="katarina" alt="Katarina">
+        <img src="../assets/imglobby/img champs/kayle.PNG" class="champ" data-campeao="kayle" alt="Kayle">
+        <img src="../assets/imglobby/img champs/kennen.PNG" class="champ" data-campeao="kennen" alt="Kennen">
+        <img src="../assets/imglobby/img champs/kled.PNG" class="champ" data-campeao="kled" alt="Kled">
+        <img src="../assets/imglobby/img champs/warwick.png" class="champ" data-campeao="warwick" alt="Warwick">
+        <img src="../assets/imglobby/img champs/leblanc.PNG" class="champ" data-campeao="leblanc" alt="LeBlanc">
+        <img src="../assets/imglobby/img champs/lissandra.PNG" class="champ" data-campeao="lissandra" alt="Lissandra">
+        <img src="../assets/imglobby/img champs/lucian.PNG" class="champ" data-campeao="lucian" alt="Lucian">
+        <img src="../assets/imglobby/img champs/lux.PNG" class="champ" data-campeao="lux" alt="Lux">
+        <img src="../assets/imglobby/img champs/malphite.PNG" class="champ" data-campeao="malphite" alt="Malphite">
+        <img src="../assets/imglobby/img champs/malzahar.PNG" class="champ" data-campeao="malzahar" alt="Malzahar">
+        <img src="../assets/imglobby/img champs/singed.png" class="champ" data-campeao="singed" alt="Singed">
+        <img src="../assets/imglobby/img champs/mel.PNG" class="champ" data-campeao="mel" alt="Mel">
+        <img src="../assets/imglobby/img champs/miss_fortune.PNG" class="champ" data-campeao="miss_fortune" alt="Miss Fortune">
+        <img src="../assets/imglobby/img champs/mordekaiser.PNG" class="champ" data-campeao="mordekaiser" alt="Mordekaiser">
+        <img src="../assets/imglobby/img champs/morgana.PNG" class="champ" data-campeao="morgana" alt="Morgana">
+        <img src="../assets/imglobby/img champs/nasus.PNG" class="champ" data-campeao="nasus" alt="Nasus">
+        <img src="../assets/imglobby/img champs/neeko.PNG" class="champ" data-campeao="neeko" alt="Neeko">
+        <img src="../assets/imglobby/img champs/shen.png" class="champ" data-campeao="shen" alt="Shen">
+        <img src="../assets/imglobby/img champs/orianna.PNG" class="champ" data-campeao="orianna" alt="Orianna">
+        <img src="../assets/imglobby/img champs/ornn.PNG" class="champ" data-campeao="ornn" alt="Ornn">
+        <img src="../assets/imglobby/img champs/pantheon.PNG" class="champ" data-campeao="pantheon" alt="Pantheon">
+        <img src="../assets/imglobby/img champs/qiyana.PNG" class="champ" data-campeao="qiyana" alt="Qiyana">
+        <img src="../assets/imglobby/img champs/quinn.PNG" class="champ" data-campeao="quinn" alt="Quinn">
+        <img src="../assets/imglobby/img champs/renekton.PNG" class="champ" data-campeao="renekton" alt="Renekton">
+        <img src="../assets/imglobby/img champs/riven.PNG" class="champ" data-campeao="riven" alt="Riven">
+        <img src="../assets/imglobby/img champs/rumble.PNG" class="champ" data-campeao="rumble" alt="Rumble">
+        <img src="../assets/imglobby/img champs/ryze.PNG" class="champ" data-campeao="ryze" alt="Ryze">
+        <img src="../assets/imglobby/img champs/samira.PNG" class="champ" data-campeao="samira" alt="Samira">
+        <img src="../assets/imglobby/img champs/sett.PNG" class="champ" data-campeao="sett" alt="Sett">
+        <img src="../assets/imglobby/img champs/sion.PNG" class="champ" data-campeao="sion" alt="Sion">
+        <img src="../assets/imglobby/img champs/sivir.PNG" class="champ" data-campeao="sivir" alt="Sivir">
+        <img src="../assets/imglobby/img champs/smolder.PNG" class="champ" data-campeao="smolder" alt="Smolder">
+        <img src="../assets/imglobby/img champs/swain.PNG" class="champ" data-campeao="swain" alt="Swain">
+        <img src="../assets/imglobby/img champs/sylas.PNG" class="champ" data-campeao="sylas" alt="Sylas">
+        <img src="../assets/imglobby/img champs/syndra.PNG" class="champ" data-campeao="syndra" alt="Syndra">
+        <img src="../assets/imglobby/img champs/taliyah.PNG" class="champ" data-campeao="taliyah" alt="Taliyah">
+        <img src="../assets/imglobby/img champs/talon.PNG" class="champ" data-campeao="talon" alt="Talon">
+        <img src="../assets/imglobby/img champs/teemo.PNG" class="champ" data-campeao="teemo" alt="Teemo">
+        <img src="../assets/imglobby/img champs/tristana.PNG" class="champ" data-campeao="tristana" alt="Tristana">
+        <img src="../assets/imglobby/img champs/tryndamere.PNG" class="champ" data-campeao="tryndamere" alt="Tryndamere">
+        <img src="../assets/imglobby/img champs/twisted_fate.PNG" class="champ" data-campeao="twisted_fate" alt="Twisted Fate">
+        <img src="../assets/imglobby/img champs/twitch.PNG" class="champ" data-campeao="twitch" alt="Twitch">
+        <img src="../assets/imglobby/img champs/urgot.PNG" class="champ" data-campeao="urgot" alt="Urgot">
+        <img src="../assets/imglobby/img champs/varus.PNG" class="champ" data-campeao="varus" alt="Varus">
+        <img src="../assets/imglobby/img champs/vayne.PNG" class="champ" data-campeao="vayne" alt="Vayne">
+        <img src="../assets/imglobby/img champs/veigar.PNG" class="champ" data-campeao="veigar" alt="Veigar">
+        <img src="../assets/imglobby/img champs/velkoz.PNG" class="champ" data-campeao="velkoz" alt="Vel’Koz">
+        <img src="../assets/imglobby/img champs/vex.PNG" class="champ" data-campeao="vex" alt="Vex">
+        <img src="../assets/imglobby/img champs/viktor.PNG" class="champ" data-campeao="viktor" alt="Viktor">
+        <img src="../assets/imglobby/img champs/xayah.PNG" class="champ" data-campeao="xayah" alt="Xayah">
+        <img src="../assets/imglobby/img champs/xerath.PNG" class="champ" data-campeao="xerath" alt="Xerath">
+        <img src="../assets/imglobby/img champs/yasuo.PNG" class="champ" data-campeao="yasuo" alt="Yasuo">
+        <img src="../assets/imglobby/img champs/yone.PNG" class="champ" data-campeao="yone" alt="Yone">
+        <img src="../assets/imglobby/img champs/yorick.PNG" class="champ" data-campeao="yorick" alt="Yorick">
+        <img src="../assets/imglobby/img champs/yunara.PNG" class="champ" data-campeao="yunara" alt="Yunara">
+        <img src="../assets/imglobby/img champs/zeri.PNG" class="champ" data-campeao="zeri" alt="Zeri">
+        <img src="../assets/imglobby/img champs/ziggs.PNG" class="champ" data-campeao="ziggs" alt="Ziggs">
+        <img src="../assets/imglobby/img champs/zilean.PNG" class="champ" data-campeao="zilean" alt="Zilean">
+        <img src="../assets/imglobby/img champs/zoe.PNG" class="champ" data-campeao="zoe" alt="Zoe">
+        <img src="../assets/imglobby/img champs/zyra.PNG" class="champ" data-campeao="zyra" alt="Zyra">
+        <img src="../assets/imglobby/img champs/gragas.png" class="champ" data-campeao="gragas" alt="Gragas">
+      </div>
+    </div>
+
+    <div class="painel-matchup" id="painel-matchup" style="display:none;">
+      <h2 class="blood-text">Matchup: Jinx vs <span id="nome-campeao"></span></h2>
+
+      <div class="card matchup-card">
+        <h3 class="titulo-sangrento">Matchup</h3>
+        <ul id="texto-matchup">
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="blood-text">Spells</h3>
+        <div id="spells-container" class="spells">
+          <img src="../assets/img/spells/default1.png" alt="Spell 1" class="spell-img">
+          <img src="../assets/img/spells/default2.png" alt="Spell 2" class="spell-img">
+        </div>
+      </div>
+
+      <div class="card">
+        <h3 class="blood-text">Build</h3>
+        <div id="build-container" class="build"></div>
+      </div>
+
+      <div class="card">
+        <h3 class="blood-text">Runas</h3>
+        <h4>Árvore Primária</h4>
+        <div id="runas-primaria" class="runas"></div>
+
+        <h4>Árvore Secundária</h4>
+        <div id="runas-secundaria" class="runas"></div>
+
+        <h4>Stats</h4>
+        <div id="runas-stats" class="runas"></div>
+      </div>
+
+      <div class="card">
+        <h3 class="blood-text">Cooldowns</h3>
+        <p id="cooldowns"></p>
+      </div>
+
+      <div class="card">
+        <h3 class="blood-text">Gameplay</h3>
+        <iframe id="video-matchup"
+          width="100%"
+          height="250"
+          style="border-radius:8px;"
+          src=""
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal de imagem (mantido) -->
+  <div id="modal" class="modal">
+    <span id="fechar" class="fechar">&times;</span>
+    <img class="modal-conteudo" id="img-ampliada" alt="Imagem ampliada">
+  </div>
+
+  <!-- Scripts (troquei para a pasta jinxscript; mantenha a mesma API do Vlad para reaproveitar) -->
+  <script src="../js/jinxscript/lobby_jinx.js"></script>
+  <script src="../js/jinxscript/jinx.js"></script>
+  <script src="../js/logout.js"></script>
+
+  <footer>
+    <p>© 2025 GuiaDoCampeão | Todos direitos reservados</p>
+  </footer>
+</body>
+</html>

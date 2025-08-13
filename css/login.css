@@ -84,3 +84,4 @@ input:focus {
   pointer-events: none; /* não atrapalha cliques */
   z-index: 1; /* fica no fundo */
 }
+

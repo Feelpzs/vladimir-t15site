@@ -110,7 +110,7 @@
       const gota = rastros[i];
       ctx.beginPath();
       ctx.fillStyle = `${gota.cor}${gota.alpha})`;
-      ctx.shadowColor = "#990000";
+      ctx.shadowColor = "#dbbb06ff";
       ctx.shadowBlur = 8;
       ctx.arc(gota.x, gota.y, gota.tamanho, 0, Math.PI * 2);
       ctx.fill();
