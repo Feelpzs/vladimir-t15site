@@ -7,14 +7,13 @@
     box-sizing: border-box;
 }
 
-/* CORPO */
 body {
-    font-family: 'Orbitron', sans-serif;
-    background: url('../../assets/imgpainel/volibearraio.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #e0f8ff;
-    overflow-x: hidden;
-    line-height: 1.6;
+  font-family: 'Orbitron', sans-serif;
+  background: url('../../assets/imgpainel/volibearraio.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff; /* branco vivo para texto */
+  overflow-x: hidden;
+  line-height: 1.6;
 }
 
 
@@ -32,12 +31,26 @@ header {
     box-shadow: 0 0 15px #00ccff;
 }
 
+/* TÍTULOS PRINCIPAIS */
 h1.frost-text {
-    font-size: 4rem;
-    text-shadow: 4px 4px 10px #0099ff, 0 0 25px #00ccff;
-    animation: frost-crackle 2s infinite alternate;
+  font-size: 4rem;
+  color: #66e0ff; /* azul raio vibrante */
+  text-shadow: 4px 4px 10px #33ccff, 0 0 25px #66e0ff;
+  animation: frost-crackle 2s infinite alternate;
 }
-
+.frost-text {
+  font-family: 'Orbitron', sans-serif;
+  color: #66e0ff; /* azul raio vibrante */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow:
+    -2px -2px 0 #001122,
+    2px -2px 0 #001122,
+    -2px 2px 0 #001122,
+    2px 2px 0 #001122,
+    0 0 12px #66e0ff,
+    0 0 24px #00ccff;
+}
 .logo {
     font-size: 2rem;
     color: #f0f8ff;
@@ -65,7 +78,7 @@ nav ul li a:hover {
 
 .frost-text {
     font-family: 'Orbitron', sans-serif;
-    color: #00ccff;
+    color: #01b5e2;
     text-transform: uppercase;
     letter-spacing: 1px;
     text-shadow:
@@ -78,13 +91,17 @@ nav ul li a:hover {
 }
 
 @keyframes frost-crackle {
-    0% { text-shadow: 2px 2px 5px #004477, 0 0 10px #00aaff; }
-    100% { text-shadow: 4px 4px 15px #002244, 0 0 20px #00ccff; }
+  0% {
+    text-shadow: 2px 2px 5px #004477, 0 0 10px #33ccff;
+  }
+  100% {
+    text-shadow: 4px 4px 15px #002244, 0 0 25px #66e0ff;
+  }
 }
 
 /* HABILIDADES E DESTAQUES */
 .habilidade {
-    color: #a0eaff;
+    color: #02fff2;
     font-weight: bold;
     text-shadow: 1px 1px 4px #005577;
 }

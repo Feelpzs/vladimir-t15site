@@ -1,534 +1,366 @@
-/* ======== GERAL ======== */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0b0b0b;
-  color: #fff;
+/* =========================
+   LANDING – MÉTODO 4X (final)
+   Paleta: #0a0a0a (bg) | #ffd700 (dourado) | #14e956 (preço)
+========================= */
+
+/* ===== Reset ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+img { max-width: 100%; display: block; }
+a { text-decoration: none; }
+
+/* ===== Variáveis ===== */
+:root{
+  --bg: #0a0a0a;
+  --text: #e9e9e9;
+  --muted: #b9b9b9;
+
+  --gold: #ffd700;
+  --green: #14e956;
+
+  --glass: rgba(255,255,255,0.06);
+  --glass-2: rgba(255, 215, 0, 0.08);
+
+  --radius: 16px;
+  --shadow-gold: 0 0 24px rgba(255,215,0,0.4), 0 0 60px rgba(255,215,0,0.25);
+
+  /* Velocidade do carrossel do herói (menor = mais rápido) */
+  --rail-speed: 38s;
+}
+
+/* ===== Base ===== */
+body{
+  background: radial-gradient(1200px 900px at 70% -10%, rgba(255,215,0,0.06), transparent 60%),
+              radial-gradient(1000px 600px at 10% 120%, rgba(255,215,0,0.05), transparent 60%),
+              var(--bg);
+  color: var(--text);
+  font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.45;
+  overflow-x: hidden;
+}
+
+/* Canvas sangue (fundo) */
+#sangue{
+  position: fixed; inset: 0;
+  width: 100vw; height: 100vh;
+  z-index: 0; pointer-events: none;
+  opacity: 0.35; mix-blend-mode: screen;
+}
+
+/* ===== Hero ===== */
+.hero{
+  position: relative;
+  padding: clamp(80px, 10vw, 140px) 24px 48px;
+  min-height: 85svh;
+  display: grid; place-items: center; text-align: center;
+  isolation: isolate; z-index: 1;
+}
+.hero-overlay{
+  position: absolute; inset: 0; z-index: -1;
+  background:
+    radial-gradient(1200px 600px at 50% 0%, rgba(255,215,0,0.14), transparent 70%),
+    linear-gradient(180deg, rgba(0,0,0,0.65), rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.75));
+  filter: saturate(1.05);
+}
+
+/* Hero 4X – trilho */
+.hero-4x{ position: relative; overflow: hidden; }
+.hero-4x .hero-content{ position: relative; z-index: 2; }
+
+/* container fixo */
+.hero-rail{
+  position:absolute; inset:0; z-index:1; opacity:.18; overflow: hidden;
+}
+/* trilha que se move; deve conter 2x o conjunto de imagens (o JS duplica) */
+.rail-track{
+  display:flex; gap:0;
+  height:100%; width:max-content;
+  animation: railSlide var(--rail-speed) linear infinite;
+  will-change: transform;
+}
+.rail-track img{
+  flex: 0 0 auto;
+  height:100%; width:auto;
+  object-fit: cover;
+  filter: saturate(1.1) contrast(1.05);
+}
+@keyframes railSlide{
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Elo escalada */
+.elo-escalada{
+  display: inline-flex; align-items: center; gap: 16px;
+  padding: 10px 16px; border-radius: 999px;
+  background: var(--glass); border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: var(--shadow-gold); margin-bottom: 14px; backdrop-filter: blur(6px);
+}
+.elo{ height: 52px; filter: drop-shadow(0 0 10px rgba(255,215,0,0.25)); }
+.seta{ color: var(--gold); font-weight: 900; letter-spacing: 1px; }
+
+/* Títulos premium (sem Creepster) */
+.blood-text, .hero-title{
+  font-family: 'Cinzel', serif;
+  font-size: clamp(32px, 5vw, 56px);
+  letter-spacing: .5px; color: var(--gold);
+  text-shadow: 0 0 22px rgba(255,215,0,.35);
+}
+.sub-text, .hero-sub{
+  max-width: 980px; margin: 10px auto 18px;
+  font-size: clamp(16px, 2.2vw, 20px); color:#eee;
+}
+.highlight{ color: var(--gold); text-shadow: 0 0 14px rgba(255,215,0,0.6); }
+
+/* Chips dos campeões */
+.champions-strip{
+  display:flex; gap:10px; flex-wrap:wrap; justify-content:center;
+  margin-top: 12px;
+}
+.chip{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding: 8px 14px; border-radius: 999px;
+  border:1px solid rgba(255,215,0,.35);
+  color:#ffd700; background: rgba(0,0,0,.35);
+  text-transform:uppercase; font-weight:800; letter-spacing:.5px;
+  box-shadow: 0 0 16px rgba(255,215,0,.12);
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.chip:hover{ transform: translateY(-2px); box-shadow: 0 0 26px rgba(255,215,0,.28); background: rgba(0,0,0,.5); }
+.chip--hover, .chip--active{ transform: translateY(-2px) scale(1.04); box-shadow: 0 0 26px rgba(255,215,0,.35); }
+
+/* Botões */
+.buttons{ display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:10px; }
+.btn-buy, .btn-login, .btn-modal, .fechar{
+  position: relative; border:0; cursor:pointer; font-weight:800; letter-spacing:.4px;
+  padding:14px 22px; border-radius:14px;
+  transition: transform .12s ease, box-shadow .12s ease, background .12s;
+}
+.btn-buy{ background: linear-gradient(180deg, var(--gold), #e6b800); color:#000; box-shadow: var(--shadow-gold); }
+.btn-buy:hover{ transform: translateY(-2px) scale(1.02); }
+.btn-buy:active{ transform: translateY(0) scale(.99); }
+.pulse{ animation: pulse 2.2s ease-in-out infinite; }
+.btn-buy::after{
+  content:""; position:absolute; inset:0; border-radius: inherit; pointer-events:none;
+  background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,.42) 50%, transparent 70%);
+  transform: translateX(-120%); animation: shine 3.5s ease-in-out infinite;
+}
+.btn-login{
+  background: linear-gradient(180deg, #1c1c1c, #0f0f0f);
+  color: var(--text); border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 0 16px rgba(255,255,255,0.06);
+}
+.btn-login:hover{ box-shadow: 0 0 26px rgba(255,255,255,0.12); transform: translateY(-2px); }
+
+/* Por que funciona */
+.sec-title{
+  text-align:center; color:var(--gold);
+  font-family:'Cinzel', serif;
+  font-size: clamp(24px, 3.6vw, 36px);
+  text-shadow: 0 0 18px rgba(255,215,0,.3);
+  margin: 6px auto 12px;
+}
+.proof{ max-width:1100px; margin: 28px auto; padding: 0 18px; }
+.proof-grid{
+  list-style:none; display:grid; gap:16px;
+  grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
+}
+.proof-grid li{
+  background: linear-gradient(180deg, #141414, #0d0d0d);
+  border:1px solid rgba(255,215,0,.18);
+  border-radius: 14px; padding: 14px;
+  color:#eaeaea; box-shadow: 0 10px 28px rgba(0,0,0,.35);
+}
+.proof-grid h3{ margin:0 0 6px; color:#ffd700; font-family:'Cinzel', serif; font-size:18px; }
+
+/* ===== Benefícios ===== */
+.benefits{ padding: 32px 20px 12px; max-width: 1100px; margin: 0 auto; }
+.benefit-item{
+  margin: 14px auto;
+  background: linear-gradient(180deg, rgba(20,20,20,0.9), rgba(12,12,12,0.95));
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: var(--radius); overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.35);
+}
+.benefit-toggle{
+  width: 100%; text-align: left; padding: 18px 18px;
+  font-size: clamp(16px, 2.2vw, 20px); color: var(--text);
+  background: transparent; border: 0;
+  display: flex; align-items: center; gap: 10px; cursor: pointer;
+}
+.benefit-toggle .seta{ display:inline-block; width:22px; text-align:center; color: var(--gold); transition: transform .2s ease; }
+.benefit-item.open .benefit-toggle .seta{ transform: rotate(90deg); }
+.benefit-content{ display:none; padding: 0 18px 18px; }
+.benefit-item.open .benefit-content{ display:block; }
+
+.video-container{ position: relative; width: 100%; aspect-ratio: 16/9; margin-top: 12px;
+  border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.4); }
+.video-container iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+.benefit-content img{ margin-top: 12px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 8px 30px rgba(0,0,0,0.4); }
+
+/* ===== CTA / Preço ===== */
+.cta{
+  position: relative; z-index: 1;
+  margin: 38px auto 28px; padding: 28px 18px 8px;
+  max-width: 1050px;
+  background: linear-gradient(180deg, rgba(255,215,0,0.12), rgba(0,0,0,0.5));
+  border: 1px solid rgba(255,215,0,0.25);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-gold);
   text-align: center;
 }
+.cta .blood-text{ margin-bottom: 10px; }
 
-a {
-  text-decoration: none;
+.preco{
+  margin: 14px auto; max-width: 680px;
+  background: linear-gradient(180deg, #141414, #0e0e0e);
+  border: 1px solid rgba(255,215,0,0.35);
+  border-radius: 14px; padding: 20px;
+  box-shadow: var(--shadow-gold);
 }
+.preco-original{ font-size: 1.1rem; color: var(--muted); }
+.riscado{ text-decoration: line-through; color: #bdbdbd; }
+.divida{ font-size: 1.25rem; color: var(--gold); font-weight: 800; }
+.destaque-amarelo{ background: var(--gold); color:#000; padding: 4px 8px; border-radius: 6px; }
+.preco-promocional{ margin-top: 10px; font-size: 2rem; font-weight: 900; }
+.destaque-verde{ background: var(--green); color:#000; padding:10px 20px; border-radius:10px; box-shadow: 0 0 18px rgba(20,233,86,0.6); }
 
-.blood-text {
-  font-family: 'Creepster', cursive;
-  color: #a50606;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  text-shadow:
-    -2px -2px 0 #000,
-     2px -2px 0 #000,
-    -2px  2px 0 #000,
-     2px  2px 0 #000,
-    -2px  0   0 #000,
-     2px  0   0 #000,
-     0  -2px  0 #000,
-     0   2px  0 #000,
-     0   0   10px #a50606,
-     0   0   20px #a50606,
-     0   0   30px #a50606;
+.container-comprar{ margin-top: 16px; }
+
+/* Garantia + Timer */
+.garantia{ margin: 16px auto 8px; color: #ff9c9c; font-weight: 700; }
+.contador{
+  display: inline-flex; gap:10px; align-items:center;
+  background: var(--glass-2);
+  border: 1px solid rgba(255,215,0,0.35); color: var(--gold);
+  padding: 10px 16px; border-radius: 999px;
+  font-weight: 900; letter-spacing: 0.6px; box-shadow: var(--shadow-gold);
 }
-
-.highlight {
-  color: #ff0000;
-  font-weight: bold;
-}
-
-/* ======== HERO ======== */
-.hero {
-  position: relative;
-  background: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vladimir_0.jpg') center/cover no-repeat;
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.hero-content {
-  position: relative;
-  max-width: 700px;
-  width: 100%;
-  padding: 20px;
-  z-index: 2;
-  box-sizing: border-box;
-}
-
-.hero .blood-text {
-  font-size: 2.5rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.sub-text {
-  font-size: 1.3rem;
-  margin: 20px 0;
-  line-height: 1.6;
-  color: #f1f1f1;
-}
-
-/* ======== BOTÕES ======== */
-.buttons {
-  margin-top: 20px;
-}
-
-.btn-buy, .btn-login {
-  padding: 15px 25px;
-  border-radius: 5px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.btn-buy {
-  background: linear-gradient(90deg, #e60000, #ff4d4d);
-  color: #fff;
-  margin-right: 10px;
-}
-
-.btn-buy:hover {
-  background: linear-gradient(90deg, #ff1a1a, #ff6666);
-  transform: scale(1.05);
-}
-
-.btn-login {
-  background: #fff;
-  color: #000;
-}
-
-.btn-login:hover {
-  background: #ddd;
-}
-
-/* Animação de pulsar */
-.pulse {
-  animation: pulse 1.5s infinite;
-}
-
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(255,0,0,0.7); }
-  70% { box-shadow: 0 0 0 15px rgba(255,0,0,0); }
-  100% { box-shadow: 0 0 0 0 rgba(255,0,0,0); }
-}
-
-/* ======== BENEFÍCIOS ======== */
-.benefits {
-  background: #111;
-  padding: 50px 20px;
-}
-
-.benefit-item {
-  margin: 10px auto;
-  max-width: 700px;
-  text-align: left;
-}
-
-.benefit-toggle {
-  width: 100%;
-  background: #111;
-  color: #fff;
-  padding: 12px;
-  border: 1px solid #333;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  text-align: left;
-  transition: background 0.3s ease;
-}
-
-.benefit-toggle:hover {
-  background: #222;
-}
-
-.benefit-toggle.active .seta {
-  transform: rotate(90deg);
-}
-
-.seta {
-  display: inline-block;
-  margin-right: 8px;
-  font-size: 1.3rem;
-  color: #ff0000;
-  text-shadow: 0 0 5px #ff0000, 0 0 10px #990000;
-  animation: pulseBlood 1.5s infinite;
-  transition: transform 0.3s ease;
-}
-
-@keyframes pulseBlood {
-  0% { text-shadow: 0 0 3px #ff0000, 0 0 6px #990000; }
-  50% { text-shadow: 0 0 6px #ff3333, 0 0 12px #cc0000; }
-  100% { text-shadow: 0 0 3px #ff0000, 0 0 6px #990000; }
-}
-
-.benefit-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease, padding 0.3s ease;
-  background: #000;
-  border-left: 3px solid #ff0000;
-  padding: 0 10px;
-}
-
-.benefit-content img {
-  width: 100%;
-  border-radius: 5px;
-  margin: 10px 0;
-}
-
-/* ======== ELO ESCALADA ======== */
-.elo-escalada {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 15px;
-  gap: 10px;
-}
-
-.elo {
-  width: 150px;
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-.elo:hover {
-  transform: scale(1.1);
-}
-
-/* ======== CTA ======== */
-.cta {
-  background: #1a0000;
-  padding: 60px 20px;
-}
-
-.price {
-  font-size: 1.8rem;
-  color: #ff3333;
-  font-weight: bold;
-}
-
-.garantia {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: #bbb;
-}
-
-.preco {
-  margin-bottom: 3px;
-}
-
-.preco-original {
-  font-size: 1rem;
-  color: #bbb;
-}
-
-.riscado {
-  text-decoration: line-through;
-  color: #ff3333;
-}
-
-.preco-promocional {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 5px 0;
-}
-
-.destaque-verde {
-  color: #00ff66;
-  text-shadow: 1px 1px 4px #003300;
-}
-
-.contador {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: #ffcc00;
-  font-weight: bold;
-}
-
-.ampulheta {
-  display: inline-block;
-  margin-right: 5px;
-  animation: girar 2.1s infinite linear;
-}
-
-@keyframes girar {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* ======== VIDEO RESPONSIVO ======== */
-.video-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 0 10px #000;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* ======== CANVAS SANGUE ======== */
-#sangue {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 9999;
-}
-
-/* ======== TEXTO INTROS ======== */
-.intro-bloco {
-  color: #ccc;
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-top: 20px;
-  text-shadow: 1px 1px 2px #000;
-}
-
-.intro-bloco ul {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 10px;
-}
-
-.intro-bloco ul li {
-  margin-bottom: 6px;
-}
-
-/* ======== ANIMAÇÃO FADE IN ======== */
-.fade {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-.fade.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* ======== FOOTER ======== */
-footer {
-  background: #000;
-  padding: 15px;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* ======== GRID GERAL ======== */
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.card {
-  background: #111;
-  padding: 20px;
-  border-radius: 8px;
-  flex: 1 1 250px;
-  max-width: 300px;
-  box-sizing: border-box;
-}
-
-/* ======== RESPONSIVO ======== */
-@media (max-width: 768px) {
-  .sub-text {
-    font-size: 1rem;
-  }
-
-  .btn-buy, .btn-login {
-    font-size: 1.6rem;
-    padding: 12px 20px;
-  }
-
-  .hero {
-    height: auto;
-    padding: 40px 15px;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero .blood-text {
-    font-size: 1.8rem;
-  }
-
-  .grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    max-width: 90%;
-    width: 100%;
-  }
-
-  .elo {
-    width: 100px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero .blood-text {
-    font-size: 1.5rem !important;
-  }
-
-  .sub-text {
-    font-size: 0.95rem;
-  }
-
-  .btn-buy, .btn-login {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .elo-escalada {
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  .seta {
-    display: none;
-  }
-}
-
-@media (max-width: 480px) {
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .btn-buy,
-  .btn-login {
-    width: 90%;
-    font-size: 1rem;
-    padding: 14px 20px;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  .btn-login {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .hero-content {
-    padding: 20px 15px;
-  }
-
-  .sub-text {
-    font-size: 1rem;
-  }
-}
-
-.container-comprar {
+.ampulheta{ filter: drop-shadow(0 0 12px rgba(255,215,0,0.5)); }
+#timer{ color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.6); }
+
+/* ===== Modal de Pagamento ===== */
+.modal{ position: fixed; inset: 0; z-index: 50; display:grid; place-items:center; background: rgba(0,0,0,0.6); padding: 16px; }
+.modal.hidden{ display: none; }
+.modal-content{
+  width: min(560px, 96vw);
+  background: linear-gradient(180deg, #151515, #0d0d0d);
+  border: 1px solid rgba(255,215,0,0.32);
+  border-radius: 18px; padding: 22px;
+  box-shadow: 0 40px 120px rgba(0,0,0,0.6), var(--shadow-gold);
   text-align: center;
-  margin-top: 30px;
+}
+.modal-content h2{
+  font-family: 'Cinzel', serif;
+  font-size: 32px; color: var(--gold);
+  text-shadow: 0 0 20px rgba(255,215,0,0.5); margin-bottom: 14px;
+}
+.botoes-escolha{ display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin: 8px 0 10px; }
+.btn-modal{
+  background: linear-gradient(180deg, #1d1d1d, #111);
+  color: var(--text); border: 1px solid rgba(255,255,255,0.1);
+  padding: 12px 16px; border-radius: 12px; font-weight: 800;
+}
+.btn-modal:hover{ transform: translateY(-2px); }
+.btn-modal.pix{ border-color: rgba(20,233,86,0.35); box-shadow: 0 0 18px rgba(20,233,86,0.25) inset; }
+.fechar{ margin-top: 6px; background: linear-gradient(180deg, #2a0b0b, #140606); color: #ffbfbf; border: 1px solid rgba(255,0,0,0.35); }
+.fechar:hover{ transform: translateY(-2px); }
+
+/* Footer */
+footer{ margin: 24px auto 30px; text-align: center; color: #9f9f9f; font-size: 0.95rem; opacity: 0.9; }
+
+/* Acessibilidade */
+:focus-visible{ outline: 3px solid var(--gold); outline-offset: 2px; border-radius: 10px; }
+
+/* Animações */
+@keyframes pulse{ 0%,100%{ transform: scale(1); box-shadow: var(--shadow-gold); } 50%{ transform: scale(1.035); box-shadow: 0 0 40px rgba(255,215,0,0.7); } }
+@keyframes shine{ 0%{ transform: translateX(-120%); } 60%{ transform: translateX(120%); } 100%{ transform: translateX(120%); } }
+
+/* Responsividade */
+@media (max-width: 860px){
+  .hero-4x{ --rail-speed: 28s; } /* mobile um pouco mais lento */
+  .elo{ height: 44px; }
+  .buttons{ gap: 10px; }
+  .btn-buy, .btn-login{ width: 100%; max-width: 460px; }
+}
+@media (max-width: 540px){
+  .elo-escalada{ gap: 10px; padding: 8px 12px; }
+  .blood-text, .hero-title{ letter-spacing: .5px; }
+  .preco{ padding: 16px; }
 }
 
-.btn-buy {
-  background-color: #e94560;
-  color: white;
-  padding: 16px 32px;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 0 10px #e94560;
-  transition: 0.3s ease;
+
+/* ===== ELO – tamanho + animações ===== */
+:root{
+  /* tamanho padrão das insígnias; ajuste se quiser globalmente */
+  --elo-size: 72px;
+  --elo-glow: rgba(255, 215, 0, 0.65);
 }
 
-.btn-buy:hover {
-  background-color: #c7344d;
+.elo-escalada{
+  position: relative;
+  gap: 18px;
+  padding: 12px 22px;
+  background: rgba(0,0,0,.35);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 999px;
+  box-shadow: 0 0 22px rgba(255,215,0,.25), inset 0 0 20px rgba(255,215,0,.08);
+  backdrop-filter: blur(6px);
+  animation: pillPulse 3.2s ease-in-out infinite;
 }
 
-/* MODAL */
-
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(10, 10, 10, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
+.elo-escalada::before{
+  /* halo externo animado */
+  content:"";
+  position:absolute; inset:-12px;
+  border-radius: 999px;
+  background: radial-gradient(60% 100% at 50% 50%, rgba(255,215,0,.18), transparent 70%);
+  filter: blur(8px);
+  z-index:-1;
+  animation: halo 3.2s ease-in-out infinite;
 }
 
-.modal-content {
-  background: #1c1c1c;
-  padding: 40px;
-  border-radius: 16px;
-  text-align: center;
-  box-shadow: 0 0 20px #e94560;
-  width: 90%;
-  max-width: 400px;
+.elo{ height: var(--elo-size); filter: drop-shadow(0 0 10px rgba(255,215,0,.25)); }
+.seta{
+  font-size: clamp(22px, 2.6vw, 34px);
+  color: var(--gold);
+  text-shadow: 0 0 10px rgba(255,215,0,.5);
+  animation: arrowSlide 1.6s ease-in-out infinite;
 }
 
-.modal-content h2 {
-  color: #fff;
-  margin-bottom: 30px;
-  font-size: 20px;
+/* flutuação em fases opostas */
+.elo-escalada .elo:first-of-type{ animation: floatY 3.6s ease-in-out infinite; }
+.elo-escalada .elo:last-of-type { animation: floatY 3.6s ease-in-out infinite reverse; }
+
+/* versão grandona (só adicionar a classe no HTML) */
+.elo-escalada--xl{
+  --elo-size: 90px;        /* aumente aqui se quiser ainda maior */
+  padding: 16px 28px;
+  gap: 22px;
 }
 
-.botoes-escolha {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+/* hover: reforça brilho */
+.elo-escalada:hover{
+  box-shadow: 0 0 30px rgba(255,215,0,.4), inset 0 0 24px rgba(255,215,0,.12);
 }
 
-.btn-modal {
-  background: #e94560;
-  color: #fff;
-  border: none;
-  padding: 14px;
-  font-size: 16px;
-  border-radius: 10px;
-  font-weight: bold;
-  cursor: pointer;
+/* responsivo: reduz um pouco no mobile */
+@media (max-width: 680px){
+  .elo-escalada{ gap: 14px; padding: 10px 16px; }
+  .elo-escalada--xl{ --elo-size: 72px; }
 }
 
-.btn-modal.pix {
-  background: #34c759;
+/* ===== Keyframes extras ===== */
+@keyframes pillPulse{
+  0%,100%{ transform: scale(1); }
+  50%{ transform: scale(1.02); }
 }
-
-.btn-modal:hover {
-  opacity: 0.9;
+@keyframes halo{
+  0%,100%{ opacity:.55; }
+  50%{ opacity:.85; }
 }
-
-.fechar {
-  background: none;
-  color: #aaa;
-  font-size: 14px;
-  margin-top: 20px;
-  cursor: pointer;
-  border: none;
-}
-
-.hidden {
-  display: none;
+@keyframes arrowSlide{
+  0%,100%{ transform: translateX(0); }
+  50%{ transform: translateX(6px); }
 }

@@ -20,7 +20,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
 
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
-  const senhaCorreta = "vladpro";
+  const senhaCorreta = "vladpro1312";
 
   // Login local com senha fixa
   if (password === senhaCorreta) {

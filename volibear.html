@@ -12,7 +12,7 @@
 
 <body>
   <!-- Canvas de efeito de raios gelados -->
- 
+ <canvas id="raio"></canvas>
 
   <!-- Firebase SDK v8 + proteção de rota -->
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
@@ -38,7 +38,7 @@
       });
     };
   </script>
- <canvas id="raio"></canvas>
+ 
   <!-- Header -->
   <header>
     <div class="logo raio-text">VOLIBEAR T15</div>
@@ -57,6 +57,8 @@
         <button id="btnSairMobile" class="btn-sair-mobile">Sair</button>
       </ul>
     </nav>
+
+
   </header>
 
   <!-- Hero -->
@@ -75,9 +77,84 @@
         Invoca um raio que causa dano em área e concede escudo a Volibear se estiver no raio.<br><br>
         <strong>R – A TORMENTA IMPLACÁVEL</strong><br>
         Volibear salta, silencia torres, causa dano em área e recebe vida adicional.<br><br>
-        ✅ <strong>PONTOS FORTES:</strong> Iniciação, sustain, silenciamento de torres.<br>
-        ❌ <strong>PONTOS FRACOS:</strong> Kiting, dependência de entrada no combate.<br>
-      </p>
+     <p>
+  <strong>Q – TROVOADA ENSURDECEDORA (Thundering Smash)</strong><br>
+  <strong>Função:</strong> Engage + Velocidade de movimento + Atordoamento.<br>
+  <strong>Descrição Detalhada:</strong><br>
+  Volibear ganha velocidade de movimento ao correr em direção a inimigos.<br>
+  Ao alcançar e atacar um inimigo, ele causa dano e o atordoa por 1 segundo.<br><br>
+
+  <strong>Cooldown:</strong> 13 / 12 / 11 / 10 / 9 segundos.<br>
+  <strong>Escala:</strong><br>
+  Dano: 30 / 60 / 90 / 120 / 150 (+120% AD bônus)<br>
+  <strong>Dica:</strong> Use o Q para iniciar lutas ou punir inimigos fora de posição. Combine com Flash para pegar alvos inesperados.<br><br>
+
+  <strong>W – FÚRIA TRINCANTE (Frenzied Maul)</strong><br>
+  <strong>Função:</strong> Dano + Cura + Trocas prolongadas.<br>
+  <strong>Descrição Detalhada:</strong><br>
+  Volibear ataca com as garras, marcando o inimigo. Se atacar o mesmo alvo novamente, causa dano adicional e se cura com base na Vida perdida.<br><br>
+
+  <strong>Cooldown:</strong> 5 segundos em todos os níveis.<br>
+  <strong>Escala:</strong><br>
+  Dano (primeiro acerto): 10 / 35 / 60 / 85 / 110 (+90% AD)<br>
+  Dano (segundo acerto): 20 / 70 / 120 / 170 / 220 (+180% AD) + Cura com base na Vida perdida<br>
+  <strong>Dica:</strong> Priorize repetir o W no mesmo alvo para maximizar o dano e a cura. Ideal para lutas 1v1 ou tankar por mais tempo.<br><br>
+
+  <strong>E – INVOCAR A TEMPESTADE (Sky Splitter)</strong><br>
+  <strong>Função:</strong> Zoneamento + Escudo + Lentidão.<br>
+  <strong>Descrição Detalhada:</strong><br>
+  Volibear invoca um raio no local alvo após 1 segundo. Inimigos recebem dano mágico, são lentos por 40% e Volibear recebe um escudo se atingir campeões.<br><br>
+
+  <strong>Cooldown:</strong> 15 / 14 / 13 / 12 / 11 segundos.<br>
+  <strong>Escala:</strong><br>
+  Dano: 80 / 120 / 160 / 200 / 240 (+80% AP)<br>
+  Escudo: 15% da Vida máxima por campeão atingido<br>
+  <strong>Dica:</strong> Use antes de se jogar no meio da luta para ganhar o escudo. Perfeito para zonear áreas estreitas ou defender aliados.<br><br>
+
+  <strong>R – TORMENTA IMPLACÁVEL (Stormbringer)</strong><br>
+  <strong>Função:</strong> Engage em área + Disrupção de estruturas + Tankiness.<br>
+  <strong>Descrição Detalhada:</strong><br>
+  Volibear salta em uma área, aterrissando com impacto massivo, causando dano, desacelerando e desativando torres por alguns segundos. Ganha Vida adicional durante a duração.<br><br>
+
+  <strong>Cooldown:</strong> 160 / 140 / 120 segundos.<br>
+  <strong>Escala:</strong><br>
+  Dano: 250 / 475 / 700 (+250% AD bônus)<br>
+  Vida adicional: 200 / 400 / 600<br>
+  <strong>Dica:</strong> Use para tower dive com segurança. Ótimo para flanquear inimigos desprevenidos ou iniciar lutas com força total.<br><br>
+
+  ✅ <strong>PONTOS FORTES E FRACOS</strong><br>
+  ✔ <strong>Pontos Fortes:</strong><br>
+  • Excelente engage e presença em lutas.<br>
+  • Cura poderosa com W e resistência elevada.<br>
+  • Pode desativar torres com R, ideal para dives.<br>
+  • Ótimo em duelos 1v1.<br><br>
+
+  ❌ <strong>Pontos Fracos:</strong><br>
+  • Fácil de kitar por campeões de longo alcance.<br>
+  • Habilidades previsíveis e com cast time.<br>
+  • Altamente dependente de acertar o combo completo.<br>
+  • Sem dash ou mobilidade fora do Q.<br><br>
+
+  <strong>Impacto:</strong> Volibear transforma qualquer teamfight em caos quando bem posicionado. Sua capacidade de tankar e iniciar lutas cria vantagem desde o mid game até o late game.
+</p>
+
+<h2 class="raio-text">Como se Posicionar em Teamfights</h2>
+<p>
+  Volibear é um iniciador. Sempre busque o flanco ou entre pela frente apenas quando tiver certeza de que o time pode acompanhar.<br>
+  Ative o <span class="habilidade">R</span> para criar o caos, desativar torres ou impedir o avanço inimigo.<br>
+  Use o <span class="habilidade">Q</span> no carry adversário ou para interromper habilidades importantes.<br>
+  Tenha o <span class="habilidade">E</span> pronto para ganhar escudo assim que pular no meio da luta.
+</p>
+
+<h2 class="blood-text">Como Jogar a Lane Phase</h2>
+<p>
+  Abuse do seu poder no early game. Volibear é muito forte nos níveis 1–3.<br>
+  Use o <span class="habilidade">Q</span> para punir oponentes que se expõem e engajar trocas favoráveis.<br>
+  O <span class="habilidade">W</span> deve ser usado duas vezes no mesmo alvo sempre que possível para maximizar a cura.<br>
+  Se estiver contra ranged, use a moita e tente pegar o inimigo de surpresa.<br>
+  Controle bem a wave e prepare seu engage quando o inimigo gastar habilidades importantes.
+</p>
+
     </div>
   </section>
 

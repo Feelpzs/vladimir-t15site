@@ -2,47 +2,92 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Painel de Escolha de Campeão</title>
-  <link rel="stylesheet" href="css/painel.css" />
+
+  <!-- Fonte com vibe LoL -->
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+  <link rel="stylesheet" href="../css/painel.css"/>
+
+  <!-- Howler (se for usar no JS) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" defer></script>
 </head>
-
 <body>
-    
-    
-    <div class="painel">
-    <p class="intro">
-  Aqui começa a sua jornada.<br />
-  Escolha o campeão que você irá dominar e tornar-se temido em Summoner's Rift.
-</p>
+  <main class="painel" role="main">
+    <header class="painel-header">
+      <p class="intro" aria-live="polite">
+        Aqui começa a sua jornada.<br>
+        Escolha o campeão que você irá dominar e tornar-se temido em Summoner's Rift.
+      </p>
+      <h1 class="titulo">Escolha seu Campeão</h1>
+    </header>
 
-    <h1>Escolha seu Campeão</h1>
-    <div class="cards">
-      <div class="bandeira-lol" data-url="../volibear.html">
-        <img src="assets/imgpainel/volibear.jpg" alt="Volibear" />
-        <div class="champion">Volibear</div>
-      </div>
-      <div class="bandeira-lol" data-url="../vlad.html">
-        <img src="assets/imgpainel/vladimir.png" alt="Vladimir" />
-        <div class="champion">Vladimir</div>
-      </div>
-      <div class="bandeira-lol" data-champ="zeri">
-        <img src="assets/zeri.png" alt="Zeri" />
-        <div class="champion">-50%</div>
-      </div>
-      <div class="bandeira-lol" data-url="campeoes/pyke.html">
-        <img src="assets/pyke.png" alt="Pyke" />
-        <div class="champion">-%</div>
-      </div>
-    </div>
-  </div>
+    <!-- Grade de bandeiras -->
+    <section class="cards" role="list" aria-label="Lista de campeões disponíveis">
+      <!-- Volibear -->
+      <article class="bandeira-lol volibear" role="listitem" tabindex="0"
+               data-url="volibear.html" aria-label="Volibear">
+        <div class="banner-frame">
+          <figure class="banner-media">
+            <!-- usamos object-fit via CSS para manter o personagem completo -->
+            <img src="assets/imgpainel/volibear.jpg" alt="Retrato do campeão Volibear"/>
+          </figure>
+          <div class="banner-glow" aria-hidden="true"></div>
+          <div class="banner-bottom">
+            <span class="champion">Volibear</span>
+          </div>
+        </div>
+      </article>
 
+      <!-- Vladimir -->
+      <article class="bandeira-lol" role="listitem" tabindex="0"
+               data-url="vlad.html" aria-label="Vladimir">
+        <div class="banner-frame">
+          <figure class="banner-media">
+            <img src="assets/imgpainel/vladimir.png" alt="Retrato do campeão Vladimir"/>
+          </figure>
+          <div class="banner-glow" aria-hidden="true"></div>
+          <div class="banner-bottom">
+            <span class="champion">Vladimir</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Jinx -->
+      <article class="bandeira-lol jinx" role="listitem" tabindex="0"
+               data-url="jinx.html" aria-label="Jinx">
+        <div class="banner-frame">
+          <figure class="banner-media">
+            <img src="assets/imgpainel/jinx.jpg" alt="Retrato da campeã Jinx"/>
+          </figure>
+          <div class="banner-glow" aria-hidden="true"></div>
+          <div class="banner-bottom">
+            <span class="champion">Jinx</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Nautilus -->
+      <article class="bandeira-lol nautilus" role="listitem" tabindex="0"
+               data-url="nautilus.html" aria-label="Nautilus">
+        <div class="banner-frame">
+          <figure class="banner-media">
+            <img src="assets/imgpainel/nautilus.jpg" alt="Retrato do campeão Nautilus"/>
+          </figure>
+          <div class="banner-glow" aria-hidden="true"></div>
+          <div class="banner-bottom">
+            <span class="champion">Nautilus</span>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- Áudios -->
   <audio id="efeitoAudio" src="assets/audiopainel/20250805_160225 (audio-extractor.net).mp3" preload="auto"></audio>
-  <audio id="hoverAudio" src="assets/audiopainel/selecione.mp3" preload="auto"></audio>
+  <audio id="hoverAudio"  src="assets/audiopainel/selecione.mp3" preload="auto"></audio>
 
-
-  <script src="js/painel.js"></script>
+  <!-- JS do painel -->
+  <script src="js/painel.js" defer></script>
 </body>
 </html>
