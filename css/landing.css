@@ -364,3 +364,126 @@ footer{ margin: 24px auto 30px; text-align: center; color: #9f9f9f; font-size: 0
   0%,100%{ transform: translateX(0); }
   50%{ transform: translateX(6px); }
 }
+
+
+/* Tablets/laptops pequenos */
+@media (max-width: 1024px){
+  :root{ --rail-speed: 32s; } /* carrossel um pouco mais devagar */
+  .hero{ padding: clamp(72px, 9vw, 120px) 20px 40px; }
+  .blood-text, .hero-title{ font-size: clamp(28px, 4.8vw, 50px); }
+  .sub-text, .hero-sub{ font-size: clamp(15px, 2.1vw, 19px); }
+  .proof{ padding: 0 16px; }
+}
+
+/* Tablets & celulares grandes */
+@media (max-width: 768px){
+  :root{ --rail-speed: 30s; }
+  .hero{ 
+    padding-top: calc(clamp(60px, 10vw, 96px) + env(safe-area-inset-top));
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-bottom: calc(28px + env(safe-area-inset-bottom));
+    min-height: 78svh;
+  }
+  .hero-rail{ opacity: .14; } /* menos invasivo atrás do texto */
+
+  .blood-text, .hero-title{ font-size: clamp(26px, 6.8vw, 44px); letter-spacing: .4px; }
+  .sub-text, .hero-sub{ font-size: clamp(14px, 3.6vw, 18px); margin: 8px auto 14px; }
+
+  .elo-escalada{ gap: 14px; padding: 10px 14px; }
+  .elo-escalada--xl{ --elo-size: 80px; }
+
+  .champions-strip{ gap: 8px; }
+  .chip{ padding: 8px 12px; font-size: .9rem; }
+
+  .buttons{ gap: 10px; }
+  .btn-buy, .btn-login{ width: 100%; max-width: 520px; }
+
+  .benefits{ padding: 26px 16px 10px; }
+  .benefit-toggle{ padding: 16px; }
+  .benefit-content{ padding: 0 16px 16px; }
+
+  .proof-grid{ grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 14px; }
+
+  .cta{ margin: 28px auto 22px; padding: 22px 14px 8px; }
+  .preco{ padding: 16px; }
+  .preco-original{ font-size: 1rem; }
+  .divida{ font-size: 1.1rem; }
+  .preco-promocional{ font-size: 1.8rem; }
+
+  .contador{ padding: 8px 14px; font-size: .95rem; }
+  .modal-content{ width: min(94vw, 520px); }
+}
+
+/* Celulares comuns (≤600px) */
+@media (max-width: 600px){
+  :root{ --rail-speed: 28s; }
+
+  .hero{ min-height: 74svh; }
+  .hero-rail{ opacity: .12; }
+
+  .blood-text, .hero-title{ font-size: clamp(24px, 7.5vw, 38px); }
+  .sub-text, .hero-sub{ font-size: clamp(14px, 4vw, 17px); }
+
+  .elo-escalada{ gap: 12px; padding: 8px 12px; }
+  .elo-escalada--xl{ --elo-size: 72px; }
+  .seta{ font-size: clamp(18px, 5.5vw, 26px); }
+
+  .chip{ padding: 7px 10px; font-size: .88rem; }
+  /* Se quiser empilhar chips em 2 colunas, descomente: */
+  /* .champions-strip{ justify-content: center; }
+     .chip{ flex: 1 1 calc(50% - 8px); text-align:center; } */
+
+  .cta .blood-text{ margin-bottom: 8px; }
+  .destaque-verde{ padding: 8px 14px; }
+
+  .proof-grid{ grid-template-columns: 1fr 1fr; }
+}
+
+/* Celulares pequenos / super compactos (≤420px) */
+@media (max-width: 420px){
+  /* Desliga o carrossel pra priorizar legibilidade/desempenho */
+  .hero-rail{ display: none; }
+
+  .hero{ 
+    padding-top: calc(56px + env(safe-area-inset-top));
+    padding-bottom: calc(22px + env(safe-area-inset-bottom));
+    min-height: 70svh;
+  }
+
+  .blood-text, .hero-title{ font-size: clamp(22px, 8.2vw, 32px); }
+  .sub-text, .hero-sub{ font-size: clamp(13px, 4.5vw, 16px); }
+
+  .elo-escalada{ gap: 10px; padding: 8px 10px; }
+  .elo-escalada--xl{ --elo-size: 64px; }
+
+  .buttons{ gap: 8px; }
+  .btn-buy, .btn-login{ width: 100%; max-width: none; padding: 12px 16px; }
+
+  .benefit-item{ margin: 10px auto; }
+  .benefit-toggle{ padding: 14px; font-size: 1rem; }
+  .benefit-content{ padding: 0 14px 14px; }
+
+  .proof-grid{ grid-template-columns: 1fr; }
+  .preco{ padding: 14px; }
+  .preco-promocional{ font-size: 1.6rem; }
+
+  .contador{ padding: 7px 12px; font-weight: 800; }
+  .modal-content{ width: 94vw; border-radius: 14px; padding: 18px; }
+}
+
+/* Telas muito baixas (landscape em celulares) */
+@media (max-height: 700px) and (max-width: 768px){
+  .hero{ min-height: 64svh; padding-top: 48px; padding-bottom: 24px; }
+  .elo-escalada{ transform: scale(.95); }
+}
+
+/* Reduz animações para acessibilidade */
+@media (prefers-reduced-motion: reduce){
+  .rail-track,
+  .elo-escalada,
+  .elo-escalada::before,
+  .elo-escalada .elo,
+  .seta,
+  .btn-buy.pulse{ animation: none !important; }
+}

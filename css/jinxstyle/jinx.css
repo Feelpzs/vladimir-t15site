@@ -258,3 +258,56 @@ nav#menu ul{
   nav#menu ul{ flex-direction: column; align-items: stretch; gap: 8px; }
   nav#menu a{ text-align: center; padding: 12px; }
 }
+
+
+/* Título com efeito de “falha” */
+.glitch{
+  position: relative; display: inline-block;
+  text-shadow: 0 0 18px rgba(51,224,255,.55);
+  animation: glitch-shift 2.5s infinite linear alternate;
+}
+.glitch::before,
+.glitch::after{
+  content: attr(data-text);
+  position: absolute; inset: 0;
+  pointer-events: none; mix-blend-mode: screen;
+}
+.glitch::before{ transform: translate(2px,0); color: #ff3aa7; clip-path: inset(0 0 0 0); animation: glitch-slice 2.5s infinite steps(20,end); }
+.glitch::after { transform: translate(-2px,0); color: #33e0ff; clip-path: inset(0 0 0 0); animation: glitch-slice 2.5s infinite reverse steps(18,end); }
+
+@keyframes glitch-shift{
+  0%{ transform: translateZ(0); }
+  10%{ transform: skewX(0.3deg); }
+  20%{ transform: translateX(-1px); }
+  35%{ transform: translateX(1px); }
+  50%{ transform: skewX(-0.4deg); }
+  60%{ transform: translateX(0); }
+  80%{ transform: translateX(1px); }
+  100%{ transform: translateX(0); }
+}
+@keyframes glitch-slice{
+  0%{ clip-path: inset(0 0 0 0); }
+  10%{ clip-path: inset(10% 0 65% 0); }
+  20%{ clip-path: inset(80% 0 0 0); }
+  30%{ clip-path: inset(40% 0 40% 0); }
+  45%{ clip-path: inset(0 0 85% 0); }
+  60%{ clip-path: inset(60% 0 20% 0); }
+  75%{ clip-path: inset(5% 0 5% 0); }
+  100%{ clip-path: inset(0 0 0 0); }
+}
+
+/* Faixa “CONHEÇA O KIT…” com glitch leve e gradiente animado */
+.glitch-btn{
+  position: relative; overflow: hidden;
+  background: linear-gradient(90deg, var(--accent-pink), var(--accent-cyan));
+  background-size: 200% 100%; animation: holo-pan 4s linear infinite;
+  box-shadow: 0 8px 22px rgba(255,58,167,.18), 0 8px 22px rgba(51,224,255,.18);
+}
+.glitch-btn::before,
+.glitch-btn::after{
+  content: attr(data-text); position:absolute; inset:0; pointer-events:none;
+  font-weight: 800; display:grid; place-items:center; border-radius: inherit;
+}
+.glitch-btn::before{ color: rgba(255,255,255,.8); mix-blend-mode: screen; transform: translate(1px,0); opacity:.6; }
+.glitch-btn::after { color: rgba(255,255,255,.8); mix-blend-mode: screen; transform: translate(-1px,0); opacity:.6; }
+@keyframes holo-pan{ 0%{background-position:0 0;} 100%{background-position:200% 0;} }
