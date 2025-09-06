@@ -487,3 +487,178 @@ footer{ margin: 24px auto 30px; text-align: center; color: #9f9f9f; font-size: 0
   .seta,
   .btn-buy.pulse{ animation: none !important; }
 }
+
+/* ===== Hero Title – formato premium ===== */
+.hero-title--split{
+  max-width: min(1200px, 92vw);
+  margin-inline: auto;
+  text-wrap: balance;              /* melhora as quebras de linha (browsers modernos) */
+  line-height: 1.08;
+}
+
+/* selo pequeno acima */
+.hero-title--split .kicker{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-family:'Montserrat', system-ui, sans-serif;
+  font-weight:800;
+  font-size: clamp(12px, 1.6vw, 14px);
+  letter-spacing:.8px;
+  text-transform:uppercase;
+  color:#111;
+  padding:6px 10px;
+  border-radius:999px;
+  background: linear-gradient(180deg, #ffd700, #e6b800);
+  box-shadow: 0 6px 24px rgba(255,215,0,.35);
+  margin-bottom: 10px;
+}
+.hero-title--split .kicker b{ color:#000; }
+
+/* linha principal */
+.hero-title--split .headline{
+  display:block;
+  font-family:'Cinzel', serif;
+  font-weight:700;
+  letter-spacing:.6px;
+  /* gradiente dourado no texto */
+  background: linear-gradient(180deg, #ffe88d 0%, #ffd700 35%, #d9a800 100%);
+  -webkit-background-clip:text;
+          background-clip:text;
+  color: transparent;
+  text-shadow: 0 0 24px rgba(255,215,0,.28);
+  font-size: clamp(28px, 5.6vw, 58px);
+}
+
+/* highlight animado em "4 CAMPEÕES" */
+.hero-title--split .hl{
+  position:relative;
+  white-space:nowrap;
+}
+.hero-title--split .hl::after{
+  content:"";
+  position:absolute;
+  left:-4%; right:-4%;
+  bottom:.06em;
+  height:.22em;
+  border-radius: 6px;
+  background: linear-gradient(90deg, rgba(255,215,0,.15), rgba(255,215,0,.6), rgba(255,215,0,.15));
+  filter: blur(0.5px);
+  animation: hlShine 3.2s ease-in-out infinite;
+  z-index:-1;
+}
+@keyframes hlShine{
+  0%,100%{ opacity:.55; }
+  50%{ opacity:.95; }
+}
+
+/* segunda linha */
+.hero-title--split .subline{
+  display:block;
+  margin-top:.28em;
+  font-family:'Cinzel', serif;
+  font-weight:700;
+  font-size: clamp(22px, 4.4vw, 44px);
+  letter-spacing:.6px;
+  color:#ffef9a;
+  text-shadow: 0 0 18px rgba(255,215,0,.25);
+}
+
+/* responsivo fino */
+@media (max-width: 640px){
+  .hero-title--split{ line-height: 1.04; }
+  .hero-title--split .kicker{ margin-bottom: 8px; }
+  .hero-title--split .headline{ font-size: clamp(24px, 7.2vw, 36px); }
+  .hero-title--split .subline{ font-size: clamp(18px, 6.2vw, 28px); }
+}
+
+/* acessibilidade: se usuário pedir menos animação */
+@media (prefers-reduced-motion: reduce){
+  .hero-title--split .hl::after{ animation:none; }
+}
+
+
+/* === FIX: botões quebrando no mobile === */
+
+/* sempre tratar botões como blocos flex */
+.btn-buy,
+.btn-login,
+.btn-modal,
+.fechar{
+  display: inline-flex;           /* vira “caixa” (largura funciona) */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: normal;            /* permite quebrar linha no texto grande */
+  line-height: 1.2;
+}
+
+/* usa grid (sem wrap) pro grupo de botões */
+.buttons{
+  width: min(680px, 100%);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap: 12px;
+}
+
+/* tablets: mantém dois lados se couber */
+@media (max-width: 860px){
+  .buttons{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* celulares: força 1 por linha e largura total */
+@media (max-width: 600px){
+  .buttons{
+    grid-template-columns: 1fr;   /* empilha */
+    gap: 10px;
+  }
+  .btn-buy,
+  .btn-login{
+    width: 100%;
+    min-height: 52px;             /* altura confortável p/ toque */
+    font-size: 1rem;
+    padding: 12px 16px;
+  }
+}
+
+/* celulares bem pequenos */
+@media (max-width: 420px){
+  .btn-buy,
+  .btn-login{
+    min-height: 48px;
+    font-size: .95rem;
+    padding: 10px 14px;
+  }
+}
+
+/* === FIX: "4 CAMPEÕES" invisível === */
+
+/* mantém o gradiente no título principal */
+.hero-title--split .headline{
+  background: linear-gradient(180deg, #ffe88d 0%, #ffd700 35%, #d9a800 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;                 /* Safari/Chrome */
+  -webkit-text-fill-color: transparent;
+}
+
+/* reaplica o gradiente no span interno também */
+.hero-title--split .headline .hl{
+  background: inherit;                 /* usa o mesmo gradiente da .headline */
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Fallback para browsers sem background-clip:text */
+@supports not (-webkit-background-clip: text) {
+  .hero-title--split .headline,
+  .hero-title--split .headline .hl{
+    background: none;
+    color: #ffd700;
+  }
+}

@@ -1,0 +1,476 @@
+/* ===============================
+   GUIA NAUTILUS T15 – THEME CSS
+   Paleta: Fundo abissal #06121a | Primário #0ea5e9 | Acento #22d3ee | Dourado náutico #d4af37
+   Tipografia de títulos preservada (Creepster) para continuidade visual
+   =============================== */
+
+/* ===== Reset ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+:root{
+  --bg: #06121a;
+  --bg-elev: #0a1b26;
+  --bg-glass: rgba(6,18,26,0.6);
+  --text: #dbeafe;
+  --muted: #94a3b8;
+  --primary: #0ea5e9;     /* azul oceano */
+  --accent: #22d3ee;      /* ciano água */
+  --gold: #d4af37;        /* dourado náutico */
+  --danger: #ef4444;
+  --success: #22c55e;
+  --card-border: rgba(255,255,255,.06);
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+/* ===== Base ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url('../../assets/img/Nautilus_36.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ddd;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Efeito “bolhas” leves (opcional) */
+body::before{
+  content:"";
+  position: fixed; inset: -20vmax;
+  background:
+    radial-gradient(120px 120px at 20% 30%, rgba(34,211,238,.06), transparent 60%),
+    radial-gradient(160px 160px at 70% 60%, rgba(14,165,233,.06), transparent 60%);
+  pointer-events:none; z-index:0;
+}
+
+/* ===== Header / Navbar ===== */
+header{
+  position: sticky; top:0; z-index:50;
+  background: linear-gradient(180deg, rgba(6,18,26,.9), rgba(6,18,26,.75));
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--card-border);
+  box-shadow: var(--shadow);
+}
+
+.logo{
+  font-family: "Creepster", system-ui;
+  letter-spacing: 1px;
+  font-size: 26px;
+  color: var(--gold);
+  text-shadow: 0 2px 12px rgba(212,175,55,.3);
+  padding: 14px 18px;
+  display: inline-block;
+}
+
+nav{ display: inline-block; }
+nav ul{ display:flex; gap:14px; align-items:center; padding: 10px 18px; }
+nav a{
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: var(--text);
+  font-weight: 600;
+  transition: transform .15s ease, background .15s ease, color .15s ease;
+}
+nav a:hover{
+  background: rgba(14,165,233,.12);
+  color: #e6f6ff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 18px rgba(14,165,233,.2);
+}
+
+.menu-toggle{
+  display:none;
+  position:absolute; right:12px; top:10px;
+  font-size: 26px; line-height: 1;
+  background: transparent; color: var(--text);
+  border: none; cursor:pointer;
+}
+
+/* Botões sair */
+.btn-sair-desktop, .btn-sair-mobile{
+  border: 1px solid var(--card-border);
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  color: var(--text);
+  padding: 8px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform .15s ease, background .15s ease, border-color .15s ease;
+}
+.btn-sair-desktop:hover, .btn-sair-mobile:hover{
+  transform: translateY(-1px);
+  background: linear-gradient(180deg, rgba(34,211,238,.12), rgba(34,211,238,.03));
+  border-color: rgba(34,211,238,.4);
+}
+.btn-sair-mobile{ display:none; }
+
+/* ===== Hero ===== */
+.hero{
+  position: relative;
+  padding: 56px 20px 24px;
+  max-width: 1100px; margin: 0 auto;
+}
+.titulo-sangrento{
+  font-family: "Creepster", system-ui;
+  font-size: clamp(28px, 5vw, 44px);
+  color: var(--accent);
+  text-shadow: 0 6px 30px rgba(34,211,238,.25);
+  margin-bottom: 14px;
+}
+.como-jogar{
+  background: linear-gradient(180deg, rgba(10,27,38,.9), rgba(6,18,26,.9));
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+}
+.blood-text{ color: var(--gold); letter-spacing:.5px; }
+
+/* ===== Tipos / badges ===== */
+.habilidade{
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* ===== Grid / Cards ===== */
+.grid{
+  margin: 22px auto 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+  max-width: 1100px; padding: 0 20px;
+}
+.card{
+  grid-column: span 12;
+  background: linear-gradient(180deg, rgba(10,27,38,.92), rgba(6,18,26,.92));
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: var(--shadow);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s;
+}
+.card:hover{
+  transform: translateY(-2px);
+  border-color: rgba(14,165,233,.35);
+  box-shadow: 0 14px 30px rgba(14,165,233,.12);
+}
+.card h3{ color: var(--text); margin: 8px 0 6px; }
+.card p{ color: var(--muted); }
+
+/* Imagens dentro dos cards (runas/builds/spells) */
+.runa-img, .spell-img{
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid var(--card-border);
+  background: rgba(255,255,255,.02);
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+/* ===== Seções ===== */
+section{ padding: 10px 0 22px; }
+section > h2{ max-width:1100px; margin: 0 auto; padding: 0 20px; }
+
+/* ===== Lobby / Campeões ===== */
+.lobby{
+  max-width: 1200px; margin: 14px auto 40px;
+  padding: 0 20px;
+}
+.meu-campeao{
+  display:flex; align-items:center; gap:16px;
+  background: linear-gradient(180deg, rgba(14,165,233,.06), rgba(6,18,26,.92));
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 12px 14px;
+  box-shadow: var(--shadow);
+}
+.vlad-img{ width: 72px; height:72px; object-fit: contain; }
+.summoner{ font-weight: 700; font-size: 18px; color: var(--text); }
+
+.destaque-texto{
+  color: var(--text);
+  opacity: .85;
+}
+
+.carrossel-champs{ margin-top: 18px; }
+.search-bar{
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  background: rgba(255,255,255,.03);
+  color: var(--text);
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+  margin: 8px 0 14px;
+}
+.search-bar:focus{
+  border-color: rgba(14,165,233,.45);
+  box-shadow: 0 0 0 4px rgba(14,165,233,.15);
+}
+
+.carrossel{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+.champ{
+  width: 100%; aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  background: rgba(255,255,255,.04);
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease, filter .15s ease;
+}
+.champ:hover{
+  transform: translateY(-2px) scale(1.02);
+  border-color: rgba(212,175,55,.45);
+  box-shadow: 0 10px 22px rgba(212,175,55,.15);
+  filter: saturate(1.1);
+}
+
+/* Painel Matchup */
+.painel-matchup{
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+}
+.painel-matchup .card{ grid-column: span 12; }
+.matchup-card ul{ padding-left: 18px; list-style: disc; color: var(--muted); }
+
+/* ===== Modal de Imagem ===== */
+.modal{
+  display:none; position: fixed; inset: 0;
+  background: rgba(0,0,0,.6);
+  z-index: 100;
+}
+.modal .modal-conteudo{
+  position: absolute; left:50%; top:50%; transform: translate(-50%, -50%);
+  max-width: 92vw; max-height: 86vh;
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow);
+}
+.fechar{
+  position: absolute; right: 22px; top: 14px;
+  font-size: 32px; font-weight: bold;
+  color: #fff; cursor:pointer;
+}
+
+/* ===== Efeitos ===== */
+.fade{ animation: fadeIn .5s ease both; }
+@keyframes fadeIn{ from{ opacity:0; transform: translateY(6px);} to{opacity:1; transform: translateY(0);} }
+
+/* ===== Canvas sangue (mantido para compatibilidade) ===== */
+#sangue{ position: fixed; inset:0; z-index: -1; pointer-events:none; }
+
+/* ===== Footer ===== */
+footer{
+  max-width: 1100px; margin: 40px auto 24px;
+  padding: 0 20px; color: var(--muted);
+  text-align: center;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 980px){
+  .grid{ grid-template-columns: repeat(8, 1fr); }
+  .carrossel{ grid-template-columns: repeat(5, 1fr); }
+}
+@media (max-width: 780px){
+  nav ul{ display:none; }
+  #menu.open ul{ display:flex; flex-direction: column; gap: 8px; padding-bottom: 12px; }
+  .menu-toggle{ display:block; }
+  .btn-sair-mobile{ display:inline-block; }
+  .btn-sair-desktop{ display:none; }
+
+  .grid{ grid-template-columns: repeat(6, 1fr); }
+  .carrossel{ grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 540px){
+  .grid{ grid-template-columns: repeat(4, 1fr); }
+  .carrossel{ grid-template-columns: repeat(3, 1fr); }
+  .vlad-img{ width:56px; height:56px; }
+}
+
+
+
+/* ===== Header Nautilus ===== */
+header{
+  --header-h: 68px;
+  position: sticky; top: 0; z-index: 70;
+  display: flex; align-items: center; gap: 12px;
+  height: var(--header-h);
+  padding: 0 18px;
+  background: linear-gradient(180deg, rgba(6,18,26,.92), rgba(6,18,26,.75));
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  box-shadow: 0 8px 30px rgba(0,0,0,.35);
+}
+
+/* Marca */
+.logo{
+  font-family: var(--title-font, "Saira Stencil One", system-ui, sans-serif);
+  font-size: 22px;
+  letter-spacing: .8px;
+  color: var(--gold, #d4af37);
+  text-shadow: 0 0 10px rgba(14,165,233,.35), 0 2px 12px rgba(34,211,238,.25);
+  white-space: nowrap;
+}
+
+/* Botão hamburguer (aparece só no mobile) */
+.menu-toggle{
+  margin-left: auto;         /* empurra para a direita */
+  width: 40px; height: 40px;
+  display: none;             /* visível só no mobile */
+  place-items: center;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  color: #e6f6ff; cursor: pointer;
+  transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.menu-toggle:hover{
+  transform: translateY(-1px);
+  border-color: rgba(14,165,233,.45);
+  box-shadow: 0 8px 20px rgba(14,165,233,.25);
+}
+
+/* Nav à direita (desktop) */
+#menu{
+  margin-left: auto;  /* alinha o nav à direita no header */
+}
+#menu ul{
+  display: flex; align-items: center; gap: 14px;
+}
+#menu a{
+  display: inline-block;
+  padding: 10px 12px;
+  border-radius: 12px;
+  color: #dbeafe;
+  font-weight: 700;
+  letter-spacing: .3px;
+  transition: color .15s ease, background .15s ease, transform .15s ease, box-shadow .15s ease;
+}
+#menu a:hover{
+  color: #eaf7ff;
+  background: rgba(14,165,233,.12);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(14,165,233,.2);
+}
+
+/* Botões “Sair” */
+.btn-sair-desktop,
+.btn-sair-mobile{
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+  color: #e6f6ff; font-weight: 700; cursor: pointer;
+  transition: transform .15s, border-color .15s, box-shadow .15s, background .15s;
+}
+.btn-sair-desktop:hover,
+.btn-sair-mobile:hover{
+  transform: translateY(-1px);
+  border-color: rgba(34,211,238,.45);
+  box-shadow: 0 10px 22px rgba(34,211,238,.25);
+}
+.btn-sair-mobile{ display: none; } /* só no mobile */
+
+/* ===== Mobile (<= 920px): nav vira painel que desliza da direita ===== */
+@media (max-width: 920px){
+  /* mostra hamburguer */
+  .menu-toggle{ display: grid; }
+
+  /* painel off-canvas */
+  #menu{
+    position: fixed;
+    top: var(--header-h);
+    right: 10px;
+    width: min(86vw, 360px);
+    max-height: calc(100vh - var(--header-h) - 16px);
+    padding: 10px;
+    background: linear-gradient(180deg, rgba(6,18,26,.96), rgba(6,18,26,.9));
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 16px;
+    box-shadow: 0 16px 40px rgba(0,0,0,.45), 0 0 0 1px rgba(14,165,233,.12) inset;
+    transform: translateX(16px) translateY(-10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform .18s ease, opacity .18s ease;
+  }
+  #menu.open{
+    transform: translateX(0) translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+  #menu ul{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 6px;
+  }
+  #menu a{
+    width: 100%;
+    text-align: center;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: rgba(255,255,255,.02);
+    border: 1px solid rgba(255,255,255,.06);
+  }
+  #menu a:hover{
+    background: rgba(14,165,233,.12);
+    border-color: rgba(14,165,233,.45);
+  }
+
+  /* botões Sair: no mobile fica dentro do painel */
+  .btn-sair-desktop{ display: none; }
+  .btn-sair-mobile{ display: inline-block; width: 100%; }
+}
+
+/* ===== Acessibilidade / focus ===== */
+a:focus-visible, button:focus-visible{
+  outline: 3px solid rgba(14,165,233,.5);
+  outline-offset: 3px;
+  border-radius: 12px;
+}
+
+
+/* ===== Menu: underline animado + ativo ===== */
+#menu a{
+  position: relative;
+}
+
+#menu a::after{
+  content:"";
+  position:absolute;
+  left:12px; right:12px; bottom:6px;
+  height:2px;
+  background: linear-gradient(90deg, var(--primary,#0ea5e9), var(--accent,#22d3ee));
+  border-radius: 999px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease;
+}
+#menu a:hover::after{ transform: scaleX(1); }
+
+/* Estado ativo via classe/ARIA */
+#menu a.is-active,
+#menu a[aria-current="true"]{
+  color:#eaf7ff;
+}
+#menu a.is-active::after,
+#menu a[aria-current="true"]::after{
+  transform: scaleX(1);
+}
+
+/* Acessibilidade: foco visível consistente */
+#menu a:focus-visible{
+  outline: 3px solid rgba(14,165,233,.5);
+  outline-offset: 4px;
+  border-radius: 10px;
+}
